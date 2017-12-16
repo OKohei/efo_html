@@ -360,7 +360,7 @@ if(isset($_GET['lang'])) {
                 <li class="item1">
                     <div class="contact_content">
                         <div class="title">
-                            <p>df sdfs fsd fsdfs fsdfsd</p>
+                            <p><img src="/images/bg7/icon1.png" alt="">df sdfs fsd fsdfs fsdfsd</p>
                         </div>
                         <div class="content">
                             <p class="phone">03-5766-8877</p>
@@ -371,7 +371,7 @@ if(isset($_GET['lang'])) {
                 <li class="item2">
                     <div class="contact_content">
                         <div class="title">
-                            <p>df sdfsdf sdf sdfsdf</p>
+                            <p><img src="/images/bg7/icon2.png" alt="">df sdfs fsd fsdfs fsdfsd</p>
                         </div>
                         <div class="content">
                             <p>sdfsd fsdfsd sdfsdf sd</p>
@@ -381,7 +381,7 @@ if(isset($_GET['lang'])) {
                 <li class="item3">
                     <div class="contact_content">
                         <div class="title">
-                            <p>chatbot df sdfsdfs fsdfs</p>
+                            <p><img src="/images/bg7/icon3.png" alt="">df sdfs fsd fsdfs fsdfsd</p>
                         </div>
                         <div class="content">
                             <p>BOTCHAN EFO sdfsdf dfsd</p>
