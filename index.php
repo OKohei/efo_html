@@ -48,6 +48,8 @@ if(isset($_GET['lang'])) {
                         $('#header_nav').show();
                     }
                 });
+                !function(n,r){"function"==typeof define&&define.amd?define(r):"object"==typeof exports?module.exports=r():n.transformicons=r()}(this||window,function(){"use strict";var n={},r="tcon-transform",t={transform:["click"],revert:["click"]},e=function(n){return"string"==typeof n?Array.prototype.slice.call(document.querySelectorAll(n)):"undefined"==typeof n||n instanceof Array?n:[n]},o=function(n){return"string"==typeof n?n.toLowerCase().split(" "):n},f=function(n,r,f){var c=(f?"remove":"add")+"EventListener",u=e(n),s=u.length,a={};for(var l in t)a[l]=r&&r[l]?o(r[l]):t[l];for(;s--;)for(var d in a)for(var v=a[d].length;v--;)u[s][c](a[d][v],i)},i=function(r){n.toggle(r.currentTarget)};return n.add=function(r,t){return f(r,t),n},n.remove=function(r,t){return f(r,t,!0),n},n.transform=function(t){return e(t).forEach(function(n){n.classList.add(r)}),n},n.revert=function(t){return e(t).forEach(function(n){n.classList.remove(r)}),n},n.toggle=function(t){return e(t).forEach(function(t){n[t.classList.contains(r)?"revert":"transform"](t)}),n},n});
+                transformicons.add(".tcon");
             });
         </script>
     </head>
@@ -129,202 +131,265 @@ if(isset($_GET['lang'])) {
             <p>BOTCHAN EFO fsd fs fsdfsd dfsd sdf sdfsdsdfsd fsdff</p>
         </div>
     </div>
-    <div class="bg1_item_box base">
-        <ul class="bg1_item base">
-            <li>
-                <h2>sds gfgdfg dfgdfg dfgdf</h2>
-                <img src="/images/bg2/item1.png" alt="">
-                <p><?= $flow2[$LANG] ?></p>
-            </li>
-            <li>
-                <h2>sds gfgdfg dfgdfg dfgdf</h2>
-                <img src="/images/bg2/item2.png" alt="">
-                <p><?= $flow4[$LANG] ?></p>
-            </li>
-            <li>
-                <h2>sds gfgdfg dfgdfg dfgdf</h2>
-                <img src="/images/bg2/item3.png" alt="">
-                <p><?= $flow6[$LANG] ?></p>
-            </li>
-        </ul>
-    </div>
-</div>
-
-
-<div class="section" id="price">
-    <div class="header">
-        <img src="/images/<?php echo $LANG; ?>/price/price_ttl_header.png" alt="料金プラン">
-    </div>
-    <div class="price_initialcost base">
-        <p class="price_initialcost_ttl"><img src="/images/<?php echo $LANG; ?>/price/price_initialcost_ttl.png" alt="初期導入費"></p>
-        <div class="price_initialcost_txtWrapper">
-            <p class="price_initialcost_txt">
-                <img src="/images/<?php echo $LANG; ?>/price/price_initialcost_txt.png" alt="通常100,000円のところ期間限定で無料！" class="disp-pc">
-                <img src="/images/<?php echo $LANG; ?>/price/price_initialcost_txt_sp.png" alt="通常100,000円のところ期間限定で無料！" class="disp-sp">
-            </p>
-            <p class="price_initialcost_period"><?= $price1[$LANG] ?></p>
+    <div class="bg2_item_box base">
+        <div class="bg2_item_cotainer">
+            <ul class="bg2_item">
+                <li class="item1">
+                    <h2>sds gfgdfg dfgdfg dfgdf</h2>
+                    <img src="/images/bg2/item1.png" alt="">
+                    <p><?= $flow2[$LANG] ?></p>
+                </li>
+                <li class="item2">
+                    <h2>sds gfgdfg dfgdfg dfgdf</h2>
+                    <img src="/images/bg2/item2.png" alt="">
+                    <p><?= $flow4[$LANG] ?></p>
+                </li>
+                <li class="item3">
+                    <h2>sds gfgdfg dfgdfg dfgdf</h2>
+                    <img src="/images/bg2/item3.png" alt="">
+                    <p><?= $flow6[$LANG] ?></p>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="price_plan base">
-        <p class="price_plan_cont">
-            <img src="/images/<?php echo $LANG; ?>/price/price_plan_free.png" alt="フリープラン" class="disp-pc">
-            <img src="/images/<?php echo $LANG; ?>/price/price_plan_free_sp.png" alt="フリープラン" class="disp-sp">
-        </p>
-        <p class="price_plan_cont">
-            <img src="/images/<?php echo $LANG; ?>/price/price_plan_minimum.png" alt="ミニマムプラン" class="disp-pc">
-            <img src="/images/<?php echo $LANG; ?>/price/price_plan_minimum_sp.png" alt="ミニマムプラン" class="disp-sp">
-        </p>
-        <p class="price_plan_cont">
-            <img src="/images/<?php echo $LANG; ?>/price/price_plan_standard.png" alt="スタンダードプラン" class="disp-pc">
-            <img src="/images/<?php echo $LANG; ?>/price/price_plan_standard_sp.png" alt="スタンダードプラン" class="disp-sp">
-        </p>
-        <p class="price_plan_cont">
-            <img src="/images/<?php echo $LANG; ?>/price/price_plan_wagamama.png" alt="ワガママプラン" class="disp-pc">
-            <img src="/images/<?php echo $LANG; ?>/price/price_plan_wagamama_sp.png" alt="ワガママプラン" class="disp-sp">
-        </p>
-    </div>
-    <div class="price_entry">
-        <p class="price_entry_btn"><a href="https://admin.botchan.chat/auth/register/?lang=<?= $LANG; ?>">
-                <img src="/images/<?php echo $LANG; ?>/price/price_entry_btn.png" alt="無料アカウント登録" class="disp-pc">
-                <img src="/images/<?php echo $LANG; ?>/price/price_entry_btn_sp.png" alt="無料アカウント登録" class="disp-sp">
-            </a></p>
-        <p class="price_entry_txt"><?= $price2[$LANG] ?></p>
-    </div>
-    <div class="price_option base">
-        <p class="price_option_ttl"><img src="/images/<?php echo $LANG; ?>/price/price_ttl_option.png" alt="オプション"></p>
-        <p class="price_option_txt"><?= $price3[$LANG] ?></p>
-        <ul class="price_option_list">
-            <li class="price_option_item">
-                <p class="price_option_item_ttl"><?= $price4[$LANG] ?></p>
-                <p class="price_option_item_txt"><?= $price5[$LANG] ?></p>
-            </li>
-            <li class="price_option_item">
-                <p class="price_option_item_ttl"><?= $price6[$LANG] ?></p>
-                <p class="price_option_item_txt"><?= $price7[$LANG] ?></p>
-            </li>
-            <li class="price_option_item">
-                <p class="price_option_item_ttl"><?= $price8[$LANG] ?></p>
-                <p class="price_option_item_txt"><?= $price9[$LANG] ?></p>
-            </li>
-            <li class="price_option_item">
-                <p class="price_option_item_ttl"><?= $price10[$LANG] ?></p>
-                <p class="price_option_item_txt"><?= $price11[$LANG] ?></p>
-            </li>
-            <li class="price_option_item">
-                <p class="price_option_item_ttl"><?= $price12[$LANG] ?></p>
-                <p class="price_option_item_txt"><?= $price13[$LANG] ?></p>
-            </li>
-        </ul>
-    </div>
-
 </div>
 
-
-<div class="section" id="contact">
-    <div class="header">
-        <img src="/images/<?php echo $LANG; ?>/contact/header.png" width="200" alt="">
+<div class="section bg3" id="bg3">
+    <div class="text-1-box base">
+        <div class="text-1-content">
+            <p>wytu fsd fs fsdfsd dfsdf !</p>
+        </div>
+        <div class="text-2-content">
+            <p>CVR sdf sfsdf sdfsdfsd sdf</p>
+        </div>
     </div>
-    <p class="text-6-text"><?= $contact1[$LANG] ?></p>
-    <div class="text-6-images">
-        <img class="left" src="/images/<?php echo $LANG; ?>/contact/left.png" width="30%" alt="">
-        <a href="./contact.php?lang=<?= $LANG; ?>">
-            <img src="/images/<?php echo $LANG; ?>/contact/right.png" width="30%" alt="">
-        </a>
+    <div class="bg3_item_box base">
+        <div class="bg3_item_cotainer">
+            <ul class="bg3_item left">
+                <li class="item1">
+                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                </li>
+                <li class="item2">
+                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                </li>
+                <li class="item3">
+                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                </li>
+            </ul>
+            <ul class="bg3_item right">
+                <li class="item1 left">
+                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                </li>
+                <li class="item2">
+                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                </li>
+                <li class="item3">
+                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="service_view base">
+        <div class="service_item service_pc">
+            <img src="/images/bg3/pc.png" alt="">
+        </div>
+        <div class="service_item service_mobile">
+            <img src="/images/bg3/phone.png" alt="">
+        </div>
     </div>
 </div>
 
-<div class="section bg1">
-    <div class="header">
-        <img src="/images/<?php echo $LANG; ?>/faq/header.png" width="200" alt="">
-        <?php if ($LANG=='ja'){ ?>
-            <div class="header2">
-
-                <img src="/images/<?php echo $LANG; ?>/faq/faq.png" width="100" alt="">
-
+<div class="section bg4" id="bg4">
+    <div class="text-1-box base">
+        <div class="text-1-content">
+            <p>wytu fsd fs fsdfsd dfsdf !</p>
+        </div>
+    </div>
+    <div class="bg4_item_box base">
+        <div class="bg4_item_cotainer">
+            <ul class="bg4_item left">
+                <li class="item1">
+                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                </li>
+                <li class="item2">
+                    <p>sds gfgdfg f</p>
+                </li>
+                <li class="item3">
+                    <p>sds gfgdfg </p>
+                </li>
+                <li class="item4">
+                    <p>sds gfgdfg f</p>
+                </li>
+                <li class="item5">
+                    <p>sds gfgdfg </p>
+                </li>
+            </ul>
+            <div class="info_item">
+                <span>
+                    sfhf fsdsd hfsd fjsdf sdf sdfsdfsd sdfsf sdfsdfsd sdfsdf sdsee fdgdgd
+                </span>
             </div>
-        <?php } ?>
+            <div class="service_item service_pc">
+                <img src="/images/bg4/phone.png" alt="">
+            </div>
+        </div>
     </div>
-    <div>
-        <ul class="text-6-list base">
-            <li>
-                <div class="q">
-                    <?= $faq1[$LANG] ?>
-                </div>
-                <div class="a">
-                    <?= $faq2[$LANG] ?>
-                </div>
-            </li>
+</div>
 
-            <li>
-                <div class="q">
-                    <?= $faq3[$LANG] ?>
-                </div>
-                <div class="a">
-                    <?= $faq4[$LANG] ?>
-                </div>
-            </li>
-
-            <li>
-                <div class="q">
-                    <?= $faq5[$LANG] ?>
-                </div>
-                <div class="a">
-                    <?= $faq6[$LANG] ?>
-                </div>
-            </li>
-
-            <li>
-                <div class="q">
-                    <?= $faq7[$LANG] ?>
-                </div>
-                <div class="a">
-                    <?= $faq8[$LANG] ?>
-                </div>
-            </li>
-
-            <li>
-                <div class="q">
-                    <?= $faq9[$LANG] ?>
-                </div>
-                <div class="a">
-                    <?= $faq10[$LANG] ?>
-                </div>
-            </li>
-
-
-            <li>
-                <div class="q">
-                    <?= $faq11[$LANG] ?>
-                </div>
-                <div class="a">
-                    <?= $faq12[$LANG] ?>
-                </div>
-            </li>
-
-            <li>
-                <div class="q">
-                    <?= $faq13[$LANG] ?>
-                </div>
-                <div class="a">
-                    <?= $faq14[$LANG] ?>
-                </div>
-            </li>
-
-            <li>
-                <div class="q">
-                    <?= $faq15[$LANG] ?>
-                </div>
-                <div class="a">
-                    <?= $faq16[$LANG] ?>
-                </div>
-            </li>
-
-        </ul>
+<div class="section bg5" id="bg5">
+    <div class="text-1-box base">
+        <div class="text-1-content">
+            <p>wytu fsd fs fsdfsd dfsdf !</p>
+        </div>
     </div>
-    <div class="faq_link">
-        <p class="sign_up fc-black">
-            <a href="https://admin.botchan.chat/auth/register/?lang=<?= $LANG; ?>"><?= $btn_sign_up[$LANG] ?></a>
-        </p>
+    <div class="bg5_item_box base">
+        <div class="bg5_item_cotainer">
+            <ul class="bg5_item">
+                <li class="item1">
+                    <div class="step_content">
+                        <div class="step_title">
+                            <p class="label1">Step 1</p>
+                            <p class="label2">sdf sdfsdf dfsdfsf sd asdasd asd asdsdfsdfsd ssdf dsd fsdf sdfs</p>
+                        </div>
+                        <div class="step_image">
+                            <img src="/images/bg5/step3.png" alt="">
+                        </div>
+                        <p class="label3">sdf sdfsdf fsd ssdf dsd fsdf s</p>
+                    </div>
+                </li>
+                <li class="item2">
+                    <div class="step_content">
+                        <p class="label1">ghfgg</p>
+                        <div class="step_image">
+                            <img src="/images/bg5/arow_next.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="item3">
+                    <div class="step_content">
+                        <div class="step_title">
+                            <p class="label1">Step 2</p>
+                            <p class="label2">sdf sdfs s</p>
+                        </div>
+                        <div class="step_image">
+                            <img src="/images/bg5/step2.png" alt="">
+                        </div>
+                        <p class="label3">Step 1</p>
+                    </div>
+                </li>
+                <li class="item4">
+                    <div class="step_content">
+                        <p class="label1">ghfgg</p>
+                        <div class="step_image">
+                            <img src="/images/bg5/arow_next.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="item5">
+                    <div class="step_content">
+                        <div class="step_title">
+                            <p class="label1">Step 3</p>
+                            <p class="label2">sdf s</p>
+                        </div>
+                        <div class="step_image">
+                            <img src="/images/bg5/step3.png" alt="">
+                        </div>
+                        <p class="label3">Step 1</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="section bg6" id="bg6">
+    <div class="text-1-box base">
+        <div class="text-1-content">
+            <p>hello sams</p>
+        </div>
+    </div>
+    <div class="bg6_box base">
+        <div class="bg6_cotainer">
+            <table class="table">
+                <tbody>
+                <tr class="item1">
+                    <td>dfg dfgdfg</td>
+                    <td>10mdo</td>
+                </tr>
+                <tr class="item_img">
+                    <td colspan="2">
+                        <div class="table_icon_box">
+                            <img src="/images/bg6/table_icon.png" alt="">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="item2">
+                    <td>Thornton</td>
+                    <td>10fat</td>
+                </tr>
+                <tr class="item3">
+                    <td>the Bird</td>
+                    <td>20twitter</td>
+                </tr>
+                <tr class="item4">
+                    <td>Thornton</td>
+                    <td>30fat</td>
+                </tr>
+                <tr class="item5">
+                    <td>the Bird</td>
+                    <td>50twitter</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="title_bottom_box">
+                <p class="title_bottom">sdfsdfsd sdf sdsdsdfsd</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section bg7" id="bg7">
+    <div class="text-1-box base">
+        <div class="text-1-content">
+            <p>wytu fsd fs</p>
+        </div>
+    </div>
+    <div class="bg7_item_box base">
+        <div class="bg7_item_cotainer">
+            <ul class="bg7_item">
+                <li class="item1">
+                    <div class="contact_content">
+                        <div class="title">
+                            <p>df sdfs fsd fsdfs fsdfsd</p>
+                        </div>
+                        <div class="content">
+                            <p class="phone">03-5766-8877</p>
+                            <p class="subtitle">sdfs fsdfsdfsdf sdf s</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item2">
+                    <div class="contact_content">
+                        <div class="title">
+                            <p>df sdfsdf sdf sdfsdf</p>
+                        </div>
+                        <div class="content">
+                            <p>sdfsd fsdfsd sdfsdf sd</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item3">
+                    <div class="contact_content">
+                        <div class="title">
+                            <p>chatbot df sdfsdfs fsdfs</p>
+                        </div>
+                        <div class="content">
+                            <p>BOTCHAN EFO sdfsdf dfsd</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 
