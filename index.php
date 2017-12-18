@@ -58,7 +58,7 @@ if(isset($_GET['lang'])) {
 <header>
     <h1 class="meta-h1"><?= $meta_h1[$LANG] ?></h1>
     <div class="base">
-        <a href="/?lang=<?= $LANG ?>">
+        <a class="img_logo_box" href="/?lang=<?= $LANG ?>">
             <img class="logo" src="/images/logo.png" width="200" alt="">
         </a>
         <ul id="header_nav">
@@ -66,14 +66,6 @@ if(isset($_GET['lang'])) {
             <li><a href="#feature"><?= $menu2[$LANG] ?></a></li>
             <li><a href="#usecase"><?= $menu3[$LANG] ?></a></li>
             <li><a href="#flow"><?= $menu4[$LANG] ?></a></li>
-            <li><a href="#price"><?= $menu5[$LANG] ?></a></li>
-            <li><a href="#contact"><?= $menu6[$LANG] ?></a></li>
-            <li><a href="https://admin.botchan.chat/?lang=<?= $LANG; ?>"><?= $menu7[$LANG] ?></a></li>
-            <li><a href="./?lang=<?= ($LANG == 'en')? 'ja' : 'en' ?>">
-                    <img class="en_white" src="/images/<?php echo $LANG; ?>/header_en_white.png" width="100" alt="">
-                    <img class="en_black" src="/images/<?php echo $LANG; ?>/header_en_black.png" width="100" alt="">
-                </a>
-            </li>
         </ul>
     </div>
     <button type="button" id="hmenu" class="tcon tcon-menu--xcross" aria-label="toggle menu">
@@ -84,6 +76,8 @@ if(isset($_GET['lang'])) {
 <div id="header" style="background-image: url(/images/<?php echo $LANG; ?>/header_image.png)">
     <div class="mobile_demo_box">
         <img id="mobile_demo" src="/images/mobile_demo.png" alt="">
+        <p class="start_chat_btn"></p>
+        <div class="efo_demo"></div>
     </div>
     <div class="header_text_box">
         <div class="header_text">

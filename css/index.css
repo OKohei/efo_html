@@ -99,6 +99,32 @@ header.scroll #header_nav .en_black {
   position: absolute;
   right: 0;
   bottom: 0;
+  border-radius: 5px;
+}
+#header .mobile_demo_box .start_chat_btn {
+  position: absolute;
+  right: 27%;
+  bottom: 28px;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 6px 52px;
+  margin: 0;
+  width: 72px;
+  height: 22px;
+  border-radius: 20px;
+}
+#header .mobile_demo_box .start_chat_btn:focus {
+  outline: none;
+  text-decoration: none;
+}
+#header .efo_demo {
+  position: absolute;
+  right: 150px;
+  bottom: 0;
+}
+#header .efo_demo .wc-webchat {
+  display: block; width: 240px; height: 412px;
+  border: none;
 }
 #header .header_text_box {
   width: 33%;
