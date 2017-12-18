@@ -26,6 +26,7 @@ if(isset($_GET['lang'])) {
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <script src="./js/lib.js"></script>
+        <script src="./js/custom.js"></script>
         <script>
             $(function(){
                 $(document).scroll(function(){
@@ -402,10 +403,5 @@ if(isset($_GET['lang'])) {
 
     <div class="copyright">&copy;2017 wevnal Inc. All Rights Reserved.</div>
 </div>
-
-<!-- SKELETON -->
-
-<!-- END.SKELETON -->
-
 </body>
 </html>

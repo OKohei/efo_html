@@ -2,11 +2,11 @@
 include('language.php');
 $LANG = 'en';
 if(isset($_GET['lang'])) {
-    if($_GET['lang'] == 'vn') {
-        $LANG = 'vn';
-    } else if($_GET['lang'] == 'ja') {
-        $LANG = 'ja';
-    }
+  if($_GET['lang'] == 'vn') {
+    $LANG = 'vn';
+  } else if($_GET['lang'] == 'ja') {
+    $LANG = 'ja';
+  }
 }
 
 ?>
@@ -53,22 +53,26 @@ if(isset($_GET['lang'])) {
             });
         </script>
     </head>
-<body>
-<header class="black">
+<body class="company_page">
+<header>
+    <h1 class="meta-h1"><?= $meta_h1[$LANG] ?></h1>
     <div class="base">
         <a href="/?lang=<?= $LANG ?>">
             <img class="logo" src="/images/logo.png" width="200" alt="">
         </a>
         <ul id="header_nav">
-            <li><a href="/#what"><?= $menu1[$LANG] ?></a></li>
-            <li><a href="/#feature"><?= $menu2[$LANG] ?></a></li>
-            <li><a href="/#usecase"><?= $menu3[$LANG] ?></a></li>
-            <li><a href="/#flow"><?= $menu4[$LANG] ?></a></li>
-            <li><a href="/#contact"><?= $menu5[$LANG] ?></a></li>
-            <li><a href="./company.php?lang=<?= ($LANG == 'en')? 'ja' : 'en' ?>">
+            <li><a href="#what"><?= $menu1[$LANG] ?></a></li>
+            <li><a href="#feature"><?= $menu2[$LANG] ?></a></li>
+            <li><a href="#usecase"><?= $menu3[$LANG] ?></a></li>
+            <li><a href="#flow"><?= $menu4[$LANG] ?></a></li>
+            <li><a href="#price"><?= $menu5[$LANG] ?></a></li>
+            <li><a href="#contact"><?= $menu6[$LANG] ?></a></li>
+            <li><a href="https://admin.botchan.chat/?lang=<?= $LANG; ?>"><?= $menu7[$LANG] ?></a></li>
+            <li><a href="./?lang=<?= ($LANG == 'en')? 'ja' : 'en' ?>">
                     <img class="en_white" src="/images/<?php echo $LANG; ?>/header_en_white.png" width="100" alt="">
                     <img class="en_black" src="/images/<?php echo $LANG; ?>/header_en_black.png" width="100" alt="">
-                </a></li>
+                </a>
+            </li>
         </ul>
     </div>
     <button type="button" id="hmenu" class="tcon tcon-menu--xcross" aria-label="toggle menu">
@@ -76,9 +80,34 @@ if(isset($_GET['lang'])) {
         <span class="tcon-visuallyhidden">toggle menu</span>
     </button>
 </header>
-<div class="contact_base">
-    <div class="contact_header">
-        <img src="/images/<?php echo $LANG; ?>/company/header.png" width="200" alt="">
+<div id="header" style="background-image: url(/images/<?php echo $LANG; ?>/header_image.png)">
+    <div class="header_text_box">
+        <div class="header_text">
+            <div class="header_text_item first">
+                <p>ad jasds jdajd </p>
+            </div>
+            <div class="header_text_item second">
+                <p>COMPANY</p>
+            </div>
+        </div>
+    </div>
+    <div class="breadcumb">
+        <div class="base">
+            <div class="breadcumb_container">
+                <div class="item">
+                    <p>sdf sfsdf sdfs</p>
+                </div>
+                <span class="breadcumb_right"> > </span>
+                <div class="item">
+                    <p>sdf sfsdf</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact_base base">
+    <div class="contact_title">
+        <h3>Company</h3>
     </div>
     <?php if($LANG == 'ja'): ?>
         <table>
@@ -212,6 +241,7 @@ if(isset($_GET['lang'])) {
         </table>
     <?php endif; ?>
 </div>
+
 <div class="footer">
     <ul>
         <li><a href="./contact.php?lang=<?= $LANG; ?>"><?= $footer1[$LANG] ?></a></li>
