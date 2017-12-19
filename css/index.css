@@ -422,11 +422,9 @@ header.scroll #header_nav .en_black {
   float: right;
   margin: 8px 0;
 }
-.section.bg3 .bg3_item li:not(.active)
-{
-  width: 70%;
-}
+
 .section.bg3 .bg3_item li {
+  width: 70%;
   line-height: 48px;
   margin: 13px 0;
   text-decoration: none;
@@ -435,6 +433,9 @@ header.scroll #header_nav .en_black {
   font-weight: bold;
   box-shadow: 0 0 0 0px rgba(0, 0, 0, .1), 6px 7px 8px rgba(0, 0, 0, .15);
   cursor: pointer;
+}
+.section.bg3 .bg3_item li.active {
+  width: 90%;
 }
 .section.bg3 .bg3_item li.item1 {
   background-color: #1791c9;
@@ -461,6 +462,19 @@ header.scroll #header_nav .en_black {
 .section.bg3 .service_item.service_mobile {
   /*width: 35%;*/
   margin-left: 30px;
+  position: relative;
+}
+/*iframe mobile*/
+.section.bg3 .service_item .efo_demo_mobile {
+  position: absolute;
+  bottom: 46px;
+  right: 11px;
+  border: none;
+}
+.section.bg3 .service_item .efo_demo_mobile .wc-webchat2 {
+  width: 157px;
+  height: 278px;
+  border: none;
 }
 
 
