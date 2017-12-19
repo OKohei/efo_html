@@ -1386,6 +1386,9 @@ header.scroll #header_nav .en_black {
 }
 
 @media screen and (max-width : 480px) {
+  .section.bg6 .bg6_cotainer table {
+    width: 90%;
+  }
   .section.bg7 .bg7_item li {
     width: 85%;
     margin: 13px 0px;
