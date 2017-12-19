@@ -692,7 +692,7 @@ header.scroll #header_nav .en_black {
 .section.bg6 .bg6_cotainer table tr td:first-child {
   color: #fff;
 }
-.section.bg6 .bg6_cotainer table tr td:last-child {
+.section.bg6 .bg6_cotainer table tr:not(.item_img) td:last-child {
   border-left: 2px solid #d1d1d1;
 }
 .section.bg6 .bg6_cotainer table td {
@@ -703,6 +703,7 @@ header.scroll #header_nav .en_black {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
+  height: 100%;
 }
 .section.bg6 .bg6_cotainer table tr:nth-of-type(odd) {
   background-color: #f9f9f9;
