@@ -669,22 +669,27 @@ header.scroll #header_nav .en_black {
 .section.bg6 .bg6_cotainer table tr.item1 td:first-child {
   background: url(../images/bg6/table_background1.png) no-repeat center transparent;
   background-size: cover;
+  padding-top: 0%;
 }
 .section.bg6 .bg6_cotainer table tr.item2 td:first-child {
   background: url(../images/bg6/table_background2.png) no-repeat center transparent;
   background-size: cover;
+  padding-top: 0%;
 }
 .section.bg6 .bg6_cotainer table tr.item3 td:first-child {
   background: url(../images/bg6/table_background3.png) no-repeat center transparent;
   background-size: cover;
+  padding-top: 0%;
 }
 .section.bg6 .bg6_cotainer table tr.item4 td:first-child {
   background: url(../images/bg6/table_background4.png) no-repeat center transparent;
   background-size: cover;
+  padding-top: 0%;
 }
 .section.bg6 .bg6_cotainer table tr.item5 td:first-child {
   background: url(../images/bg6/table_background5.png) no-repeat center transparent;
   background-size: cover;
+  padding-top: 0%;
 }
 .section.bg6 .bg6_cotainer table tr td:first-child {
   color: #fff;
@@ -839,7 +844,7 @@ header.scroll #header_nav .en_black {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 20px;
 }
 .footer .copyright {
   padding-bottom: 30px;
@@ -1250,9 +1255,6 @@ header.scroll #header_nav .en_black {
   }
 }
 
-
-
-
 @media screen and (max-width: 760px) {
 
   #hmenu {
@@ -1383,7 +1385,15 @@ header.scroll #header_nav .en_black {
 
 }
 
-
+@media screen and (max-width : 480px) {
+  .section.bg7 .bg7_item li {
+    width: 75%;
+    margin: 13px 60px;
+  }
+  .footer ul > li > a {
+    font-size: 17px;
+  }
+}
 .tcon {
   -webkit-appearance: none;
   -moz-appearance: none;
