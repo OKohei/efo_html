@@ -17,15 +17,15 @@ $content = isset($_POST['content']) ? $_POST['content']: '';
 mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 
-$to      = 'botchan@wevnal.co.jp';
-//$to      = 'nguyen.duc.quyet@miyatsu.vn';
+//$to      = 'botchan@wevnal.co.jp';
+$to      = 'nguyen.duc.quyet@miyatsu.vn';
 $subject = 'お問い合わせがありました';
 $message = '';
 $message .= 'お名前: ' . $person_name . "\n";
 $message .= 'メールアドレス: ' . $mail . "\n";
 $message .= '電話番号: ' . $tel . "\n";
 $message .= 'お問い合わせ内容: ' . $content . "\n";
-$headers = 'From: botchan@wevnal.co.jp' . "\r\n";
+$headers = 'From: vu.thi.my.linh@miyatsu.vn' . "\r\n";
 
 mail($to, $subject, $message, $headers);
 
