@@ -124,27 +124,27 @@ if(isset($_GET['lang'])) {
                     <p><?= $contact_f3[$LANG] ?></p>
                     <span class="require">hj gh</span>
                 </td>
-                <td><input type="text" name="company" value="" placeholder="sdfsfsd dgf dsd đf" required /></td>
+                <td><input type="text" name="person_name" value="" placeholder="sdfsfsd dgf dsd đf" required /></td>
             </tr>
             <tr class="item3">
                 <td>
                     <p><?= $contact_f4[$LANG] ?></p>
                     <span class="require">hj gh</span>
                 </td>
-                <td><input type="text" name="company" value="" placeholder="sdfsfsd dgf dsd đf" required /></td>
+                <td><input type="text" name="tel" value="" placeholder="sdfsfsd dgf dsd đf" required /></td>
             </tr>
             <tr class="item4">
                 <td>
                     <p><?= $contact_f5[$LANG] ?></p>
                 </td>
-                <td><input type="text" name="company" value="" placeholder="sdfsfsd dgf dsd đf" /></td>
+                <td><input type="text" name="email" value="" placeholder="sdfsfsd dgf dsd đf" /></td>
             </tr>
             <tr class="item5">
                 <td>
                     <p><?= $contact_f5[$LANG] ?></p>
                     <span class="require">hj gh</span>
                 </td>
-                <td><textarea name="bot" id="" cols="30" rows="10" placeholder="sdfsfsd dgf dsd đf" ></textarea></td>
+                <td><textarea name="content" id="" cols="30" rows="10" placeholder="sdfsfsd dgf dsd đf" ></textarea></td>
             </tr>
             </tbody>
         </table>
