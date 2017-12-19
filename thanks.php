@@ -84,10 +84,10 @@ mail($to, $subject, $message, $headers);
     </script>
   </head>
 <body>
-<header class="black">
+<header>
   <div class="base">
     <a href="/?lang=<?= $LANG ?>">
-      <img class="logo" src="/images/logo.png" width="200" alt="">
+      <img class="logo" src="/images/logo.png" width="235" alt="">
     </a>
     <ul id="header_nav">
       <li><a href="/#what"><?= $menu1[$LANG] ?></a></li>
@@ -95,10 +95,6 @@ mail($to, $subject, $message, $headers);
       <li><a href="/#usecase"><?= $menu3[$LANG] ?></a></li>
       <li><a href="/#flow"><?= $menu4[$LANG] ?></a></li>
       <li><a href="/#contact"><?= $menu5[$LANG] ?></a></li>
-      <li><a href="./privacy.php?lang=<?= ($LANG == 'en')? 'ja' : 'en' ?>">
-          <img class="en_white" src="/images/<?php echo $LANG; ?>/header_en_white.png" width="100" alt="">
-          <img class="en_black" src="/images/<?php echo $LANG; ?>/header_en_black.png" width="100" alt="">
-        </a></li>
     </ul>
   </div>
   <button type="button" id="hmenu" class="tcon tcon-menu--xcross" aria-label="toggle menu">

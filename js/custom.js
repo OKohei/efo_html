@@ -6,8 +6,22 @@ $(function(){
       'customize.gif',
       'onetag.gif'
     ];
+
+    //frame header
     $('#header .mobile_demo_box .start_chat_btn').on('click', function () {
-        var iframe_chat = '<iframe class="wc-webchat" id="wc-webchat" src="http://192.168.10.10:3030/efo?connect_page_id=5a1533249a89201ada6de403"></iframe>';
+        var iframe_chat = '<iframe class="wc-webchat" src="http://192.168.10.10:3030/efo?connect_page_id=5a1533249a89201ada6de403"></iframe>';
+        $('#header .mobile_demo_box .efo_demo').append(iframe_chat);
+        setTimeout(function () {
+            var wc_irame = document.getElementById("wc-webchat").contentWindow;
+
+            wc_irame.postMessage({'new_conversation_flg' : 1}, 'http://192.168.10.10:3030');
+            wc_irame.postMessage({'maximize_flg' : 1}, 'http://192.168.10.10:3030');
+        }, 1000);
+    });
+
+    //frame device
+    $('#bg3 .bg3_item li').on('click', function () {
+        var iframe_chat = '<iframe class="wc-webchat1" id="wc-webchat1" src="http://192.168.10.10:3030/efo?connect_page_id=5a1533249a89201ada6de403"></iframe>';
         $('#header .mobile_demo_box .efo_demo').append(iframe_chat);
         setTimeout(function () {
             var wc_irame = document.getElementById("wc-webchat").contentWindow;
@@ -61,6 +75,9 @@ function setSixeDemoBg4() {
             $('.bg4_item_cotainer .screen_img').css({
                 'right' : ((windown_w - screen_device_w + 35) / 2) + 'px'
             });
+            // set interface bg5
+            $('.section.bg5 .next img').attr("src", '/images/bg5/arrow_down.png');
+            $('.section.bg5 img.step_img').css("width", '60%');
         } else {
             $('.bg4_item_cotainer .screen_img').attr('style', null);
         }
