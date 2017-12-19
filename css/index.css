@@ -1386,6 +1386,9 @@ header.scroll #header_nav .en_black {
 }
 
 @media screen and (max-width : 480px) {
+  .section.bg6 .bg6_cotainer table td {
+    font-size: 16px;
+  }
   .section.bg6 .bg6_cotainer table {
     width: 100%;
     margin: 0 5px;
@@ -1401,10 +1404,10 @@ header.scroll #header_nav .en_black {
     margin: 13px 10px;
   }
   .section.bg7 .bg7_item li .content p {
-    font-size: 17px;
+    font-size: 16px;
   }
   .footer ul > li > a {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 .tcon {
