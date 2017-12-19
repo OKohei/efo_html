@@ -357,11 +357,11 @@ header.scroll #header_nav .en_black {
   display: inline-block;
   width: 100%;
   padding: 20px 0 35px 0;
-  padding-left: 18%;
 }
 .section.bg2 .bg2_item {
-  /*float: right;*/
   text-align: center;
+  display: inline;
+  /*margin-left: 205px;*/
 }
 .section.bg2 .bg2_item li {
   width: 35%;
@@ -469,7 +469,6 @@ header.scroll #header_nav .en_black {
 }
 .section.bg3 .service_item.service_mobile {
   /*width: 35%;*/
-  margin-left: 30px;
   position: relative;
 }
 /*iframe mobile*/
@@ -594,7 +593,6 @@ header.scroll #header_nav .en_black {
   list-style: none;
 }
 .section.bg5 .bg5_item li {
-  margin: 13px 15px;
   font-weight: 500;
   text-align: center;
 }
@@ -615,7 +613,7 @@ header.scroll #header_nav .en_black {
   font-weight: normal;
 }
 .section.bg5 .step_content .step_image {
-  margin: 30px 0 15px 0;
+  margin: 15px 0 15px 0;
 }
 .section.bg5 .bg5_item li.item1,
 .section.bg5 .bg5_item li.item3,
@@ -628,7 +626,7 @@ header.scroll #header_nav .en_black {
 .section.bg5 .bg5_item li.item4 {
   width: 7%;
   float: left;
-  margin-top: 118px;
+  margin-top: 70px;
   font-size: 13px
 }
 .section.bg5 .step_image img {
@@ -1800,10 +1798,10 @@ header.scroll #header_nav .en_black {
     width: 48%;
   }
   .section.bg5 .bg5_item{
-    display: grid !important;
+    display: inline;
   }
   .section.bg5 .bg5_item>li{
-    width: 90% !important;
+    width: 100% !important;
   }
 
   /* Company SP */
