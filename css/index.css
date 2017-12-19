@@ -1390,6 +1390,9 @@ header.scroll #header_nav .en_black {
     width: 100%;
     margin: 0 5px;
   }
+  .section.bg7 .bg7_item {
+    width: auto;
+  }
   .section.bg7 .bg7_item li {
     width: 85%;
     margin: 13px 0px;
