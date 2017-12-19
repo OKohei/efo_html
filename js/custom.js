@@ -87,7 +87,11 @@ $(function(){
     });
 
     $('#hmenu').on('click', function(){
-        $('#header_nav').show();
+        if($('#header_nav').css('display') == 'none') {
+            $('#header_nav').show();
+        } else {
+            $('#header_nav').hide();
+        }
     });
     $('#header_nav li').on('click', function(){
         var windown_w = $(window).width();
