@@ -1393,9 +1393,12 @@ header.scroll #header_nav .en_black {
   .section.bg7 .bg7_item {
     width: auto;
   }
+  .section.bg7 .bg7_item_cotainer ul {
+    padding-left: 0px;
+  }
   .section.bg7 .bg7_item li {
-    width: 85%;
-    margin: 13px 0px;
+    width: 90%;
+    margin: 13px 10px;
   }
   .section.bg7 .bg7_item li .content p {
     font-size: 17px;
