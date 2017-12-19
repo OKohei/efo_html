@@ -23,7 +23,7 @@ if(isset($_GET['lang'])) {
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
         <link rel="stylesheet" href="./css/index.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <script src="./js/lib.js"></script>
         <script src="./js/custom.js"></script>
