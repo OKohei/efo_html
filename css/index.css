@@ -691,6 +691,7 @@ header.scroll #header_nav .en_black {
   float: left;
   text-align: center;
   font-weight: bold;
+  font-size: 20px;
 }
 .section.bg6 .bg6_cotainer table tr:nth-of-type(odd) {
   background-color: #f9f9f9;
@@ -759,6 +760,8 @@ header.scroll #header_nav .en_black {
   margin: 0;
   line-height: 67px;
   color: #fff;
+  font-weight: 700;
+  font-size: 20px;
 }
 .section.bg7 .bg7_item li .content {
   height: 103px;
@@ -769,10 +772,14 @@ header.scroll #header_nav .en_black {
 .section.bg7 .bg7_item li .content p {
   line-height: 103px;
   margin: 0;
+  font-weight: 700;
+  font-size: 20px;
 }
 .section.bg7 .bg7_item li .content .contact {
   text-decoration: none;
   color: #1791c9;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .section.bg7 .bg7_item li.item1 .content p {
@@ -781,6 +788,8 @@ header.scroll #header_nav .en_black {
 .section.bg7 .bg7_item li.item1 .content .phone {
   padding-top: 30px;
   font-weight: bold;
+  font-size: 26px;
+  padding-bottom: 10px;
 }
 .section.bg7 .bg7_item li .title p img {
   margin-bottom: -7px;
@@ -821,7 +830,8 @@ header.scroll #header_nav .en_black {
 .footer ul > li > a {
   text-decoration: none;
   color: white;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 23px;
 }
 .footer .copyright {
   padding-bottom: 30px;
