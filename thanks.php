@@ -26,8 +26,8 @@ $interface = isset($_POST['interface']) ? $_POST['interface']: [];
 mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 
-//$to      = 'botchan@wevnal.co.jp';
-$to      = 'nguyen.duc.quyet@miyatsu.vn';
+$to      = 'botchan@wevnal.co.jp';
+//$to      = 'nguyen.duc.quyet@miyatsu.vn';
 $subject = 'お問い合わせがありました';
 $message = '';
 $message .= '会社名: ' . $company . "\n";
@@ -35,7 +35,7 @@ $message .= 'ご担当者名: ' . $person_name . "\n";
 $message .= '電話番号: ' . $tel . "\n";
 $message .= 'メールアドレス: ' . $mail . "\n";
 $message .= '具体的なBOT内容: ' . $content . "\n";
-$headers = 'From: nguyen.duc.quyet@miyatsu.vn' . "\r\n";
+$headers = 'From: botchan@wevnal.co.jp' . "\r\n";
 
 mail($to, $subject, $message, $headers);
 

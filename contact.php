@@ -137,7 +137,7 @@ if(isset($_GET['lang'])) {
                 <td>
                     <p><?= $contact_f5[$LANG] ?></p>
                 </td>
-                <td><input type="text" name="email" value="" placeholder="sdfsfsd dgf dsd đf" /></td>
+                <td><input type="text" name="mail" value="" placeholder="sdfsfsd dgf dsd đf" /></td>
             </tr>
             <tr class="item5">
                 <td>
