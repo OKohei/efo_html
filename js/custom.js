@@ -149,8 +149,12 @@ function resetPriceForm() {
         table_icon = $('.bg6').find('table .table_icon_box'),
         table_icon_w = table_icon.innerWidth();
 
-    var left = (table_w / 2) - (table_icon_w / 2) - 5;
+    //icon
+    var left = (table_w / 2) - (table_icon_w / 2) + 2;
     table_icon.css('left', left + 'px');
+
+    //width td
+    $('.bg6 table tr td:first-child').css('width', Math.floor(table_w / 2));
 }
 
 function resetHeader() {
