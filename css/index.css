@@ -1382,6 +1382,9 @@ header.scroll #header_nav .en_black {
     text-align: center;
     margin: 0;
   }
+  .section.bg6 .bg6_cotainer table td {
+    font-size: 15px;
+  }
 
 }
 
