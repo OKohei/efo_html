@@ -147,7 +147,7 @@ $contact14['ja'] = 'お問い合わせ';
 
 $contact20['ja'] = '必須';
 
-$contact21['ja'] = '会社名*';
+$contact21['ja'] = 'お名前';
 $contact211['ja'] = '※お名前を入力して下さい';
 
 $contact22['ja'] = 'メールアドレス';

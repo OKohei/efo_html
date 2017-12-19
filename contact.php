@@ -117,7 +117,7 @@ if(isset($_GET['lang'])) {
                     <p><?= $contact21[$LANG] ?></p>
                     <span class="require"><?= $contact20[$LANG] ?></span>
                 </td>
-                <td><input type="text" name="company" value="" placeholder="<?= $contact211[$LANG] ?>" required /></td>
+                <td><input type="text" name="person_name" value="" placeholder="<?= $contact211[$LANG] ?>" required /></td>
             </tr>
             <tr class="item2">
                 <td>
