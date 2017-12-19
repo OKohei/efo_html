@@ -27,7 +27,7 @@ mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 
 //$to      = 'botchan@wevnal.co.jp';
-$to      = 'tungnk.hn@gmail.com';
+$to      = 'nguyen.duc.quyet@miyatsu.vn';
 $subject = 'お問い合わせがありました';
 $message = '';
 $message .= '会社名: ' . $company . "\n";
@@ -43,7 +43,7 @@ $message .= 'ジャンル: ' . $jungle . "\n";
 $message .= '導入時期: ' . $introduction . "\n";
 $message .= 'インターフェース: ' . join($interface, ',') . "\n";
 $message .= '具体的なBOT内容: ' . $bot . "\n";
-$headers = 'From: botchan@wevnal.co.jp' . "\r\n";
+$headers = 'From: nguyen.duc.quyet@miyatsu.vn' . "\r\n";
 
 mail($to, $subject, $message, $headers);
 
