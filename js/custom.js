@@ -53,12 +53,18 @@ $(window).resize(function () {
 });
 
 function setSixeDemoBg4() {
-    // var screen_device_w = $('.bg4_item_cotainer .screen_device').innerWidth();
-    // var screen_device_h = $('.bg4_item_cotainer .screen_device').innerHeight();
-    // $('.bg4_item_cotainer .screen_img').css({
-    //     'width' : (screen_device_w - 50) + 'px',
-    //     'height' : (screen_device_h - 50) + 'px',
-    // });
+    setTimeout(function () {
+        var windown_w = $(window).width();
+        if(windown_w <= 760) {
+            var screen_device_w = $('.bg4_item_cotainer .screen_device').innerWidth();
+
+            $('.bg4_item_cotainer .screen_img').css({
+                'right' : ((windown_w - screen_device_w + 35) / 2) + 'px'
+            });
+        } else {
+            $('.bg4_item_cotainer .screen_img').attr('style', null);
+        }
+    }, 300);
 }
 
 function resetPriceForm() {

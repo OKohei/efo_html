@@ -1593,9 +1593,23 @@ header.scroll #header_nav .en_black {
     top: 69px;
     right: 213px;
   }
-
-
-
+  .section.bg4 .bg4_item.left {
+    min-width: 43%;
+  }
+  .section.bg4 .bg4_item li {
+    line-height: 28px;
+    font-size: 13px;
+  }
+  .section.bg4 .info_item {
+    margin-top: 37px;
+    width: 20%;
+  }
+  .section.bg5 {
+    padding-top: 25px;
+  }
+  .section.bg5 .bg5_item li {
+    width: 100%;
+  }
 
 
   .section .box_container .box_item {
