@@ -255,7 +255,7 @@ if(isset($_GET['lang'])) {
                             <p class="label2"><?= $block52[$LANG] ?></p>
                         </div>
                         <div class="step_image">
-                            <img src="/images/bg5/step3.png" alt="">
+                            <img class="step_img" src="/images/bg5/step3.png" alt="">
                         </div>
                         <p class="label3"><?= $block53[$LANG] ?></p>
                     </div>
@@ -263,7 +263,7 @@ if(isset($_GET['lang'])) {
                 <li class="item2">
                     <div class="step_content">
                         <p class="label1"><?= $block54[$LANG] ?></p>
-                        <div class="step_image">
+                        <div class="step_image next">
                             <img src="/images/bg5/arow_next.png" alt="">
                         </div>
                     </div>
@@ -275,7 +275,7 @@ if(isset($_GET['lang'])) {
                             <p class="label2"><?= $block55[$LANG] ?></p>
                         </div>
                         <div class="step_image">
-                            <img src="/images/bg5/step2.png" alt="">
+                            <img class="step_img" src="/images/bg5/step2.png" alt="">
                         </div>
                         <p class="label3"><?= $block56[$LANG] ?></p>
                     </div>
@@ -283,7 +283,7 @@ if(isset($_GET['lang'])) {
                 <li class="item4">
                     <div class="step_content">
                         <p class="label1"><?= $block57[$LANG] ?></p>
-                        <div class="step_image">
+                        <div class="step_image next">
                             <img src="/images/bg5/arow_next.png" alt="">
                         </div>
                     </div>
@@ -295,7 +295,7 @@ if(isset($_GET['lang'])) {
                             <p class="label2"><?= $block58[$LANG] ?></p>
                         </div>
                         <div class="step_image">
-                            <img src="/images/bg5/step3.png" alt="">
+                            <img class="step_img" src="/images/bg5/step3.png" alt="">
                         </div>
                         <p class="label3"><?= $block59[$LANG] ?></p>
                     </div>

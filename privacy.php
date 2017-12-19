@@ -67,12 +67,12 @@ if(isset($_GET['lang'])) {
             <li><a href="#flow"><?= $menu4[$LANG] ?></a></li>
             <li><a href="#price"><?= $menu5[$LANG] ?></a></li>
             <li><a href="#contact"><?= $menu6[$LANG] ?></a></li>
-            <li><a href="https://admin.botchan.chat/?lang=<?= $LANG; ?>"><?= $menu7[$LANG] ?></a></li>
-            <li><a href="./?lang=<?= ($LANG == 'en')? 'ja' : 'en' ?>">
-                    <img class="en_white" src="/images/<?php echo $LANG; ?>/header_en_white.png" width="100" alt="">
-                    <img class="en_black" src="/images/<?php echo $LANG; ?>/header_en_black.png" width="100" alt="">
-                </a>
-            </li>
+<!--            <li><a href="https://admin.botchan.chat/?lang=--><?//= $LANG; ?><!--">--><?//= $menu7[$LANG] ?><!--</a></li>-->
+<!--            <li><a href="./?lang=--><?//= ($LANG == 'en')? 'ja' : 'en' ?><!--">-->
+<!--                    <img class="en_white" src="/images/--><?php //echo $LANG; ?><!--/header_en_white.png" width="100" alt="">-->
+<!--                    <img class="en_black" src="/images/--><?php //echo $LANG; ?><!--/header_en_black.png" width="100" alt="">-->
+<!--                </a>-->
+<!--            </li>-->
         </ul>
     </div>
     <button type="button" id="hmenu" class="tcon tcon-menu--xcross" aria-label="toggle menu">
@@ -84,26 +84,30 @@ if(isset($_GET['lang'])) {
   <div class="header_text_box">
     <div class="header_text">
       <div class="header_text_item first">
-        <p>ad jasds jdajd asld sdfd</p>
+          <p><?= $privacy11[$LANG] ?></p>
       </div>
       <div class="header_text_item second">
-        <p>ad jasds jdajd asld sdfd</p>
+          <p><?= $privacy12[$LANG] ?></p>
       </div>
     </div>
   </div>
-  <div class="breadcumb">
-    <div class="base">
-      <div class="breadcumb_container">
-        <div class="item">
-          <p>sdf sfsdf sdfs</p>
+    <div class="breadcumb">
+        <div class="base">
+            <div class="breadcumb_container">
+                <div class="item">
+                    <p><?= $privacy21[$LANG] ?></p>
+                </div>
+                <span class="breadcumb_right"> > </span>
+                <div class="item">
+                    <p><?= $privacy22[$LANG] ?></p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 <div class="contact_base base">
     <div class="contact_title">
-        <h3>Privacy policy</h3>
+        <h3><?= $privacy22[$LANG] ?></h3>
     </div>
     <div class="privacy_content">
         <?php if($LANG == 'ja'): ?>

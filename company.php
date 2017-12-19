@@ -67,12 +67,12 @@ if(isset($_GET['lang'])) {
             <li><a href="#flow"><?= $menu4[$LANG] ?></a></li>
             <li><a href="#price"><?= $menu5[$LANG] ?></a></li>
             <li><a href="#contact"><?= $menu6[$LANG] ?></a></li>
-            <li><a href="https://admin.botchan.chat/?lang=<?= $LANG; ?>"><?= $menu7[$LANG] ?></a></li>
-            <li><a href="./?lang=<?= ($LANG == 'en')? 'ja' : 'en' ?>">
-                    <img class="en_white" src="/images/<?php echo $LANG; ?>/header_en_white.png" width="100" alt="">
-                    <img class="en_black" src="/images/<?php echo $LANG; ?>/header_en_black.png" width="100" alt="">
-                </a>
-            </li>
+<!--            <li><a href="https://admin.botchan.chat/?lang=--><?//= $LANG; ?><!--">--><?//= $menu7[$LANG] ?><!--</a></li>-->
+<!--            <li><a href="./?lang=--><?//= ($LANG == 'en')? 'ja' : 'en' ?><!--">-->
+<!--                    <img class="en_white" src="/images/--><?php //echo $LANG; ?><!--/header_en_white.png" width="100" alt="">-->
+<!--                    <img class="en_black" src="/images/--><?php //echo $LANG; ?><!--/header_en_black.png" width="100" alt="">-->
+<!--                </a>-->
+<!--            </li>-->
         </ul>
     </div>
     <button type="button" id="hmenu" class="tcon tcon-menu--xcross" aria-label="toggle menu">
@@ -84,10 +84,10 @@ if(isset($_GET['lang'])) {
     <div class="header_text_box">
         <div class="header_text">
             <div class="header_text_item first">
-                <p>ad jasds jdajd </p>
+                <p><?= $company11[$LANG] ?></p>
             </div>
             <div class="header_text_item second">
-                <p>COMPANY</p>
+                <p><?= $company12[$LANG] ?></p>
             </div>
         </div>
     </div>
@@ -95,11 +95,11 @@ if(isset($_GET['lang'])) {
         <div class="base">
             <div class="breadcumb_container">
                 <div class="item">
-                    <p>sdf sfsdf sdfs</p>
+                    <p><?= $company21[$LANG] ?></p>
                 </div>
                 <span class="breadcumb_right"> > </span>
                 <div class="item">
-                    <p>sdf sfsdf</p>
+                    <p><?= $company22[$LANG] ?></p>
                 </div>
             </div>
         </div>
@@ -147,20 +147,36 @@ if(isset($_GET['lang'])) {
                 <td>設立</td>
                 <td>2011年4月</td>
             </tr>
+
             <tr>
                 <td>関連子会社</td>
-                <td>Tokyo Mild Foundation 株式会社<br />
-                    <a href="http://tokyomildfoundation.com/">http://tokyomildfoundation.com/</a><br />
-                    ベトナム オフショアラボ開発 18F,<br />
-                    Ladeco Building, 266 DoiCan StrBaDinh, Hanoi, Vietnam
+                <td>株式会社HUVRID
+                    <br />
+                    <a href="http://huvrid.co.jp/">http://huvrid.co.jp/</a><br /><br />
                 </td>
             </tr>
+
+            <tr>
+                <td>関連会社</td>
+                <td>Tokyo Mild Foundation 株式会社<br />
+                    <a href="http://tokyomildfoundation.com/">http://tokyomildfoundation.com/</a><br /><br />
+                </td>
+            </tr>
+
+            <tr>
+                <td>関連会社</td>
+                <td>ベトナム オフショアラボ開発<br />
+                    18F,Ladeco Building, 266 DoiCan StrBaDinh, Hanoi, Vietnam<br /><br />
+                </td>
+            </tr>
+
+
             <tr>
                 <td>事業内容</td>
                 <td>インターネット広告代理事業<br />
                     インターネットメディア事業<br />
                     Web制作事業<br />
-                    AI・IoT事業
+                    AI・IoT事業<br /><br />
                 </td>
             </tr>
             <tr>

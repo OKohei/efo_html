@@ -1640,4 +1640,10 @@ header.scroll #header_nav .en_black {
   .section.bg6 .bg6_cotainer table td {
     width: 48%;
   }
+  .section.bg5 .bg5_item{
+    display: grid !important;
+  }
+  .section.bg5 .bg5_item>li{
+    width: 90% !important;
+  }
 }
