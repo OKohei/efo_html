@@ -1388,7 +1388,10 @@ header.scroll #header_nav .en_black {
 @media screen and (max-width : 480px) {
   .section.bg7 .bg7_item li {
     width: 75%;
-    margin: 13px 60px;
+    margin: 13px 55px;
+  }
+  .section.bg7 .bg7_item li .content p {
+    font-size: 17px;
   }
   .footer ul > li > a {
     font-size: 17px;
