@@ -1,6 +1,6 @@
 <?php
 include('language.php');
-$LANG = 'en';
+$LANG = 'ja';
 if(isset($_GET['lang'])) {
   if($_GET['lang'] == 'vn') {
     $LANG = 'vn';
@@ -67,12 +67,12 @@ if(isset($_GET['lang'])) {
             <li><a href="#flow"><?= $menu4[$LANG] ?></a></li>
             <li><a href="#price"><?= $menu5[$LANG] ?></a></li>
             <li><a href="#contact"><?= $menu6[$LANG] ?></a></li>
-            <li><a href="https://admin.botchan.chat/?lang=<?= $LANG; ?>"><?= $menu7[$LANG] ?></a></li>
-            <li><a href="./?lang=<?= ($LANG == 'en')? 'ja' : 'en' ?>">
-                    <img class="en_white" src="/images/<?php echo $LANG; ?>/header_en_white.png" width="100" alt="">
-                    <img class="en_black" src="/images/<?php echo $LANG; ?>/header_en_black.png" width="100" alt="">
-                </a>
-            </li>
+<!--            <li><a href="https://admin.botchan.chat/?lang=--><?//= $LANG; ?><!--">--><?//= $menu7[$LANG] ?><!--</a></li>-->
+<!--            <li><a href="./?lang=--><?//= ($LANG == 'en')? 'ja' : 'en' ?><!--">-->
+<!--                    <img class="en_white" src="/images/--><?php //echo $LANG; ?><!--/header_en_white.png" width="100" alt="">-->
+<!--                    <img class="en_black" src="/images/--><?php //echo $LANG; ?><!--/header_en_black.png" width="100" alt="">-->
+<!--                </a>-->
+<!--            </li>-->
         </ul>
     </div>
     <button type="button" id="hmenu" class="tcon tcon-menu--xcross" aria-label="toggle menu">
@@ -84,10 +84,10 @@ if(isset($_GET['lang'])) {
     <div class="header_text_box">
         <div class="header_text">
             <div class="header_text_item first">
-                <p>ad jasds jdajd </p>
+                <p><?= $contact11[$LANG] ?></p>
             </div>
             <div class="header_text_item second">
-                <p>Contact</p>
+                <p><?= $contact12[$LANG] ?></p>
             </div>
         </div>
     </div>
@@ -95,11 +95,11 @@ if(isset($_GET['lang'])) {
         <div class="base">
             <div class="breadcumb_container">
                 <div class="item">
-                    <p>sdf sfsdf sdfs</p>
+                    <p><?= $contact13[$LANG] ?></p>
                 </div>
                 <span class="breadcumb_right"> > </span>
                 <div class="item">
-                    <p>sdf sfsdf</p>
+                    <p><?= $contact14[$LANG] ?></p>
                 </div>
             </div>
         </div>
@@ -107,49 +107,49 @@ if(isset($_GET['lang'])) {
 </div>
 <div class="contact_base base">
     <div class="contact_title">
-        <h3>Contact</h3>
+        <h3><?= $contact11[$LANG] ?></h3>
     </div>
     <form action="./thanks.php?lang=<?= $LANG; ?>" method="post">
         <table class="table">
             <tbody>
             <tr class="item1">
                 <td>
-                    <p><?= $contact_f2[$LANG] ?></p>
-                    <span class="require">hj gh</span>
+                    <p><?= $contact21[$LANG] ?></p>
+                    <span class="require"><?= $contact20[$LANG] ?></span>
                 </td>
-                <td><input type="text" name="company" value="" placeholder="sdfsfsd dgf dsd đf" required /></td>
+                <td><input type="text" name="company" value="" placeholder="<?= $contact211[$LANG] ?>" required /></td>
             </tr>
             <tr class="item2">
                 <td>
-                    <p><?= $contact_f3[$LANG] ?></p>
-                    <span class="require">hj gh</span>
+                    <p><?= $contact22[$LANG] ?></p>
+                    <span class="require"><?= $contact20[$LANG] ?></span>
                 </td>
-                <td><input type="text" name="person_name" value="" placeholder="sdfsfsd dgf dsd đf" required /></td>
+                <td><input type="email" name="mail" value="" placeholder="<?= $contact221[$LANG] ?>" required /></td>
             </tr>
             <tr class="item3">
                 <td>
-                    <p><?= $contact_f4[$LANG] ?></p>
-                    <span class="require">hj gh</span>
+                    <p><?= $contact23[$LANG] ?></p>
+                    <span class="require"><?= $contact20[$LANG] ?></span>
                 </td>
-                <td><input type="text" name="tel" value="" placeholder="sdfsfsd dgf dsd đf" required /></td>
+                <td><input type="email" name="mail_confirm" value="" placeholder="<?= $contact231[$LANG] ?>" required /></td>
             </tr>
             <tr class="item4">
                 <td>
-                    <p><?= $contact_f5[$LANG] ?></p>
+                    <p><?= $contact24[$LANG] ?></p>
                 </td>
-                <td><input type="text" name="mail" value="" placeholder="sdfsfsd dgf dsd đf" /></td>
+                <td><input type="tel" name="tel" value="" placeholder="<?= $contact241[$LANG] ?>" /></td>
             </tr>
             <tr class="item5">
                 <td>
-                    <p><?= $contact_f5[$LANG] ?></p>
-                    <span class="require">hj gh</span>
+                    <p><?= $contact25[$LANG] ?></p>
+                    <span class="require"><?= $contact20[$LANG] ?></span>
                 </td>
-                <td><textarea name="content" id="" cols="30" rows="10" placeholder="sdfsfsd dgf dsd đf" ></textarea></td>
+                <td><textarea name="content" id="" cols="30" rows="10" placeholder="<?= $contact251[$LANG] ?>" ></textarea></td>
             </tr>
             </tbody>
         </table>
         <div class="submit">
-            <input type="submit" value="<?= $contact_f31[$LANG] ?>">
+            <input type="submit" value="<?= $contact26[$LANG] ?>">
         </div>
     </form>
 </div>
