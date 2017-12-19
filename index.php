@@ -258,7 +258,7 @@ if(isset($_GET['lang'])) {
                 <li class="item2">
                     <div class="step_content">
                         <p class="label1">ghfgg</p>
-                        <div class="step_image">
+                        <div class="step_image next">
                             <img src="/images/bg5/arow_next.png" alt="">
                         </div>
                     </div>
@@ -278,7 +278,7 @@ if(isset($_GET['lang'])) {
                 <li class="item4">
                     <div class="step_content">
                         <p class="label1">ghfgg</p>
-                        <div class="step_image">
+                        <div class="step_image next">
                             <img src="/images/bg5/arow_next.png" alt="">
                         </div>
                     </div>

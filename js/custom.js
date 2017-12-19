@@ -61,6 +61,8 @@ function setSixeDemoBg4() {
             $('.bg4_item_cotainer .screen_img').css({
                 'right' : ((windown_w - screen_device_w + 35) / 2) + 'px'
             });
+            // set interface bg5
+            $('.section.bg5 .next img').attr("src", '/images/bg5/arrow_down.png');
         } else {
             $('.bg4_item_cotainer .screen_img').attr('style', null);
         }
