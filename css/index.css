@@ -1395,6 +1395,36 @@ header.scroll #header_nav .en_black {
   .section {
     padding: 40px 0 20px 0;
   }
+  .bg4_item_cotainer ul {
+    padding-left: 0px;
+  }
+  .section.bg4, section.bg2 {
+    padding-top: 50px;
+  }
+  .section.bg2 .text-1-content {
+    font-size: 17px;
+  }
+  .section.bg2 .bg2_item_cotainer {
+    padding-left: 0px;
+  }
+  .section.bg2 .text-2-content {
+    font-size: 16px;
+    padding-left: 10px;
+
+  }
+  .section.bg4 .text-1-content {
+    margin-left: 25px;
+    font-size: 17px;
+  }
+  .section.bg4 .info_item {
+    font-size: 16px;
+  }
+  .section.bg4 .bg4_item.left li:not(.active) {
+    width: 73%;
+  }
+  .section.bg4 .bg4_item.left li.active {
+    width: 83%;
+  }
   .section.bg6 .bg6_cotainer table td {
     font-size: 15px;
   }
