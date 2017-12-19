@@ -192,9 +192,11 @@ if(isset($_GET['lang'])) {
     <div class="service_view base">
         <div class="service_item service_pc">
             <img src="/images/bg3/pc.png" alt="">
+            <div class="efo_demo_pc"></div>
         </div>
         <div class="service_item service_mobile">
             <img src="/images/bg3/phone.png" alt="">
+            <div class="efo_demo_mobile"></div>
         </div>
     </div>
 </div>
