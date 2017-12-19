@@ -166,6 +166,18 @@ $contact26['ja'] = '送信';
 
 
 
+$company11['ja'] = '運営会社';
+$company12['ja'] = 'COMPANY';
+
+$company21['ja'] = 'トップページ';
+$company22['ja'] = '運営会社';
+
+
+
+
+
+
+
 $footer1['ja'] = 'お問い合わせ';
 $footer1['en'] = 'Support';
 
