@@ -54,32 +54,7 @@ if(isset($_GET['lang'])) {
         </script>
     </head>
 <body class="privacy_page">
-<header>
-    <h1 class="meta-h1"><?= $meta_h1[$LANG] ?></h1>
-    <div class="base">
-        <a href="/?lang=<?= $LANG ?>">
-            <img class="logo" src="/images/logo.png" width="235" alt="">
-        </a>
-        <ul id="header_nav">
-            <li><a href="#what"><?= $menu1[$LANG] ?></a></li>
-            <li><a href="#feature"><?= $menu2[$LANG] ?></a></li>
-            <li><a href="#usecase"><?= $menu3[$LANG] ?></a></li>
-            <li><a href="#flow"><?= $menu4[$LANG] ?></a></li>
-            <li><a href="#price"><?= $menu5[$LANG] ?></a></li>
-            <li><a href="#contact"><?= $menu6[$LANG] ?></a></li>
-            <li><a href="https://admin.botchan.chat/?lang=<?= $LANG; ?>"><?= $menu7[$LANG] ?></a></li>
-            <li><a href="./?lang=<?= ($LANG == 'en')? 'ja' : 'en' ?>">
-                    <img class="en_white" src="/images/<?php echo $LANG; ?>/header_en_white.png" width="100" alt="">
-                    <img class="en_black" src="/images/<?php echo $LANG; ?>/header_en_black.png" width="100" alt="">
-                </a>
-            </li>
-        </ul>
-    </div>
-    <button type="button" id="hmenu" class="tcon tcon-menu--xcross" aria-label="toggle menu">
-        <span class="tcon-menu__lines" aria-hidden="true"></span>
-        <span class="tcon-visuallyhidden">toggle menu</span>
-    </button>
-</header>
+<?php include 'header.php';?>
 <div id="header" style="background-image: url(/images/<?php echo $LANG; ?>/header_image.png)">
   <div class="header_text_box">
     <div class="header_text">
