@@ -18,7 +18,7 @@ mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 
 //$to      = 'botchan@wevnal.co.jp';
-$to      = 'nguyen.duc.quyet@miyatsu.vn';
+$to      = 'vu.thi.my.linh@miyatsu.vn';
 $subject = 'お問い合わせがありました';
 $message = '';
 $message .= 'お名前: ' . $person_name . "\n";
