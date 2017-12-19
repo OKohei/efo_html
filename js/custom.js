@@ -6,6 +6,16 @@ $(function(){
       'customize.gif',
       'onetag.gif'
     ];
+
+    var connect_page_id_iframe = [
+        '5a38ebe20594089632038ec2',
+        '5a38e4cc059408963f1bb1a1',
+        '5a38de8f0594089634261853',
+        '5a38de8f0594089634261853',
+        '5a38de8f0594089634261853',
+        '5a38de8f0594089634261853'
+    ];
+
     var efo_server = 'https://admin.botchan.chat:3030';
 
     //frame header
@@ -25,17 +35,20 @@ $(function(){
         $('#bg3 .bg3_item li').removeClass('active');
         $(this).addClass('active');
 
+        var connect_page_id = connect_page_id_iframe[$(this).index()];
+
         // var iframe_pc = '<iframe class="wc-webchat1" id="wc-webchat1" src="http://192.168.10.10:3030/efo?connect_page_id=5a1533249a89201ada6de403"></iframe>';
         // $('#bg3 .service_view .efo_demo_pc').append(iframe_pc);
 
-        var iframe_mobile = '<iframe class="wc-webchat2" id="wc-webchat2" src="http://192.168.10.10:3030/efo?connect_page_id=5a1533249a89201ada6de403"></iframe>';
+        var iframe_mobile = '<iframe class="wc-webchat2" id="wc-webchat2" src="' + efo_server + '/efo?connect_page_id=' + connect_page_id + '"></iframe>';
         $('#bg3 .service_view .efo_demo_mobile').html(iframe_mobile);
 
         setTimeout(function () {
+            console.log($("#wc-webchat2"));
             var wc_irame2 = document.getElementById("wc-webchat2").contentWindow;
 
-            wc_irame2.postMessage({'new_conversation_flg' : 1}, 'http://192.168.10.10:3030');
-            wc_irame2.postMessage({'maximize_flg' : 1}, 'http://192.168.10.10:3030');
+            wc_irame2.postMessage({'new_conversation_flg' : 1}, efo_server);
+            wc_irame2.postMessage({'maximize_flg' : 1}, efo_server);
         }, 1000);
     });
 
@@ -128,16 +141,18 @@ function setDemoOption() {
             $('#bg3').append(bg3_item_box);
 
             $('#bg3 .bg3_item_box').first().find('.bg3_item.right').hide();
-
-            //set space iframe
-            // var frame_img_w = $('#bg3 .service_mobile img').innerWidth();
-            // console.log(frame_img_w, (windown_w - frame_img_w) / 2);
-            // iframe_mobile.css('right', (windown_w - frame_img_w) / 2 + 'px');
         }
+        //set space iframe
+        var frame_img_w = $('#bg3 .service_mobile img').innerWidth();
+        console.log(frame_img_w, (windown_w - frame_img_w) / 2);
+        iframe_mobile.css('right', (((windown_w - frame_img_w) / 2) + 11)+ 'px');
     } else {
         $('#bg3 .bg3_item_box').first().find('.bg3_item.right').show();
         if($('#bg3 .bg3_item_box').length > 1) {
             $('#bg3 .bg3_item_box').last().remove();
         }
+        //iframe
+        iframe_pc.attr('style', null);
+        iframe_mobile.attr('style', null);
     }
 }
