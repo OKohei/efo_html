@@ -173,6 +173,13 @@ $company21['ja'] = 'トップページ';
 $company22['ja'] = '運営会社';
 
 
+$privacy11['ja'] = 'プライバシーポリシー';
+$privacy12['ja'] = 'PRIVACY POLICY';
+
+$privacy21['ja'] = 'トップページ';
+$privacy22['ja'] = 'プライバシーポリシー';
+
+
 
 
 
