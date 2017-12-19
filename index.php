@@ -75,9 +75,11 @@ if(isset($_GET['lang'])) {
 </header>
 <div id="header" style="background-image: url(/images/<?php echo $LANG; ?>/header_image.png)">
     <div class="mobile_demo_box">
-        <img id="mobile_demo" src="/images/mobile_demo.png" alt="">
-        <p class="start_chat_btn"></p>
-        <div class="efo_demo"></div>
+        <div class="header_demo">
+            <img id="mobile_demo" src="/images/mobile_demo.png" alt="">
+            <p class="start_chat_btn"></p>
+            <div class="efo_demo"></div>
+        </div>
     </div>
     <div class="header_text_box">
         <div class="header_text">
@@ -203,7 +205,7 @@ if(isset($_GET['lang'])) {
     <div class="bg4_item_box base">
         <div class="bg4_item_cotainer">
             <ul class="bg4_item left">
-                <li class="item1">
+                <li class="item1 active">
                     <p>sds gfgdfg dfgdfg dfgdf</p>
                 </li>
                 <li class="item2">
@@ -224,8 +226,9 @@ if(isset($_GET['lang'])) {
                     sfhf fsdsd hfsd fjsdf sdf sdfsdfsd sdfsf sdfsdfsd sdfsdf sdsee fdgdgd
                 </span>
             </div>
-            <div class="service_item service_pc">
-                <img src="/images/bg4/phone.png" alt="">
+            <div class="service_item">
+                <img class="screen_device" src="/images/bg4/phone.png" alt="">
+                <img class="screen_img" src="/images/bg4/restoration.gif" alt="">
             </div>
         </div>
     </div>
