@@ -114,7 +114,6 @@ header.scroll #header_nav .en_black {
   width: 72px;
   height: 22px;
   border-radius: 20px;
-  background-color: red;
 }
 #header .mobile_demo_box .start_chat_btn:focus {
   outline: none;
@@ -279,7 +278,7 @@ header.scroll #header_nav .en_black {
 }
 .section.bg1 .box_container .box_item {
   display: table;
-  width: 31%;
+  width: 30%;
   float: left;
   position: relative;
   min-height: 1px;
@@ -337,7 +336,7 @@ header.scroll #header_nav .en_black {
 }
 
 .section.bg2 {
-  background: url(../images/bg2/background.png) no-repeat center transparent;
+  background: url(../images/bg2/background.png) no-repeat bottom transparent;
   background-size: cover;
   color: #fff;
 }
@@ -1509,14 +1508,91 @@ header.scroll #header_nav .en_black {
     height: 10px;
     bottom: 18px;
   }
-
-
-
-
-
-
-
-
+  #header .efo_demo .wc-webchat {
+    width: 151px;
+    height: 264px;
+  }
+  #header .efo_demo {
+    right: 98px;
+  }
+  .section.bg1 .text-1-wrapper p {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+  .section.bg2 {
+    background: url(../images/bg2/background_mobile.png) no-repeat bottom transparent;
+    background-size: cover;
+  }
+  .section.bg2 {
+    padding-top: 20px;
+  }
+  .section.bg2 .text-1-content {
+    margin: 0 10px;
+  }
+  .section.bg2 .text-2-content {
+    margin: 10px 10px 0 0;
+  }
+  .section.bg2 .bg2_item {
+    margin: 0;
+    padding: 0;
+  }
+  .section.bg2 .bg2_item li {
+    max-width: fit-content;
+    width: 100%;
+    height: auto;
+    margin: 15px 30px;
+  }
+  .section.bg3 {
+    padding-top: 20px;
+  }
+  .section.bg3 .text-1-box,
+  .section.bg3 .service_item.service_pc {
+    display: none;
+  }
+  .section.bg3 .bg3_item.left {
+    margin: 0;
+  }
+  .section.bg3 .bg3_item li {
+    line-height: 25px;
+    font-size: 13px;
+  }
+  .section.bg3 .bg3_item.left li {
+    padding: 0 30px 0 0;
+  }
+  .section.bg3 .bg3_item.right li {
+    padding: 0 0 0 30px;
+  }
+  .section.bg3 .bg3_item {
+    width: 68%;
+    overflow: hidden;
+  }
+  .section.bg3 .bg3_item.left .item2, .section.bg3 .bg3_item.left .item3 {
+    width: 94%;
+  }
+  .section.bg3 .service_item.service_mobile {
+    width: 100%;
+  }
+  .section.bg3 .service_item img {
+    margin: 0 auto;
+    display: block;
+  }
+  .section.bg3 .service_view {
+    padding: 0;
+  }
+  .section.bg4 {
+    padding-bottom: 60px;
+  }
+  .section.bg4 .service_item {
+    width: 100%;
+  }
+  .section.bg4 .screen_device {
+    margin: 0 auto;
+    display: block;
+  }
+  .section.bg4 .screen_img {
+    top: 69px;
+    right: 213px;
+  }
 
 
 
