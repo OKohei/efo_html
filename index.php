@@ -141,51 +141,50 @@ if(isset($_GET['lang'])) {
     </div>
 
 <div class="section bg3" id="bg3">
-        <div class="text-1-box base">
-            <div class="text-1-content">
-                <p><?= $block31[$LANG] ?></p>
-            </div>
-            <div class="text-2-content">
-                <p><?= $block32[$LANG] ?></p>
-            </div>
+    <div class="text-1-box base">
+        <div class="text-1-content">
+            <p><?= $block31[$LANG] ?></p>
         </div>
-<<<<<<< HEAD
-        <div class="bg3_item_box base">
-            <div class="bg3_item_cotainer">
-                <ul class="bg3_item left">
-                    <li class="item1 active">
-                        <p><?= $block33[$LANG] ?></p>
-                    </li>
-                    <li class="item2">
-                        <p><?= $block34[$LANG] ?></p>
-                    </li>
-                    <li class="item3">
-                        <p><?= $block35[$LANG] ?></p>
-                    </li>
-                </ul>
-                <ul class="bg3_item right">
-                    <li class="item1 left">
-                        <p><?= $block36[$LANG] ?></p>
-                    </li>
-                    <li class="item2">
-                        <p><?= $block37[$LANG] ?></p>
-                    </li>
-                    <li class="item3">
-                        <p><?= $block38[$LANG] ?></p>
-                    </li>
-                </ul>
-            </div>
+        <div class="text-2-content">
+            <p><?= $block32[$LANG] ?></p>
         </div>
-        <div class="service_view base">
-            <div class="service_item service_pc">
-                <img src="/images/bg3/pc.png" alt="">
-                <div class="efo_demo_pc"></div>
-            </div>
-            <div class="service_item service_mobile">
-                <img src="/images/bg3/phone.png" alt="">
-                <div class="efo_demo_mobile"></div>
-            </div>
+    </div>
+    <div class="bg3_item_box base">
+        <div class="bg3_item_cotainer">
+            <ul class="bg3_item left">
+                <li class="item1 active">
+                    <p><?= $block33[$LANG] ?></p>
+                </li>
+                <li class="item2">
+                    <p><?= $block34[$LANG] ?></p>
+                </li>
+                <li class="item3">
+                    <p><?= $block35[$LANG] ?></p>
+                </li>
+            </ul>
+            <ul class="bg3_item right">
+                <li class="item1 left">
+                    <p><?= $block36[$LANG] ?></p>
+                </li>
+                <li class="item2">
+                    <p><?= $block37[$LANG] ?></p>
+                </li>
+                <li class="item3">
+                    <p><?= $block38[$LANG] ?></p>
+                </li>
+            </ul>
         </div>
+    </div>
+    <div class="service_view base">
+        <div class="service_item service_pc">
+            <img src="/images/bg3/pc.png" alt="">
+            <div class="efo_demo_pc"></div>
+        </div>
+        <div class="service_item service_mobile">
+            <img src="/images/bg3/phone.png" alt="">
+            <div class="efo_demo_mobile"></div>
+        </div>
+    </div>
 
 <div class="section bg4" id="bg4">
         <div class="text-1-box base">
