@@ -25,7 +25,8 @@ $message .= 'お名前: ' . $person_name . "\n";
 $message .= 'メールアドレス: ' . $mail . "\n";
 $message .= '電話番号: ' . $tel . "\n";
 $message .= 'お問い合わせ内容: ' . $content . "\n";
-$headers = 'From: vu.thi.my.linh@miyatsu.vn' . "\r\n";
+//$headers = 'From: vu.thi.my.linh@miyatsu.vn' . "\r\n";
+$headers = 'From: nguyen.duc.quyet@miyatsu.vn' . "\r\n";
 
 mail($to, $subject, $message, $headers);
 
