@@ -1387,11 +1387,23 @@ header.scroll #header_nav .en_black {
 
 @media screen and (max-width : 480px) {
   .section.bg6 .bg6_cotainer table td {
-    font-size: 16px;
+    font-size: 15px;
   }
   .section.bg6 .bg6_cotainer table {
     width: 100%;
     margin: 0 5px;
+  }
+  .section.bg7 {
+    padding-bottom: 50px;
+  }
+  .section.bg5 .bg5_item {
+    padding-left: 0px;
+  }
+  .section.bg7 .bg7_item li .content .contact {
+    font-size: 17px;
+  }
+  .section.bg7 .bg7_item li .title p {
+    font-size: 17px;
   }
   .section.bg7 .bg7_item {
     width: auto;
