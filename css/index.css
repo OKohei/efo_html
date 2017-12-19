@@ -472,7 +472,7 @@ header.scroll #header_nav .en_black {
   border: none;
 }
 .section.bg3 .service_item .efo_demo_mobile .wc-webchat2 {
-  width: 157px;
+  width: 158px;
   height: 278px;
   border: none;
 }
@@ -1593,8 +1593,10 @@ header.scroll #header_nav .en_black {
     width: 68%;
     overflow: hidden;
   }
-  .section.bg3 .bg3_item.left .item2, .section.bg3 .bg3_item.left .item3 {
-    width: 94%;
+  .section.bg3 .bg3_item.left li,
+  .section.bg3 .bg3_item.left li.active
+  {
+    width: 70%;
   }
   .section.bg3 .service_item.service_mobile {
     width: 100%;
