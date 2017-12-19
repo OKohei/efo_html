@@ -58,7 +58,7 @@ if(isset($_GET['lang'])) {
             });
         </script>
     </head>
-<body>
+<body class="index_page">
 <?php include 'header.php';?>
 <div id="what">
     <div id="header" style="background-image: url(/images/<?php echo $LANG; ?>/header_image.png)">

@@ -164,7 +164,7 @@ header.scroll #header_nav .en_black {
 .contact_page #header
 {
   height: 250px;
-  background-position: 0px -57px;
+  background-size: cover;
 }
 .privacy_page #header .header_text_box,
 .company_page #header .header_text_box,
@@ -295,7 +295,7 @@ header.scroll #header_nav .en_black {
 }
 .section.bg1 .box_container .box_item p:before,
 .section.bg1 .box_container .box_item p:after {
-  top: 100%;
+  top: 99%;
   left: 50%;
   border: solid transparent;
   content: " ";
@@ -313,7 +313,7 @@ header.scroll #header_nav .en_black {
   border-top-color: #fff;
   border-width: 19px;
   margin-left: -19px;
-  top: 84px;
+  top: 95%;
 }
 
 .section.bg1 .text-1-wrapper {
@@ -1254,6 +1254,9 @@ header.scroll #header_nav .en_black {
     padding: 1% 4%;
   }
 }
+
+
+
 
 @media screen and (max-width: 760px) {
 
