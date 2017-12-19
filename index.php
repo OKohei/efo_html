@@ -1,6 +1,6 @@
 <?php
 include('language.php');
-$LANG = 'en';
+$LANG = 'ja';
 if(isset($_GET['lang'])) {
     if($_GET['lang'] == 'vn') {
         $LANG = 'vn';
@@ -59,13 +59,14 @@ if(isset($_GET['lang'])) {
     <h1 class="meta-h1"><?= $meta_h1[$LANG] ?></h1>
     <div class="base">
         <a class="img_logo_box" href="/?lang=<?= $LANG ?>">
-            <img class="logo" src="/images/logo.png" width="200" alt="">
+            <img class="logo" src="/images/logo.png" width="235" alt="">
         </a>
         <ul id="header_nav">
             <li><a href="#what"><?= $menu1[$LANG] ?></a></li>
             <li><a href="#feature"><?= $menu2[$LANG] ?></a></li>
             <li><a href="#usecase"><?= $menu3[$LANG] ?></a></li>
             <li><a href="#flow"><?= $menu4[$LANG] ?></a></li>
+            <li><a href="#flow"><?= $menu5[$LANG] ?></a></li>
         </ul>
     </div>
     <button type="button" id="hmenu" class="tcon tcon-menu--xcross" aria-label="toggle menu">
@@ -84,13 +85,13 @@ if(isset($_GET['lang'])) {
     <div class="header_text_box">
         <div class="header_text">
             <div class="header_text_item first">
-                <p>ad jasds jdajd asld sdfd</p>
-                <p>ad jasds jdajd asld sdfd</p>
+                <p><?= $main1[$LANG] ?></p>
+                <p><?= $main2[$LANG] ?></p>
             </div>
             <div class="header_text_item second">
-                <p>ad jasds jdajd asld sdfd</p>
-                <p>ad jasds jdajd asld sdfd sdfsd</p>
-                <p>ad jasds jdajd asld sdf dd</p>
+                <p><?= $main3[$LANG] ?></p>
+                <p><?= $main4[$LANG] ?></p>
+                <p><?= $main5[$LANG] ?></p>
             </div>
         </div>
     </div>
@@ -98,53 +99,55 @@ if(isset($_GET['lang'])) {
 
 <div class="section bg1" id="feature">
     <div class="text-1-wrapper base">
-        <p>asdas dasdsd asd asdsdasdsdsd</p>
+        <p><?= $context1[$LANG] ?></p>
     </div>
     <div class="text-2-wrapper base">
         <div class="box_container">
             <div class="box_item">
-                <p>asdas dasdsd asd asdsdasdsdsd</p>
+                <p><?= $context2[$LANG] ?></p>
             </div>
             <div class="box_item">
-                <p>asdas dasdsd asd asdsdasdsdsd</p>
+                <p><?php echo $context31[$LANG] ?> <br />
+                    <?php echo $context32[$LANG] ?>
+                </p>
             </div>
             <div class="box_item">
-                <p>asdas dasdsd asd asdsdasdsdsd</p>
+                <p><?= $context41[$LANG] ?><br /><?= $context42[$LANG] ?></p>
             </div>
         </div>
     </div>
     <div class="text-3-wrapper base">
-        <p>asdas dasdsd asd asds dasd sdas dasd asasdd asdasdsdsd</p>
+        <p><?= $context5[$LANG] ?></p>
     </div>
 </div>
 
 <div class="section bg2" id="flow">
     <div class="text-1-box base">
         <div class="text-1-content">
-            <p>BOTCHAN EFO fsd fs fsdfsd dfsdf</p>
+            <p><?= $context6[$LANG] ?></p>
         </div>
         <div class="text-2-content">
-            <p>CVR sdf sfsdf sdfsdfsd sdf</p>
-            <p>BOTCHAN EFO fsd fs fsdfsd dfsd sdf sdfsdsdfsd fsdff</p>
+            <p><?= $context7[$LANG] ?></p>
+            <p><?= $context8[$LANG] ?></p>
         </div>
     </div>
     <div class="bg2_item_box base">
         <div class="bg2_item_cotainer">
             <ul class="bg2_item">
                 <li class="item1">
-                    <h2>sds gfgdfg dfgdfg dfgdf</h2>
+                    <h2><?= $context9[$LANG] ?></h2>
                     <img src="/images/bg2/item1.png" alt="">
-                    <p><?= $flow2[$LANG] ?></p>
+                    <p><?= $context91[$LANG] ?></p>
                 </li>
                 <li class="item2">
-                    <h2>sds gfgdfg dfgdfg dfgdf</h2>
+                    <h2><?= $context10[$LANG] ?></h2>
                     <img src="/images/bg2/item2.png" alt="">
-                    <p><?= $flow4[$LANG] ?></p>
+                    <p><?= $context101[$LANG] ?></p>
                 </li>
                 <li class="item3">
-                    <h2>sds gfgdfg dfgdfg dfgdf</h2>
+                    <h2><?= $context11[$LANG] ?></h2>
                     <img src="/images/bg2/item3.png" alt="">
-                    <p><?= $flow6[$LANG] ?></p>
+                    <p><?= $context111[$LANG] ?></p>
                 </li>
             </ul>
         </div>
@@ -154,34 +157,34 @@ if(isset($_GET['lang'])) {
 <div class="section bg3" id="bg3">
     <div class="text-1-box base">
         <div class="text-1-content">
-            <p>wytu fsd fs fsdfsd dfsdf !</p>
+            <p><?= $block31[$LANG] ?></p>
         </div>
         <div class="text-2-content">
-            <p>CVR sdf sfsdf sdfsdfsd sdf</p>
+            <p><?= $block32[$LANG] ?></p>
         </div>
     </div>
     <div class="bg3_item_box base">
         <div class="bg3_item_cotainer">
             <ul class="bg3_item left">
-                <li class="item1">
-                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                <li class="item1 active">
+                    <p><?= $block33[$LANG] ?></p>
                 </li>
                 <li class="item2">
-                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                    <p><?= $block34[$LANG] ?></p>
                 </li>
                 <li class="item3">
-                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                    <p><?= $block35[$LANG] ?></p>
                 </li>
             </ul>
             <ul class="bg3_item right">
                 <li class="item1 left">
-                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                    <p><?= $block36[$LANG] ?></p>
                 </li>
                 <li class="item2">
-                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                    <p><?= $block37[$LANG] ?></p>
                 </li>
                 <li class="item3">
-                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                    <p><?= $block38[$LANG] ?></p>
                 </li>
             </ul>
         </div>
@@ -199,31 +202,31 @@ if(isset($_GET['lang'])) {
 <div class="section bg4" id="bg4">
     <div class="text-1-box base">
         <div class="text-1-content">
-            <p>wytu fsd fs fsdfsd dfsdf !</p>
+            <p><?= $block41[$LANG] ?></p>
         </div>
     </div>
     <div class="bg4_item_box base">
         <div class="bg4_item_cotainer">
             <ul class="bg4_item left">
                 <li class="item1 active">
-                    <p>sds gfgdfg dfgdfg dfgdf</p>
+                    <p><?= $block42[$LANG] ?></p>
                 </li>
                 <li class="item2">
-                    <p>sds gfgdfg f</p>
+                    <p><?= $block43[$LANG] ?></p>
                 </li>
                 <li class="item3">
-                    <p>sds gfgdfg </p>
+                    <p><?= $block44[$LANG] ?></p>
                 </li>
                 <li class="item4">
-                    <p>sds gfgdfg f</p>
+                    <p><?= $block45[$LANG] ?></p>
                 </li>
                 <li class="item5">
-                    <p>sds gfgdfg </p>
+                    <p><?= $block46[$LANG] ?></p>
                 </li>
             </ul>
             <div class="info_item">
                 <span>
-                    sfhf fsdsd hfsd fjsdf sdf sdfsdfsd sdfsf sdfsdfsd sdfsdf sdsee fdgdgd
+                     <p><?= $block47[$LANG] ?></p>
                 </span>
             </div>
             <div class="service_item">
@@ -237,7 +240,7 @@ if(isset($_GET['lang'])) {
 <div class="section bg5" id="bg5">
     <div class="text-1-box base">
         <div class="text-1-content">
-            <p>wytu fsd fs fsdfsd dfsdf !</p>
+            <p><?= $block51[$LANG] ?></p>
         </div>
     </div>
     <div class="bg5_item_box base">
@@ -247,17 +250,17 @@ if(isset($_GET['lang'])) {
                     <div class="step_content">
                         <div class="step_title">
                             <p class="label1">Step 1</p>
-                            <p class="label2">sdf sdfsdf dfsdfsf sd asdasd asd asdsdfsdfsd ssdf dsd fsdf sdfs</p>
+                            <p class="label2"><?= $block52[$LANG] ?></p>
                         </div>
                         <div class="step_image">
-                            <img src="/images/bg5/step3.png" alt="">
+                            <img class="step_img" src="/images/bg5/step3.png" alt="">
                         </div>
-                        <p class="label3">sdf sdfsdf fsd ssdf dsd fsdf s</p>
+                        <p class="label3"><?= $block53[$LANG] ?></p>
                     </div>
                 </li>
                 <li class="item2">
                     <div class="step_content">
-                        <p class="label1">ghfgg</p>
+                        <p class="label1"><?= $block54[$LANG] ?></p>
                         <div class="step_image next">
                             <img src="/images/bg5/arow_next.png" alt="">
                         </div>
@@ -267,17 +270,17 @@ if(isset($_GET['lang'])) {
                     <div class="step_content">
                         <div class="step_title">
                             <p class="label1">Step 2</p>
-                            <p class="label2">sdf sdfs s</p>
+                            <p class="label2"><?= $block55[$LANG] ?></p>
                         </div>
                         <div class="step_image">
-                            <img src="/images/bg5/step2.png" alt="">
+                            <img class="step_img" src="/images/bg5/step2.png" alt="">
                         </div>
-                        <p class="label3">Step 1</p>
+                        <p class="label3"><?= $block56[$LANG] ?></p>
                     </div>
                 </li>
                 <li class="item4">
                     <div class="step_content">
-                        <p class="label1">ghfgg</p>
+                        <p class="label1"><?= $block57[$LANG] ?></p>
                         <div class="step_image next">
                             <img src="/images/bg5/arow_next.png" alt="">
                         </div>
@@ -287,12 +290,12 @@ if(isset($_GET['lang'])) {
                     <div class="step_content">
                         <div class="step_title">
                             <p class="label1">Step 3</p>
-                            <p class="label2">sdf s</p>
+                            <p class="label2"><?= $block58[$LANG] ?></p>
                         </div>
                         <div class="step_image">
-                            <img src="/images/bg5/step3.png" alt="">
+                            <img class="step_img" src="/images/bg5/step3.png" alt="">
                         </div>
-                        <p class="label3">Step 1</p>
+                        <p class="label3"><?= $block59[$LANG] ?></p>
                     </div>
                 </li>
             </ul>
@@ -303,7 +306,7 @@ if(isset($_GET['lang'])) {
 <div class="section bg6" id="bg6">
     <div class="text-1-box base">
         <div class="text-1-content">
-            <p>hello sams</p>
+            <p><?= $block61[$LANG] ?></p>
         </div>
     </div>
     <div class="bg6_box base">
@@ -311,8 +314,8 @@ if(isset($_GET['lang'])) {
             <table class="table">
                 <tbody>
                 <tr class="item1">
-                    <td>dfg dfgdfg</td>
-                    <td>10mdo</td>
+                    <td><?= $block62[$LANG] ?></td>
+                    <td><?= $block621[$LANG] ?></td>
                 </tr>
                 <tr class="item_img">
                     <td colspan="2">
@@ -322,25 +325,25 @@ if(isset($_GET['lang'])) {
                     </td>
                 </tr>
                 <tr class="item2">
-                    <td>Thornton</td>
-                    <td>10fat</td>
+                    <td><?= $block63[$LANG] ?></td>
+                    <td><?= $block631[$LANG] ?></td>
                 </tr>
                 <tr class="item3">
-                    <td>the Bird</td>
-                    <td>20twitter</td>
+                    <td><?= $block64[$LANG] ?></td>
+                    <td><?= $block641[$LANG] ?></td>
                 </tr>
                 <tr class="item4">
-                    <td>Thornton</td>
-                    <td>30fat</td>
+                    <td><?= $block65[$LANG] ?></td>
+                    <td><?= $block651[$LANG] ?></td>
                 </tr>
                 <tr class="item5">
-                    <td>the Bird</td>
-                    <td>50twitter</td>
+                    <td><?= $block66[$LANG] ?></td>
+                    <td><?= $block661[$LANG] ?></td>
                 </tr>
                 </tbody>
             </table>
             <div class="title_bottom_box">
-                <p class="title_bottom">sdfsdfsd sdf sdsdsdfsd</p>
+                <p class="title_bottom"><?= $block67[$LANG] ?></p>
             </div>
         </div>
     </div>
@@ -349,7 +352,7 @@ if(isset($_GET['lang'])) {
 <div class="section bg7" id="bg7">
     <div class="text-1-box base">
         <div class="text-1-content">
-            <p>wytu fsd fs</p>
+            <p><?= $block71[$LANG] ?></p>
         </div>
     </div>
     <div class="bg7_item_box base">
@@ -358,31 +361,31 @@ if(isset($_GET['lang'])) {
                 <li class="item1">
                     <div class="contact_content">
                         <div class="title">
-                            <p><img src="/images/bg7/icon1.png" alt="">df sdfs fsd fsdfs fsdfsd</p>
+                            <p><img src="/images/bg7/icon1.png" alt=""><?= $block72[$LANG] ?></p>
                         </div>
                         <div class="content">
-                            <p class="phone">03-5766-8877</p>
-                            <p class="subtitle">sdfs fsdfsdfsdf sdf s</p>
+                            <p class="phone"><?= $block721[$LANG] ?></p>
+                            <p class="subtitle"><?= $block722[$LANG] ?></p>
                         </div>
                     </div>
                 </li>
                 <li class="item2">
                     <div class="contact_content">
                         <div class="title">
-                            <p><img src="/images/bg7/icon2.png" alt="">df sdfs fsd fsdfs fsdfsd</p>
+                            <p><img src="/images/bg7/icon2.png" alt=""><?= $block73[$LANG] ?></p>
                         </div>
                         <div class="content">
-                            <p>sdfsd fsdfsd sdfsdf sd</p>
+                            <p><?= $block731[$LANG] ?></p>
                         </div>
                     </div>
                 </li>
                 <li class="item3">
                     <div class="contact_content">
                         <div class="title">
-                            <p><img src="/images/bg7/icon3.png" alt="">df sdfs fsd fsdfs fsdfsd</p>
+                            <p><img src="/images/bg7/icon3.png" alt=""><?= $block74[$LANG] ?></p>
                         </div>
                         <div class="content">
-                            <p>BOTCHAN EFO sdfsdf dfsd</p>
+                            <p><?= $block741[$LANG] ?></p>
                         </div>
                     </div>
                 </li>

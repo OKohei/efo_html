@@ -58,7 +58,7 @@ if(isset($_GET['lang'])) {
     <h1 class="meta-h1"><?= $meta_h1[$LANG] ?></h1>
     <div class="base">
         <a href="/?lang=<?= $LANG ?>">
-            <img class="logo" src="/images/logo.png" width="200" alt="">
+            <img class="logo" src="/images/logo.png" width="235" alt="">
         </a>
         <ul id="header_nav">
             <li><a href="#what"><?= $menu1[$LANG] ?></a></li>
