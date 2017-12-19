@@ -367,7 +367,7 @@ if(isset($_GET['lang'])) {
                                 <p><img src="/images/bg7/icon2.png" alt=""><?= $block73[$LANG] ?></p>
                             </div>
                             <div class="content">
-                                <p><?= $block731[$LANG] ?></p>
+                                <p><a class="contact" href="./contact.php?lang=<?= $LANG; ?>"><?= $block731[$LANG] ?></a></p>
                             </div>
                         </div>
                     </li>

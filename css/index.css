@@ -770,6 +770,11 @@ header.scroll #header_nav .en_black {
   line-height: 103px;
   margin: 0;
 }
+.section.bg7 .bg7_item li .content .contact {
+  text-decoration: none;
+  color: #1791c9;
+}
+
 .section.bg7 .bg7_item li.item1 .content p {
   line-height: 22px;
 }

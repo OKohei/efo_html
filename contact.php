@@ -119,7 +119,7 @@ if(isset($_GET['lang'])) {
                     <p><?= $contact25[$LANG] ?></p>
                     <span class="require"><?= $contact20[$LANG] ?></span>
                 </td>
-                <td><textarea name="content" id="" cols="30" rows="10" placeholder="<?= $contact251[$LANG] ?>" ></textarea></td>
+                <td><textarea name="content" id="" cols="30" rows="10" placeholder="<?= $contact251[$LANG] ?>" required></textarea></td>
             </tr>
             </tbody>
         </table>

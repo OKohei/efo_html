@@ -9,19 +9,10 @@ if(isset($_GET['lang'])) {
   }
 }
 
-$company = isset($_POST['company']) ? $_POST['company']: '';
 $person_name = isset($_POST['person_name']) ? $_POST['person_name']: '';
 $tel = isset($_POST['tel']) ? $_POST['tel']: '';
 $mail = isset($_POST['mail']) ? $_POST['mail']: '';
-$department = isset($_POST['department']) ? $_POST['department']: '';
-$address = isset($_POST['address']) ? $_POST['address']: '';
-$url = isset($_POST['url']) ? $_POST['url']: '';
-$employee = isset($_POST['employee']) ? $_POST['employee']: '';
-$purpose = isset($_POST['purpose']) ? $_POST['purpose']: '';
-$jungle = isset($_POST['jungle']) ? $_POST['jungle']: '';
-$introduction = isset($_POST['introduction']) ? $_POST['introduction']: '';
-$bot = isset($_POST['bot']) ? $_POST['bot']: '';
-$interface = isset($_POST['interface']) ? $_POST['interface']: [];
+$content = isset($_POST['content']) ? $_POST['content']: '';
 
 mb_language("Japanese");
 mb_internal_encoding("UTF-8");
@@ -30,11 +21,10 @@ $to      = 'botchan@wevnal.co.jp';
 //$to      = 'nguyen.duc.quyet@miyatsu.vn';
 $subject = 'お問い合わせがありました';
 $message = '';
-$message .= '会社名: ' . $company . "\n";
-$message .= 'ご担当者名: ' . $person_name . "\n";
-$message .= '電話番号: ' . $tel . "\n";
+$message .= 'お名前: ' . $person_name . "\n";
 $message .= 'メールアドレス: ' . $mail . "\n";
-$message .= '具体的なBOT内容: ' . $content . "\n";
+$message .= '電話番号: ' . $tel . "\n";
+$message .= 'お問い合わせ内容: ' . $content . "\n";
 $headers = 'From: botchan@wevnal.co.jp' . "\r\n";
 
 mail($to, $subject, $message, $headers);
