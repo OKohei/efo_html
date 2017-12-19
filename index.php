@@ -152,7 +152,7 @@ if(isset($_GET['lang'])) {
     <div class="bg3_item_box base">
         <div class="bg3_item_cotainer">
             <ul class="bg3_item left">
-                <li class="item1 active">
+                <li class="item1">
                     <p><?= $block33[$LANG] ?></p>
                 </li>
                 <li class="item2">
@@ -185,6 +185,7 @@ if(isset($_GET['lang'])) {
             <div class="efo_demo_mobile"></div>
         </div>
     </div>
+</div>
 
 <div class="section bg4" id="bg4">
         <div class="text-1-box base">
