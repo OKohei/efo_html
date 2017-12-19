@@ -1389,6 +1389,9 @@ header.scroll #header_nav .en_black {
 }
 
 @media screen and (max-width : 480px) {
+  .section {
+    padding: 40px 0 20px 0;
+  }
   .section.bg6 .bg6_cotainer table td {
     font-size: 15px;
   }
@@ -1399,8 +1402,17 @@ header.scroll #header_nav .en_black {
   .section.bg7 {
     padding-bottom: 50px;
   }
+  .section.bg5 {
+    padding-bottom: 50px;
+  }
   .section.bg5 .bg5_item {
     padding-left: 0px;
+  }
+  .section.bg5 .bg5_item li.item2, .section.bg5 .bg5_item li.item4 {
+    margin-top: 25px;
+  }
+  .section.bg5 .step_content .step_title {
+     height: 45px;
   }
   .section.bg7 .bg7_item li .content .contact {
     font-size: 17px;
