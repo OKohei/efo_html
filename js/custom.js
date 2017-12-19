@@ -6,16 +6,17 @@ $(function(){
       'customize.gif',
       'onetag.gif'
     ];
+    var efo_server = 'https://admin.botchan.chat:3030';
 
     //frame header
     $('#header .mobile_demo_box .start_chat_btn').on('click', function () {
-        var iframe_chat = '<iframe class="wc-webchat" src="http://192.168.10.10:3030/efo?connect_page_id=5a1533249a89201ada6de403"></iframe>';
+        var iframe_chat = '<iframe class="wc-webchat" id="wc-webchat" src="' + efo_server + '/efo?connect_page_id=5a38f794059408963e1ce55d"></iframe>';
         $('#header .mobile_demo_box .efo_demo').html(iframe_chat);
         setTimeout(function () {
             var wc_irame = document.getElementById("wc-webchat").contentWindow;
 
-            wc_irame.postMessage({'new_conversation_flg' : 1}, 'http://192.168.10.10:3030');
-            wc_irame.postMessage({'maximize_flg' : 1}, 'http://192.168.10.10:3030');
+            wc_irame.postMessage({'new_conversation_flg' : 1}, efo_server);
+            wc_irame.postMessage({'maximize_flg' : 1}, efo_server);
         }, 1000);
     });
 
@@ -116,13 +117,22 @@ function resetHeader() {
 
 function setDemoOption() {
     var windown_w = $(window).width();
+    var iframe_pc = $('#bg3 .efo_demo_pc');
+    var iframe_mobile = $('#bg3 .efo_demo_mobile');
+
     if(windown_w <= 760 ) {
         if($('#bg3 .bg3_item_box').length <= 1) {
+            //move element
             var bg3_item_box = $('#bg3 .bg3_item_box').clone();
             bg3_item_box.find('.bg3_item.left').remove();
             $('#bg3').append(bg3_item_box);
 
             $('#bg3 .bg3_item_box').first().find('.bg3_item.right').hide();
+
+            //set space iframe
+            // var frame_img_w = $('#bg3 .service_mobile img').innerWidth();
+            // console.log(frame_img_w, (windown_w - frame_img_w) / 2);
+            // iframe_mobile.css('right', (windown_w - frame_img_w) / 2 + 'px');
         }
     } else {
         $('#bg3 .bg3_item_box').first().find('.bg3_item.right').show();
