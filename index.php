@@ -11,23 +11,7 @@ if(isset($_GET['lang'])) {
 
 ?>
 <html>
-<head>
-    <title><?= $meta_ttl[$LANG] ?></title>
-    <meta name="description" content="<?= $meta_desc[$LANG] ?>">
-    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-        <meta property="og:title" content="<?= $meta_ttl[$LANG] ?>" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="BOTCHAN EFO" />
-        <meta property="og:description" content="<?= $meta_desc[$LANG] ?>" />
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
-        <link rel="stylesheet" href="./css/index.css?<?= time() ?>">
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-        <script src="./js/lib.js"></script>
-        <script src="./js/custom.js?<?= time() ?>"></script>
-    </head>
+<?php include 'head.php';?>
 <body class="index_page">
 <?php include 'header.php';?>
 <div id="what">
@@ -362,7 +346,7 @@ if(isset($_GET['lang'])) {
                                 <p><img src="/images/bg7/icon2.png" alt=""><?= $block73[$LANG] ?></p>
                             </div>
                             <div class="content">
-                                <p><a class="contact" href="./contact.php?lang=<?= $LANG; ?>"><?= $block731[$LANG] ?></a></p>
+                                <p><a class="contact" href="./contact.php"><?= $block731[$LANG] ?></a></p>
                             </div>
                         </div>
                     </li>
@@ -389,9 +373,9 @@ if(isset($_GET['lang'])) {
 
 <div class="footer">
     <ul>
-        <li><a href="./contact.php?lang=<?= $LANG; ?>"><?= $footer1[$LANG] ?></a></li>
-        <li><a href="./privacy.php?lang=<?= $LANG; ?>"><?= $footer2[$LANG] ?></a></li>
-        <li><a href="./company.php?lang=<?= $LANG; ?>"><?= $footer3[$LANG] ?></a></li>
+        <li><a href="./contact.php"><?= $footer1[$LANG] ?></a></li>
+        <li><a href="./privacy.php"><?= $footer2[$LANG] ?></a></li>
+        <li><a href="./company.php"><?= $footer3[$LANG] ?></a></li>
     </ul>
 
     <div class="copyright">&copy;2017 wevnal Inc. All Rights Reserved.</div>

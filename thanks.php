@@ -31,23 +31,7 @@ mail($to, $subject, $message, $headers);
 
 ?>
 <html>
-<head>
-  <title><?= $meta_ttl[$LANG] ?></title>
-  <meta name="description" content="<?= $meta_desc[$LANG] ?>">
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-    <meta property="og:title" content="<?= $meta_ttl[$LANG] ?>" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="BOTCHAN EFO" />
-    <meta property="og:description" content="<?= $meta_desc[$LANG] ?>" />
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="./js/lib.js"></script>
-    <script src="./js/custom.js"></script>
-  </head>
+<?php include 'head.php';?>
 <body>
 <?php include 'header.php';?>
 <div class="thanks_base">
