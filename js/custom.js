@@ -222,11 +222,11 @@ function resetPriceForm() {
             table_icon_w = table_icon.innerWidth();
 
         //icon
-        var left = (table_w / 2) - (table_icon_w / 2) + 2;
+        var left = (table_w / 2) - (table_icon_w / 2) - 2;
         table_icon.css('left', left + 'px');
 
         //width td
-        $('.bg6 table tr td').css('width', Math.floor(table_w / 2));
+        $('.bg6 table tr').not('.item_img').find('td').css('width', Math.floor(table_w / 2) - 4);
     }, 100);
 }
 

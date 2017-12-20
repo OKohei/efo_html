@@ -1012,7 +1012,20 @@ header.scroll #header_nav .en_black {
     position: relative;
     top: 137px;
 }
-
+.section.bg3 .service_item .efo_demo_mobile .wc-webchat2 {
+    width: 392px;
+    height: 687px;
+    border: none;
+    top: 11px;
+    position: relative;
+}
+#phone4 {
+	position: relative;
+	float:left;
+}
+.service_view_body {
+	overflow:hidden;
+}
 
 /********* END UPDATE *********/
 
@@ -2199,7 +2212,6 @@ header.scroll #header_nav .en_black {
   }
 }
 
-
 /*** UPDATE FRAME ***/
 
 @media screen and (max-width: 760px){
@@ -2222,7 +2234,8 @@ header.scroll #header_nav .en_black {
 	}
 }
 .start_chat_btn:hover {
-	background:#1eb5ca;
+  background:#cccccc;
+  opacity: 0.5;
 }
 /*** END EPDATE ***/
 
