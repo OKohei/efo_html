@@ -965,20 +965,20 @@ header.scroll #header_nav .en_black {
 .wc-webchat-view-pc {
 	position: absolute;
 	right: -30px;
-	top: 108px;
+	top: 80px;
 	width:100%;
 }
 #wc-webchat3 {
-	border:none;
-	height: 607px;
-	width: 50%;
-	margin-right: -68px;
-	-ms-zoom: 0.5;
-	-moz-transform: scale(0.5);
+	border: none;
+    height: 446px;
+    width: 40%;
+    margin-right: 47px;
+	-ms-zoom: 0.75;
+	-moz-transform: scale(0.75);
 	-moz-transform-origin: 0 0;
-	-o-transform: scale(0.5);
+	-o-transform: scale(0.75);
 	-o-transform-origin: 0 0;
-	-webkit-transform: scale(0.5);
+	-webkit-transform: scale(0.75);
 	-webkit-transform-origin: 0 0;
 }
 .service_view_body {
@@ -986,12 +986,12 @@ header.scroll #header_nav .en_black {
 }
 #wc-webchat2 { 
 	border:none;
-	-ms-zoom: 0.5;
-	-moz-transform: scale(0.5);
+	-ms-zoom: 0.75;
+	-moz-transform: scale(0.75);
 	-moz-transform-origin: 0 0;
-	-o-transform: scale(0.5);
+	-o-transform: scale(0.75);
 	-o-transform-origin: 0 0;
-	-webkit-transform: scale(0.5);
+	-webkit-transform: scale(0.75);
 	-webkit-transform-origin: 0 0;
 }
 #wc-webchat-main {
@@ -1013,8 +1013,8 @@ header.scroll #header_nav .en_black {
     top: 137px;
 }
 .section.bg3 .service_item .efo_demo_mobile .wc-webchat2 {
-    width: 392px;
-    height: 687px;
+    width: 264px;
+    height: 458px;
     border: none;
     top: 11px;
     position: relative;
