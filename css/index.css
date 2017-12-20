@@ -2228,7 +2228,7 @@ header.scroll #header_nav .en_black {
 
 /* Index お問い合わせ */
 .section.bg7 .bg7_item {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     padding: 0;
@@ -2262,7 +2262,7 @@ header.scroll #header_nav .en_black {
 
 @media only screen and (max-width: 900px) and (min-width: 600px) {
     .section.bg7 .bg7_item li .contact_content {
-        display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
