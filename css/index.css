@@ -1972,8 +1972,8 @@ header.scroll #header_nav .en_black {
     padding: 0 13px;
   }
   .company_page .contact_base table tr {
-    /*display: block;*/
-    display: inline-grid;
+    display: flex;
+    flex-direction: column;
     height: auto;
   }
   .company_page .contact_base table tr + tr {
