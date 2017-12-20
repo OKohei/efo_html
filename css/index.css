@@ -965,20 +965,20 @@ header.scroll #header_nav .en_black {
 .wc-webchat-view-pc {
 	position: absolute;
 	right: -30px;
-	top: 108px;
+	top: 80px;
 	width:100%;
 }
 #wc-webchat3 {
-	border:none;
-	height: 607px;
-	width: 50%;
-	margin-right: -68px;
-	-ms-zoom: 0.5;
-	-moz-transform: scale(0.5);
+	border: none;
+    height: 446px;
+    width: 40%;
+    margin-right: 47px;
+	-ms-zoom: 0.75;
+	-moz-transform: scale(0.75);
 	-moz-transform-origin: 0 0;
-	-o-transform: scale(0.5);
+	-o-transform: scale(0.75);
 	-o-transform-origin: 0 0;
-	-webkit-transform: scale(0.5);
+	-webkit-transform: scale(0.75);
 	-webkit-transform-origin: 0 0;
 }
 .service_view_body {
@@ -986,12 +986,12 @@ header.scroll #header_nav .en_black {
 }
 #wc-webchat2 { 
 	border:none;
-	-ms-zoom: 0.5;
-	-moz-transform: scale(0.5);
+	-ms-zoom: 0.75;
+	-moz-transform: scale(0.75);
 	-moz-transform-origin: 0 0;
-	-o-transform: scale(0.5);
+	-o-transform: scale(0.75);
 	-o-transform-origin: 0 0;
-	-webkit-transform: scale(0.5);
+	-webkit-transform: scale(0.75);
 	-webkit-transform-origin: 0 0;
 }
 #wc-webchat-main {
@@ -1013,8 +1013,8 @@ header.scroll #header_nav .en_black {
     top: 137px;
 }
 .section.bg3 .service_item .efo_demo_mobile .wc-webchat2 {
-    width: 392px;
-    height: 687px;
+    width: 264px;
+    height: 458px;
     border: none;
     top: 11px;
     position: relative;
@@ -2233,10 +2233,7 @@ header.scroll #header_nav .en_black {
 		margin-left:10px;
 	}
 }
-.start_chat_btn:hover {
-  background:#cccccc;
-  opacity: 0.5;
-}
+
 /*** END EPDATE ***/
 
 /* Index お問い合わせ */
@@ -2280,6 +2277,7 @@ header.scroll #header_nav .en_black {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
         -webkit-box-pack: end;
@@ -2316,6 +2314,7 @@ header.scroll #header_nav .en_black {
     .section.bg7 .bg7_item {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
     }
@@ -2325,5 +2324,39 @@ header.scroll #header_nav .en_black {
     }
     .section.bg7 .bg7_item li + li {
         margin-left: auto;
+    }
+}
+@media only screen and (min-width : 761px){
+    .section.bg2 .bg2_item{
+        justify-content: flex-end;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-pack: end;
+        -webkit-flex-pack: end;
+        -ms-flex-pack: end;
+        margin-right: 30px;
+    }
+    .section.bg2 .bg2_item li{
+        height: auto;
+    }
+    .section.bg2 .bg2_item_cotainer{
+        padding-left:0;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .section.bg2 .bg2_item li {
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        max-width: none;
+    }
+}
+@media only screen and (max-width: 480px){
+    .section.bg2 .bg2_item_cotainer .bg2_item li {
+        margin-left: auto;
+        margin-right: auto;
     }
 }

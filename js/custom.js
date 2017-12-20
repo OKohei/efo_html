@@ -8,12 +8,12 @@ $(function(){
     ];
 
     var connect_page_id_iframe = [
-        '5a38ebe20594089632038ec2',
+        '5a38de8f0594089634261853',
         '5a38e4cc059408963f1bb1a1',
+        '5a38ebe20594089632038ec2',
         '5a38de8f0594089634261853',
-        '5a38de8f0594089634261853',
-        '5a38de8f0594089634261853',
-        '5a38de8f0594089634261853'
+        '5a38eec6059408963e1ce55c',
+        '5a39032005940896356a18f7'
     ];
 
     var efo_server = 'https://admin.botchan.chat:3030';
@@ -219,17 +219,17 @@ function resetPriceForm() {
     setTimeout(function () {
         var table_w = $('.bg6').find('table').innerWidth(),
             table_icon = $('.bg6').find('table .table_icon_box'),
-            table_icon_w = table_icon.innerWidth();
+            // table_icon_w = table_icon.innerWidth();
+            table_icon_w = 63;
 
+        //width td
+        $('.bg6 table tr').not('.item_img').find('td').css('width', Math.floor(table_w / 2) - 4);
         //icon
         var left = (table_w / 2) - (table_icon_w / 2) - 2;
         table_icon.css('left', left + 'px');
 
-        //width td
-        $('.bg6 table tr').not('.item_img').find('td').css('width', Math.floor(table_w / 2) - 4);
     }, 100);
 }
-
 function resetHeader() {
     //set magrin top chat demo box
     var windown_w = $(window).width();
