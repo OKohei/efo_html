@@ -96,18 +96,24 @@ if(isset($_GET['lang'])) {
                 <ul class="bg2_item">
                     <li class="item1">
                         <h2><?= $context9[$LANG] ?></h2>
-                        <img src="/images/bg2/item1.png" alt="">
-                        <p><?= $context91[$LANG] ?></p>
+                        <div class="sp_view">
+                            <img src="/images/bg2/item1.png" alt="">
+                            <p><?= $context91[$LANG] ?></p>
+                        </div>
                     </li>
                     <li class="item2">
                         <h2><?= $context10[$LANG] ?></h2>
-                        <img src="/images/bg2/item2.png" alt="">
-                        <p><?= $context101[$LANG] ?></p>
+                        <div class="sp_view">
+                            <img src="/images/bg2/item2.png" alt="">
+                            <p><?= $context101[$LANG] ?></p>
+                        </div>
                     </li>
                     <li class="item3">
                         <h2><?= $context11[$LANG] ?></h2>
-                        <img src="/images/bg2/item3.png" alt="">
-                        <p><?= $context111[$LANG] ?></p>
+                        <div class="sp_view">
+                            <img src="/images/bg2/item3.png" alt="">
+                            <p><?= $context111[$LANG] ?></p>
+                        </div>
                     </li>
                 </ul>
             </div>
