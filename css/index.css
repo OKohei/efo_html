@@ -1878,6 +1878,14 @@ header.scroll #header_nav .en_black {
     width: 55%;
   }
 }
+@media screen and (max-width: 1100px) {
+    .section.bg3 .service_item.service_pc {
+        display: none;
+    }
+    .service_view_body{
+        text-align: center;
+    }
+}
 @media screen and (max-width: 1003px) {
   .section.bg4 .service_item {
     margin-right: 2%;

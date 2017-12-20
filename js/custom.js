@@ -11,7 +11,6 @@ $(function(){
         '5a38de8f0594089634261853',
         '5a38e4cc059408963f1bb1a1',
         '5a38ebe20594089632038ec2',
-        '5a38de8f0594089634261853',
         '5a38eec6059408963e1ce55c',
         '5a39032005940896356a18f7'
     ];
@@ -57,18 +56,10 @@ $(function(){
 	});
     $(document).on('click', '#bg3 .bg3_item li', function () {
         var iframe_index = $(this).attr('data-iframe_index');
-        if (iframe_index) {
+        if (iframe_index && connect_page_id_iframe[iframe_index] != void 0) {
             var connect_page_id = connect_page_id_iframe[iframe_index];
             $('#bg3 .bg3_item li').removeClass('active');
             $(this).addClass('active');
-
-            // var iframe_pc = '<iframe class="wc-webchat1" id="wc-webchat1" src="http://192.168.10.10:3030/efo?connect_page_id=5a1533249a89201ada6de403"></iframe>';
-            // $('#bg3 .service_view .efo_demo_pc').append(iframe_pc);
-
-            var connect_page_id = connect_page_id_iframe[$(this).index()];
-
-            // var iframe_pc = '<iframe class="wc-webchat1" id="wc-webchat1" src="http://192.168.10.10:3030/efo?connect_page_id=5a1533249a89201ada6de403"></iframe>';
-            // $('#bg3 .service_view .efo_demo_pc').append(iframe_pc);
 
             var iframe_mobile = '<iframe class="wc-webchat2" id="wc-webchat2" src="' + efo_server + '/efo?connect_page_id=' + connect_page_id + '"></iframe>';
             var iframe_pc = '<iframe class="wc-webchat3" id="wc-webchat3" src="' + efo_server + '/efo?connect_page_id=' + connect_page_id + '"></iframe>';
