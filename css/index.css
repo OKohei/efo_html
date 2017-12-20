@@ -1429,7 +1429,7 @@ header.scroll #header_nav .en_black {
   .privacy_page .contact_base, .company_page .contact_base{
     padding: 15px 0px;
   }
-  .privacy_page #header .header_text_item, .company_page #header .header_text_item{
+  .privacy_page #header .header_text_item, .company_page #header .header_text_item, .company_page #header .header_text_item, .company_page #header .header_text_item{
     width: 95%;
     margin-left: auto;
     margin-right: auto;
