@@ -1950,6 +1950,8 @@ font-weight: 700;
   .contact_page table tr {
     border: none;
   }
+}
+@media only screen and (max-width : 320px) {
   .section.bg2 .bg2_item li {
     max-width: 270px;
   }
