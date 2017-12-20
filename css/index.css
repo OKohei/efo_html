@@ -51,7 +51,6 @@ header img.logo {
   text-align: center;
   display: inline-block;
   height: 629px;
-  border-bottom: 1px solid #7eaedf;
 }
 
 #header_nav {
@@ -1796,42 +1795,42 @@ header.scroll #header_nav .en_black {
     position: fixed;
     bottom: 40px;
     left: 20px;
+    margin: 0;
 }
 #pagetop a {
-    background: rgba(35,154,190,0.3);
-    color: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.3);
+    color: rgba(255,255,255,1);
     padding: 44px 20px 30px 20px;
     text-align: center;
-    border-radius: 300px;
+    border-radius: 50% 50%;
     position: relative;
     font-size: 10px;
     font-weight: 700;
+    height: 90px;
+    width: 90px;
+
 }
 #pagetop a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 #pagetop a:after {
-    border: 14px solid transparent;
-    border-bottom: 10px solid rgba(0,0,0,0.6);
+    border: 12px solid transparent;
+    border-bottom: 14px solid rgba(255,255,255,1);
     display: block;
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -28px;
-    margin-left: -15px;
+    margin-left: -12px;
 }
 #pagetop a:hover {
-    background: rgba(35,154,190,0.9);
-    color: rgba(255,255,255,1);
+    background: rgba(0,0,0,0.9);
 }
 #pagetop a, #pagetop a:after, #pagetop a:hover, #pagetop a:hover:after {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-}
-#pagetop a:hover:after {
-    border-bottom: 10px solid rgba(255,255,255,1);
 }
 
 /*  PC,SP切り替え */
@@ -2128,12 +2127,14 @@ header.scroll #header_nav .en_black {
         left: 10px;
     }
     #pagetop a {
-        padding: 30px 10px 16px 10px;
-        text-align: center;
-        border-radius: 300px;
-        position: relative;
+        padding: 10px;
+        border-radius: 50% 50%;
         font-size: 8px;
         font-weight: 500;
+        height: 55px;
+        width: 55px;
+        display: inline-block;
+        line-height: 68px;
     }
 
 }
