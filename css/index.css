@@ -1792,7 +1792,8 @@ header.scroll #header_nav .en_black {
   }
   .section.bg2 .bg2_item li {
     /*max-width: fit-content;*/
-    max-width: 325px;
+    /*max-width: 325px;*/
+    max-width: 86%;
     width: 100%;
     height: auto;
     margin: 15px 30px;
