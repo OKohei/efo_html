@@ -5,11 +5,11 @@
             <img class="logo" src="/images/logo.png" width="235" alt="">
         </a>
         <ul id="header_nav">
-            <li><a href="/#what"><?= $menu1[$LANG] ?></a></li>
-            <li><a href="/#feature"><?= $menu2[$LANG] ?></a></li>
-            <li><a href="/#usecase"><?= $menu3[$LANG] ?></a></li>
-            <li><a href="/#price"><?= $menu4[$LANG] ?></a></li>
-            <li><a href="/#contact"><?= $menu5[$LANG] ?></a></li>
+            <li><a href="#" data-sec="what"><?= $menu1[$LANG] ?></a></li>
+            <li><a href="#" data-sec="feature"><?= $menu2[$LANG] ?></a></li>
+            <li><a href="#" data-sec="usecase"><?= $menu3[$LANG] ?></a></li>
+            <li><a href="#" data-sec="price"><?= $menu4[$LANG] ?></a></li>
+            <li><a href="#" data-sec="contact"><?= $menu5[$LANG] ?></a></li>
         </ul>
     </div>
     <button type="button" id="hmenu" class="tcon tcon-menu--xcross" aria-label="toggle menu">

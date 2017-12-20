@@ -104,14 +104,19 @@ $(function(){
         resetPriceForm();
     }, 100);
 
+    //click to menu
+    $("#header_nav li a").on('click', function (e) {
+        e.preventDefault();
+        var sec_id      = $(this).data('sec'),
+            box_content = $('#' + sec_id);
 
-    $('a[href^=#]').click(function() {
-        var speed = 400;
-        var href= $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top - $('header').height();
-        $('body,html').animate({scrollTop:position}, speed, 'swing');
-        return false;
+        if(box_content.length > 0) {
+            var topPos  = $('#' + sec_id).offset().top;
+            if($("body > header").innerHeight()) {
+                topPos -= $("body > header").innerHeight();
+            }
+            $('html, body').animate({ scrollTop: topPos }, 200);
+        }
     });
 
     $('#hmenu').on('click', function(){
