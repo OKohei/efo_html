@@ -608,6 +608,9 @@ header.scroll #header_nav .en_black {
   height: 98px;
   overflow: hidden;
 }
+.section.bg5 .next_step {
+  margin-top: 50px;
+}
 .section.bg5 .step_content .label1 {
   padding-bottom: 3px;
 }

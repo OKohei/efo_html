@@ -242,7 +242,7 @@ if(isset($_GET['lang'])) {
                         </div>
                     </li>
                     <li class="item2">
-                        <div class="step_content">
+                        <div class="step_content next_step">
                             <p class="label1"><?= $block54[$LANG] ?></p>
                             <div class="step_image next">
                                 <img src="/images/bg5/arow_next.png" alt="">
@@ -262,7 +262,7 @@ if(isset($_GET['lang'])) {
                         </div>
                     </li>
                     <li class="item4">
-                        <div class="step_content">
+                        <div class="step_content next_step">
                             <p class="label1"><?= $block57[$LANG] ?></p>
                             <div class="step_image next">
                                 <img src="/images/bg5/arow_next.png" alt="">
