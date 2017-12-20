@@ -156,7 +156,7 @@ header.scroll #header_nav .en_black {
   padding-top: 10px;
 }
 #header .header_text_item.second .bold_text {
-    font-size: 19px;
+    font-size: 25px;
 }
 #header .header_text_item.second .title_comment {
     font-size: 13px;
@@ -935,7 +935,7 @@ header.scroll #header_nav .en_black {
 	border: solid 1px #a3a3a3;
 	border-radius: 4px;
 	min-width: 80%;
-	font-size: 1rem;
+	font-size: 14px;
 	display: inline-block;
 	height: 30px;
 	outline: none;
