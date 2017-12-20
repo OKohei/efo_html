@@ -205,7 +205,7 @@ function resetPriceForm() {
         table_icon.css('left', left + 'px');
 
         //width td
-        $('.bg6 table tr td:first-child').css('width', Math.floor(table_w / 2));
+        $('.bg6 table tr td').css('width', Math.floor(table_w / 2));
     }, 100);
 }
 
