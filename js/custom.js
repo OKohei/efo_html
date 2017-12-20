@@ -76,8 +76,14 @@ $(function(){
         }
         $(this).parent().addClass('active');
     });
-	
-	
+
+    $('#openBotchanEfo').on('click', function () {
+        var title = $(".wc-cmd.minimize_box").attr("title");
+        if(title == "Maximize"){
+            $(".wc-cmd.minimize_box").click();
+        }
+        $('.wc-webchat-ctn').show();
+    });
 
     setSizeBg1();
     resetHeader();
