@@ -2228,9 +2228,13 @@ header.scroll #header_nav .en_black {
 
 /* Index お問い合わせ */
 .section.bg7 .bg7_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0;
     margin: 0 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: calc(100% - 40px);
 }
@@ -2258,8 +2262,15 @@ header.scroll #header_nav .en_black {
 
 @media only screen and (max-width: 900px) and (min-width: 600px) {
     .section.bg7 .bg7_item li .contact_content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
     }
     .section.bg7 .bg7_item li .title, .section.bg7 .bg7_item li .content {
@@ -2290,6 +2301,9 @@ header.scroll #header_nav .en_black {
 
 @media only screen and (max-width : 600px) {
     .section.bg7 .bg7_item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .section.bg7 .bg7_item li {
