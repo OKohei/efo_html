@@ -55,8 +55,7 @@ if(isset($_GET['lang'])) {
     </div>
 </div>
 
-<div id="what">
-    <div class="section bg1" id="feature">
+<div class="section bg1">
         <div class="text-1-wrapper base">
             <p><?= $context1[$LANG] ?></p>
         </div>
@@ -79,9 +78,9 @@ if(isset($_GET['lang'])) {
             <p><?= $context5[$LANG] ?></p>
         </div>
     </div>
-</div>
 
-<div class="section bg2" id="flow">
+<div id="feature">
+    <div class="section bg2" id="flow">
         <div class="text-1-box base">
             <div class="text-1-content">
                 <p><?= $context6[$LANG] ?></p>
@@ -119,7 +118,7 @@ if(isset($_GET['lang'])) {
             </div>
         </div>
     </div>
-
+</div>
 <div class="section bg3" id="bg3">
     <div class="text-1-box base">
         <div class="text-1-content">
