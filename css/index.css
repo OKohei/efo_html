@@ -1629,6 +1629,7 @@ header.scroll #header_nav .en_black {
   .section.bg6 .bg6_cotainer table {
     width: 100%;
     margin: 0;
+    border-collapse: collapse;
   }
   .section.bg6 .bg6_cotainer .title_bottom_box {
     margin-right: 0;
