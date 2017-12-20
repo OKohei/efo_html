@@ -268,7 +268,7 @@ function setDemoOption() {
     var windown_w = $(window).width();
     var iframe_pc = $('#bg3 .efo_demo_pc');
     var iframe_mobile = $('#bg3 .efo_demo_mobile');
-
+	var phone4 = $('#phone4');
     if(windown_w <= 760 ) {
         if($('#bg3 .bg3_item_box').length <= 1) {
             //move element
@@ -281,6 +281,7 @@ function setDemoOption() {
         //set space iframe
         var frame_img_w = $('#bg3 .service_mobile img').innerWidth();
         iframe_mobile.css('left', (((windown_w - frame_img_w/2) / 2) - 33)+ 'px');
+		phone4.css('left', (((windown_w - frame_img_w) / 2)+10)+ 'px');
 		
     } else {
         $('#bg3 .bg3_item_box').first().find('.bg3_item.right').show();
