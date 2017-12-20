@@ -132,7 +132,7 @@ $block73['ja'] = 'ネットからお問い合わせ';
 $block731['ja'] = 'お問い合わせフォーム>';
 
 $block74['ja'] = 'chatbotでお問い合わせ';
-$block741['ja'] = 'BOTCHAN EFOを開く>';
+$block741['ja'] = 'BOTCHAN EFOを開く';
 
 
 

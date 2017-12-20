@@ -18,12 +18,13 @@ $(function(){
 
     var efo_server = 'https://admin.botchan.chat:3030';
 
+
     //frame header
     $('#header .mobile_demo_box .start_chat_btn').on('click', function () {
-        var iframe_chat = '<iframe class="wc-webchat" id="wc-webchat" src="' + efo_server + '/efo?connect_page_id=5a38f794059408963e1ce55d"></iframe>';
+        var iframe_chat = '<iframe class="wc-webchat" id="wc-webchat-main" src="' + efo_server + '/efo?connect_page_id=5a38f794059408963e1ce55d"></iframe>';
         $('#header .mobile_demo_box .efo_demo').html(iframe_chat);
         setTimeout(function () {
-            var wc_irame = document.getElementById("wc-webchat").contentWindow;
+            var wc_irame = document.getElementById("wc-webchat-main").contentWindow;
 
             wc_irame.postMessage({'new_conversation_flg' : 1}, efo_server);
             wc_irame.postMessage({'maximize_flg' : 1}, efo_server);
@@ -63,6 +64,16 @@ $(function(){
             info_item.hide();
         }
         $(this).parent().addClass('active');
+    });
+
+    $('#openBotchanEfo').on('click', function () {
+        $('.wc-webchat-ctn').show();
+        var wc_irame = document.getElementById("wc-webchat").contentWindow;
+        var post_message_data = {
+            'chat_box_open_close': true
+        };
+        wc_irame.postMessage((post_message_data);
+
     });
 
     setSizeBg1();
@@ -155,10 +166,6 @@ function resetPriceForm() {
 
     //width td
     $('.bg6 table tr td:first-child').css('width', Math.floor(table_w / 2));
-    $('.bg6 table tr').not('.item_img').find('td:first-child').css('height', 62);
-
-
-
 }
 
 function resetHeader() {

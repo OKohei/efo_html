@@ -858,8 +858,13 @@ header.scroll #header_nav .en_black {
 }
 
 
+.wc-webchat-ctn{
+  display: none;
+}
 
-
+#openBotchanEfo{
+  cursor: pointer;
+}
 
 .thanks_base {
   max-width: 800px;
