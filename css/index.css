@@ -1754,7 +1754,8 @@ header.scroll #header_nav .en_black {
     padding: 0;
   }
   .section.bg2 .bg2_item li {
-    max-width: fit-content;
+    /*max-width: fit-content;*/
+    max-width: 325px;
     width: 100%;
     height: auto;
     margin: 15px 30px;
