@@ -115,7 +115,7 @@ $(function(){
             if($("body > header").innerHeight()) {
                 topPos -= $("body > header").innerHeight();
             }
-            $('html, body').animate({ scrollTop: topPos }, 200);
+            $('html, body').animate({ scrollTop: topPos }, 400);
         }
     });
 
