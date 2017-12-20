@@ -140,10 +140,9 @@ header.scroll #header_nav .en_black {
 #header .header_text_box .header_text {
   position: absolute;
   top: 36%;
-  width: 100%;
 }
 #header .header_text_item {
-  width: 80%;
+  width: 100%;
 }
 #header .header_text_item p {
   margin: 0;
@@ -1388,9 +1387,9 @@ header.scroll #header_nav .en_black {
     max-width: 100%;
   }
 
-  .header_text{
-    width: 80%;
-  }
+  /*.header_text{*/
+    /*width: 80%;*/
+  /*}*/
 
   .footer ul{
     padding: 24px 0;
