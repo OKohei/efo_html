@@ -55,8 +55,7 @@ if(isset($_GET['lang'])) {
     </div>
 </div>
 
-<div id="what">
-    <div class="section bg1" id="feature">
+<div class="section bg1">
         <div class="text-1-wrapper base">
             <p><?= $context1[$LANG] ?></p>
         </div>
@@ -79,9 +78,9 @@ if(isset($_GET['lang'])) {
             <p><?= $context5[$LANG] ?></p>
         </div>
     </div>
-</div>
 
-<div class="section bg2" id="flow">
+<div id="feature">
+    <div class="section bg2" id="flow">
         <div class="text-1-box base">
             <div class="text-1-content">
                 <p><?= $context6[$LANG] ?></p>
@@ -96,24 +95,30 @@ if(isset($_GET['lang'])) {
                 <ul class="bg2_item">
                     <li class="item1">
                         <h2><?= $context9[$LANG] ?></h2>
-                        <img src="/images/bg2/item1.png" alt="">
-                        <p><?= $context91[$LANG] ?></p>
+                        <div class="sp_view">
+                            <img src="/images/bg2/item1.png" alt="">
+                            <p><?= $context91[$LANG] ?></p>
+                        </div>
                     </li>
                     <li class="item2">
                         <h2><?= $context10[$LANG] ?></h2>
-                        <img src="/images/bg2/item2.png" alt="">
-                        <p><?= $context101[$LANG] ?></p>
+                        <div class="sp_view">
+                            <img src="/images/bg2/item2.png" alt="">
+                            <p><?= $context101[$LANG] ?></p>
+                        </div>
                     </li>
                     <li class="item3">
                         <h2><?= $context11[$LANG] ?></h2>
-                        <img src="/images/bg2/item3.png" alt="">
-                        <p><?= $context111[$LANG] ?></p>
+                        <div class="sp_view">
+                            <img src="/images/bg2/item3.png" alt="">
+                            <p><?= $context111[$LANG] ?></p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-
+</div>
 <div class="section bg3" id="bg3">
     <div class="text-1-box base">
         <div class="text-1-content">
