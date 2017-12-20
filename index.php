@@ -22,11 +22,11 @@ if(isset($_GET['lang'])) {
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
-        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/index.css?<?= time() ?>">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <script src="./js/lib.js"></script>
-        <script src="./js/custom.js"></script>
+        <script src="./js/custom.js?<?= time() ?>"></script>
     </head>
 <body class="index_page">
 <?php include 'header.php';?>
@@ -55,8 +55,7 @@ if(isset($_GET['lang'])) {
     </div>
 </div>
 
-<div id="what">
-    <div class="section bg1" id="feature">
+<div class="section bg1">
         <div class="text-1-wrapper base">
             <p><?= $context1[$LANG] ?></p>
         </div>
@@ -79,9 +78,9 @@ if(isset($_GET['lang'])) {
             <p><?= $context5[$LANG] ?></p>
         </div>
     </div>
-</div>
 
-<div class="section bg2" id="flow">
+<div id="feature">
+    <div class="section bg2" id="flow">
         <div class="text-1-box base">
             <div class="text-1-content">
                 <p><?= $context6[$LANG] ?></p>
@@ -96,24 +95,30 @@ if(isset($_GET['lang'])) {
                 <ul class="bg2_item">
                     <li class="item1">
                         <h2><?= $context9[$LANG] ?></h2>
-                        <img src="/images/bg2/item1.png" alt="">
-                        <p><?= $context91[$LANG] ?></p>
+                        <div class="sp_view">
+                            <img src="/images/bg2/item1.png" alt="">
+                            <p><?= $context91[$LANG] ?></p>
+                        </div>
                     </li>
                     <li class="item2">
                         <h2><?= $context10[$LANG] ?></h2>
-                        <img src="/images/bg2/item2.png" alt="">
-                        <p><?= $context101[$LANG] ?></p>
+                        <div class="sp_view">
+                            <img src="/images/bg2/item2.png" alt="">
+                            <p><?= $context101[$LANG] ?></p>
+                        </div>
                     </li>
                     <li class="item3">
                         <h2><?= $context11[$LANG] ?></h2>
-                        <img src="/images/bg2/item3.png" alt="">
-                        <p><?= $context111[$LANG] ?></p>
+                        <div class="sp_view">
+                            <img src="/images/bg2/item3.png" alt="">
+                            <p><?= $context111[$LANG] ?></p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-
+</div>
 <div class="section bg3" id="bg3">
     <div class="text-1-box base">
         <div class="text-1-content">
