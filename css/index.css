@@ -148,13 +148,16 @@ header.scroll #header_nav .en_black {
   margin: 0;
 }
 #header .header_text_item.first {
-  font-size: 28px;
+  font-size: 26px;
   border-bottom: 4px solid #fff;
   padding-bottom: 10px;
 }
 #header .header_text_item.second {
-  font-size: 16px;
+  font-size: 14px;
   padding-top: 10px;
+}
+#header .header_text_item.second .bold_text {
+    font-size: 19px;
 }
 
 /*privacy, company page*/
@@ -835,13 +838,13 @@ header.scroll #header_nav .en_black {
   line-height: 103px;
   margin: 0;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
 }
 .section.bg7 .bg7_item li .content .contact {
   text-decoration: none;
   color: #1791c9;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .section.bg7 .bg7_item li.item1 .content p {
@@ -852,6 +855,9 @@ header.scroll #header_nav .en_black {
   font-weight: bold;
   font-size: 26px;
   padding-bottom: 10px;
+}
+.section.bg7 .bg7_item li.item1 .content .phone a{
+  color: #1791c9;
 }
 .section.bg7 .bg7_item li .title p img {
   margin-bottom: -7px;
@@ -1637,6 +1643,7 @@ header.scroll #header_nav .en_black {
   .section.bg6 .bg6_cotainer table {
     width: 100%;
     margin: 0;
+    border-collapse: collapse;
   }
   .section.bg6 .bg6_cotainer .title_bottom_box {
     margin-right: 0;

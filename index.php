@@ -33,6 +33,7 @@ if(isset($_GET['lang'])) {
                     <p><?= $main3[$LANG] ?></p>
                     <p><?= $main4[$LANG] ?></p>
                     <p><?= $main5[$LANG] ?></p>
+                    <p><?= $main6[$LANG] ?></p>
                 </div>
             </div>
         </div>
@@ -347,7 +348,7 @@ if(isset($_GET['lang'])) {
                                 <p><img src="/images/bg7/icon2.png" alt=""><?= $block73[$LANG] ?></p>
                             </div>
                             <div class="content">
-                                <p><a class="contact" href="./contact.php"><?= $block731[$LANG] ?></a></p>
+                                <p><a class="contact" href="https://admin.botchan.chat:3030/efo?connect_page_id=5a3a292e05940871e066b422" target="_blank"><?= $block731[$LANG] ?></a></p>
                             </div>
                         </div>
                     </li>
@@ -377,6 +378,6 @@ if(isset($_GET['lang'])) {
 <link href="https://admin.botchan.chat:3030/css/efo.css" rel="stylesheet">
 <script src="https://admin.botchan.chat:3030/js/efo.js"></script>
 <script>
-    embot_init('https://admin.botchan.chat:3030/efo', '5a38f794059408963e1ce55d');
+    embot_init('https://admin.botchan.chat:3030/efo', '5a3a292e05940871e066b422');
 </script>
 </html>

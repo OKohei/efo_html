@@ -1,16 +1,11 @@
 <?php
 
-$meta_ttl['ja'] = 'Chatbot AIはBOTCHAN | 人工知能(AI)が搭載されたchatbotを簡単に作れるCMS';
-$meta_ttl['en'] = 'BOTCHAN | Chatbot, also called as chatterbox is programmed as a communication tool.';
-$meta_ttl['vn'] = 'BOTCHAN | Chatbot còn được gọi là chatterbox, chương trình như một công cụ truyền thông.';
+$meta_ttl['ja'] = 'BOTCHAN EFO';
 
-$meta_desc['ja'] = 'BOTCHANはwevnalで開発・販売するChatbot AIプラットフォームです。';
-$meta_desc['en'] = 'BOTCHAN is a Chatbot AI platform developed and sold at wevnal.';
-$meta_desc['vn'] = 'BOTCHAN là nền tảng Chatbot AI được phát triển và phát hành bởi Wevnal.';
+$meta_desc['ja'] = 'BOTCHAN EFOは、そんなCVまでのあと一歩をサポートし、CVRの向上に繋げる、接客型の入力フォームです';
 
-$meta_h1['ja'] = 'Chatbot AIでカスタマーサポートを簡単に！';
-$meta_h1['en'] = 'BOTCHAN is an AI service, responding to questions asked by your customer.';
-$meta_h1['vn'] = 'BOTCHAN là dịch vụ AI, trả lời các câu hỏi của khách hàng.';
+
+$meta_h1['ja'] = 'BOTCHAN EFOでカスタマーサポートを簡単に！';
 
 
 
@@ -37,9 +32,10 @@ $menu5['vn'] = 'Bảng giá';
 
 $main1['ja'] = 'CVRを劇的に上げる';
 $main2['ja'] = '入力フォームの新常識';
-$main3['ja'] = '知っていますか？入力フォームの離脱率は平均68%。';
+$main3['ja'] = "知っていますか？入力フォームの離脱率は<b class='bold_text'>平均68%</b>。";
 $main4['ja'] = 'BOTCHAN EFOは、そんなCVまでのあと一歩をサポートし、';
 $main5['ja'] = 'CVRの向上に繋げる、接客型の入力フォームです。';
+$main6['ja'] = '※自社Tagtoru用数値調べ';
 
 
 $context1['ja'] = '従来の入力フォームだと…';
