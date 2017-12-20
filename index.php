@@ -153,17 +153,32 @@ if(isset($_GET['lang'])) {
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="service_view base">
-        <div class="service_item service_pc">
-            <img src="/images/bg3/pc.png" alt="">
-            <div class="efo_demo_pc"></div>
-        </div>
-        <div class="service_item service_mobile">
-            <img src="/images/bg3/phone.png" alt="">
-            <div class="efo_demo_mobile"></div>
-        </div>
-    </div>
+    </div>	
+	
+	<div class="service_view base">
+		<div class="service_view_body">	
+			<div class="service_item service_pc">
+				<div class="out-pc-view">
+					<h4 class="service_view_search" style="margin-bottom:16px;">
+						<input class="service_view_input_search" placeholder="http://efo.botchan.chat/">
+					</h4>
+					<div class="efo_demo_pc">
+						<div class="wc-webchat-web-pc">
+							<iframe class="wc-webchat2" id="wc-webchat4" src="http://efo.botchan.chat/"></iframe>
+						</div>
+						<div class="wc-webchat-view-pc"></div>							
+					</div>			
+				</div>          
+				
+				
+				
+			</div>
+			<div class="service_item service_mobile">
+				<img src="/images/bg3/phone.png" alt="">
+				<div class="efo_demo_mobile"></div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div class="section bg4" id="bg4">
@@ -357,12 +372,7 @@ if(isset($_GET['lang'])) {
                                 <p><img src="/images/bg7/icon3.png" alt=""><?= $block74[$LANG] ?></p>
                             </div>
                             <div class="content">
-
-
-                                <p>
-                                    <span id="openBotchanEfo"><?= $block741[$LANG] ?>&gt;</span>
-
-                                    </p>
+                                <p><?= $block741[$LANG] ?></p>
                             </div>
                         </div>
                     </li>
@@ -382,9 +392,4 @@ if(isset($_GET['lang'])) {
     <div class="copyright">&copy;2017 wevnal Inc. All Rights Reserved.</div>
 </div>
 </body>
-<link href="https://admin.botchan.chat:3030/css/efo.css" rel="stylesheet">
-<script src="https://admin.botchan.chat:3030/js/efo.js"></script>
-<script>
-    embot_init('https://admin.botchan.chat:3030/efo', '5a38f794059408963e1ce55d');
-</script>
 </html>
