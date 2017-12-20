@@ -148,16 +148,19 @@ header.scroll #header_nav .en_black {
   margin: 0;
 }
 #header .header_text_item.first {
-  font-size: 26px;
+  font-size: 28px;
   border-bottom: 4px solid #fff;
   padding-bottom: 10px;
 }
 #header .header_text_item.second {
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 10px;
 }
 #header .header_text_item.second .bold_text {
     font-size: 19px;
+}
+#header .header_text_item.second .title_comment {
+    font-size: 13px;
 }
 
 /*privacy, company page*/
@@ -805,16 +808,16 @@ header.scroll #header_nav .en_black {
     text-align: center;
     width: 28%;
     float: left;
-    background: #1791c9;
-    border: 5px solid #1791c9;
+   /* background: #1791c9;
+    border: 5px solid #1791c9;*/
     min-height: 170px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    /*border-top-left-radius: 25px;
+    border-top-right-radius: 25px;*/
     overflow: hidden;
 }
 .section.bg7 .bg7_item li .title {
   height: 67px;
-  background-color: #1791c9;
+  /*background-color: #1791c9;*/
 }
 .section.bg7 .bg7_item li .title p {
   margin: 0;
@@ -1778,7 +1781,47 @@ header.scroll #header_nav .en_black {
   position: static;
   width: auto; }
 
-
+#pagetop {
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+}
+#pagetop a {
+    background: rgba(35,154,190,0.3);
+    color: rgba(0,0,0,0.6);
+    padding: 44px 20px 30px 20px;
+    text-align: center;
+    border-radius: 300px;
+    position: relative;
+    font-size: 10px;
+    font-weight: 700;
+}
+#pagetop a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+#pagetop a:after {
+    border: 14px solid transparent;
+    border-bottom: 10px solid rgba(0,0,0,0.6);
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -28px;
+    margin-left: -15px;
+}
+#pagetop a:hover {
+    background: rgba(35,154,190,0.9);
+    color: rgba(255,255,255,1);
+}
+#pagetop a, #pagetop a:after, #pagetop a:hover, #pagetop a:hover:after {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+#pagetop a:hover:after {
+    border-bottom: 10px solid rgba(255,255,255,1);
+}
 
 /*  PC,SP切り替え */
 @media screen and (max-width: 1200px) {
@@ -2068,6 +2111,20 @@ header.scroll #header_nav .en_black {
     font-size: 15px;
     text-align: left;
   }
+
+    #pagetop {
+        bottom: 10px;
+        left: 10px;
+    }
+    #pagetop a {
+        padding: 30px 10px 16px 10px;
+        text-align: center;
+        border-radius: 300px;
+        position: relative;
+        font-size: 8px;
+        font-weight: 500;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -2156,3 +2213,78 @@ header.scroll #header_nav .en_black {
 	background:#1eb5ca;
 }
 /*** END EPDATE ***/
+
+/* Index お問い合わせ */
+.section.bg7 .bg7_item {
+    display: flex;
+    padding: 0;
+    margin: 0 20px;
+    justify-content: center;
+    width: calc(100% - 40px);
+}
+
+.section.bg7 .bg7_item li {
+    margin: 0;
+    box-shadow: inset 0 0 0 5px #1791c9;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 5px;
+}
+
+.section.bg7 .bg7_item li + li {
+    margin-left: 20px;
+}
+.section.bg7 .bg7_item li .title {
+    background: #1791c9;
+}
+
+@media only screen and (max-width : 1200px) {
+    .section.bg7 .bg7_item li {
+        width: calc((100% - 60px) / 3);
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    .section.bg7 .bg7_item li .contact_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .section.bg7 .bg7_item li .title, .section.bg7 .bg7_item li .content {
+        height: auto;
+    }
+    .section.bg7 .bg7_item li .title {
+        min-height: 74px;
+    }
+    .section.bg7 .bg7_item li .content {
+        padding: 10px 0;
+    }
+    .section.bg7 .bg7_item li .title p {
+        line-height: normal;
+        padding: 5px;
+    }
+    .section.bg7 .bg7_item li .content p {
+        line-height: normal;
+    }
+    .section.bg7 .bg7_item li + li {
+        margin-left: calc(100vw * 20 / 750);
+    }
+
+    .section.bg7 .bg7_item li.item1 .content .phone {
+        padding-top: 0;
+        line-height: 1.3;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .section.bg7 .bg7_item {
+        flex-direction: column;
+    }
+    .section.bg7 .bg7_item li {
+        width: 90%;
+        margin: 30px auto 0;
+    }
+    .section.bg7 .bg7_item li + li {
+        margin-left: auto;
+    }
+}

@@ -6,3 +6,4 @@
     </ul>
     <div class="copyright">&copy;2017 wevnal Inc. All Rights Reserved.</div>
 </div>
+<p id="pagetop" style="display: none;"><a href="#top">PAGETOP</a></p>
