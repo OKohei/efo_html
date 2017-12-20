@@ -1890,6 +1890,7 @@ header.scroll #header_nav .en_black {
   }
   .section.bg2 .bg2_item li .sp_view p{
     font-size: 15px;
+    text-align: left;
   }
 }
 
