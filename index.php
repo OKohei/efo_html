@@ -33,6 +33,7 @@ if(isset($_GET['lang'])) {
                     <p><?= $main3[$LANG] ?></p>
                     <p><?= $main4[$LANG] ?></p>
                     <p><?= $main5[$LANG] ?></p>
+                    <p><?= $main6[$LANG] ?></p>
                 </div>
             </div>
         </div>
