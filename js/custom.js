@@ -155,6 +155,10 @@ function resetPriceForm() {
 
     //width td
     $('.bg6 table tr td:first-child').css('width', Math.floor(table_w / 2));
+    $('.bg6 table tr').not('.item_img').find('td:first-child').css('height', 62);
+
+
+
 }
 
 function resetHeader() {
