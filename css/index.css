@@ -1263,7 +1263,7 @@ header.scroll #header_nav .en_black {
   .privacy_page #header .header_text_box .header_text{
     width: auto;
   }
-  .privacy_page .contact_base{
+  .privacy_page .contact_base, .company_page .contact_base{
     padding: 15px 0px;
   }
   .privacy_page #header .header_text_item{
@@ -1849,7 +1849,7 @@ header.scroll #header_nav .en_black {
     width: 90vw;
   }
   .company_page .contact_base table {
-    padding: 0 calc(100vw * 80 / 760);
+    padding: 0 13px;
   }
   .company_page .contact_base table tr {
     display: block;
