@@ -192,14 +192,6 @@ if(isset($_GET['lang'])) {
     <?php endif; ?>
 </div>
 
-<div class="footer">
-    <ul>
-        <li><a href="./contact.php?lang=<?= $LANG; ?>"><?= $footer1[$LANG] ?></a></li>
-        <li><a href="./privacy.php?lang=<?= $LANG; ?>"><?= $footer2[$LANG] ?></a></li>
-        <li><a href="./company.php?lang=<?= $LANG; ?>"><?= $footer3[$LANG] ?></a></li>
-    </ul>
-
-    <div class="copyright">&copy;2017 wevnal Inc. All Rights Reserved.</div>
-</div>
+<?php include 'footer.php';?>
 </body>
 </html>

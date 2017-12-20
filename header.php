@@ -1,7 +1,7 @@
 <header>
     <h1 class="meta-h1"><?= $meta_h1[$LANG] ?></h1>
     <div class="base">
-        <a class="img_logo_box" href="/?lang=<?= $LANG ?>">
+        <a class="img_logo_box" href="/">
             <img class="logo" src="/images/logo.png" width="235" alt="">
         </a>
         <ul id="header_nav">
