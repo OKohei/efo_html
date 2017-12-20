@@ -316,12 +316,14 @@ header.scroll #header_nav .en_black {
 }
 
 .section.bg1 .text-1-wrapper {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 700;
 }
+
 .section.bg1 .text-1-wrapper p {
   display: inline-block;
-  padding: 20px 15px
+  padding: 15px 5px;
+  font-weight: 700;
 }
 .section.bg1 .text-2-wrapper {
   text-align: center;
@@ -331,7 +333,7 @@ header.scroll #header_nav .en_black {
   font-size: 22px;
   padding-left: 10%;
   margin-top: 30px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .section.bg2 {
@@ -463,16 +465,8 @@ header.scroll #header_nav .en_black {
   max-width: 100%;
 }
 .section.bg3 .service_item.service_pc {
-  width: 800px;
+  width: 62%;
   text-align: right;
-	background:url(../images/bg3/pc.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center top;
-	float: left;
-	position: relative;
-	height:463px;
-	margin-left:6%;
 }
 .section.bg3 .service_item.service_mobile {
   /*width: 35%;*/
@@ -481,13 +475,13 @@ header.scroll #header_nav .en_black {
 /*iframe mobile*/
 .section.bg3 .service_item .efo_demo_mobile {
   position: absolute;
-  top: 45px;
-  left: 13px;
+  bottom: 46px;
+  right: 11px;
   border: none;
 }
 .section.bg3 .service_item .efo_demo_mobile .wc-webchat2 {
-  width: 316px;
-  height: 556px;
+  width: 158px;
+  height: 278px;
   border: none;
 }
 
@@ -504,7 +498,6 @@ header.scroll #header_nav .en_black {
 }
 .section.bg4 .text-1-content {
   border-bottom: 4px solid #fff;
-  margin-left: 20%;
 }
 .section.bg4 p {
   margin: 0;
@@ -760,16 +753,17 @@ header.scroll #header_nav .en_black {
   list-style: none;
 }
 .section.bg7 .bg7_item li {
-  margin: 13px 15px;
-  font-weight: 500;
-  text-align: center;
-  width: 28%;
-  float: left;
-  border: 5px solid #1791c9;
-  min-height: 170px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  overflow: hidden;
+    margin: 13px 15px;
+    font-weight: 500;
+    text-align: center;
+    width: 28%;
+    float: left;
+    background: #1791c9;
+    border: 5px solid #1791c9;
+    min-height: 170px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: hidden;
 }
 .section.bg7 .bg7_item li .title {
   height: 67px;
@@ -783,10 +777,11 @@ header.scroll #header_nav .en_black {
   font-size: 20px;
 }
 .section.bg7 .bg7_item li .content {
-  height: 103px;
-  display: inline-block;
-  width: 100%;
-  color: #1791c9;
+    height: 103px;
+    display: inline-block;
+    width: 100%;
+    color: #1791c9;
+    background: #fff;
 }
 .section.bg7 .bg7_item li .content p {
   line-height: 103px;
@@ -2011,4 +2006,12 @@ header.scroll #header_nav .en_black {
   .contact_page table tr {
     border: none;
   }
+}
+
+.wc-webchat-ctn{
+  display: none;
+}
+
+#openBotchanEfo{
+  cursor: pointer;
 }

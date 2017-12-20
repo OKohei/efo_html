@@ -372,7 +372,12 @@ if(isset($_GET['lang'])) {
                                 <p><img src="/images/bg7/icon3.png" alt=""><?= $block74[$LANG] ?></p>
                             </div>
                             <div class="content">
-                                <p><?= $block741[$LANG] ?></p>
+
+
+                                <p>
+                                    <span id="openBotchanEfo"><?= $block741[$LANG] ?>&gt;</span>
+
+                                    </p>
                             </div>
                         </div>
                     </li>
@@ -392,4 +397,9 @@ if(isset($_GET['lang'])) {
     <div class="copyright">&copy;2017 wevnal Inc. All Rights Reserved.</div>
 </div>
 </body>
+<link href="https://admin.botchan.chat:3030/css/efo.css" rel="stylesheet">
+<script src="https://admin.botchan.chat:3030/js/efo.js"></script>
+<script>
+    embot_init('https://admin.botchan.chat:3030/efo', '5a38f794059408963e1ce55d');
+</script>
 </html>
