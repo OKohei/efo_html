@@ -2277,6 +2277,7 @@ header.scroll #header_nav .en_black {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
         -webkit-box-pack: end;
@@ -2313,6 +2314,7 @@ header.scroll #header_nav .en_black {
     .section.bg7 .bg7_item {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
     }
@@ -2322,5 +2324,39 @@ header.scroll #header_nav .en_black {
     }
     .section.bg7 .bg7_item li + li {
         margin-left: auto;
+    }
+}
+@media only screen and (min-width : 761px){
+    .section.bg2 .bg2_item{
+        justify-content: flex-end;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-box-pack: end;
+        -webkit-flex-pack: end;
+        -ms-flex-pack: end;
+        margin-right: 30px;
+    }
+    .section.bg2 .bg2_item li{
+        height: auto;
+    }
+    .section.bg2 .bg2_item_cotainer{
+        padding-left:0;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .section.bg2 .bg2_item li {
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        max-width: none;
+    }
+}
+@media only screen and (max-width: 480px){
+    .section.bg2 .bg2_item_cotainer .bg2_item li {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
