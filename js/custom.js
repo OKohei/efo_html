@@ -109,13 +109,16 @@ $(function(){
         e.preventDefault();
         var sec_id      = $(this).data('sec'),
             box_content = $('#' + sec_id);
-
-        if(box_content.length > 0) {
-            var topPos  = $('#' + sec_id).offset().top;
-            if($("body > header").innerHeight()) {
-                topPos -= $("body > header").innerHeight();
+        if($('body').hasClass('index_page')) {
+            if(box_content.length > 0) {
+                var topPos  = $('#' + sec_id).offset().top;
+                if($("body > header").innerHeight()) {
+                    topPos -= $("body > header").innerHeight();
+                }
+                $('html, body').animate({ scrollTop: topPos }, 400);
             }
-            $('html, body').animate({ scrollTop: topPos }, 400);
+        } else {
+            window.location.href = '/' + '#' + sec_id;
         }
     });
 
