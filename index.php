@@ -220,7 +220,7 @@ if(isset($_GET['lang'])) {
                                 <p class="label2"><?= $block52[$LANG] ?></p>
                             </div>
                             <div class="step_image">
-                                <img class="step_img" src="/images/bg5/step3.png" alt="">
+                                <img class="step_img" src="/images/bg5/step1.png" alt="">
                             </div>
                             <p class="label3"><?= $block53[$LANG] ?></p>
                         </div>
