@@ -1398,9 +1398,7 @@ font-weight: 700;
   }
 
   .footer ul > li{
-    display: block;
-    text-align: center;
-    margin: 0;
+    margin: 0 6px;
   }
   .section.bg6 .bg6_cotainer table td {
     font-size: 15px;
@@ -1963,5 +1961,10 @@ font-weight: 700;
   }
   .section.bg2 .bg2_item li .sp_view p {
     font-size: 14px;
+  }
+  .footer ul > li{
+    display: block;
+    text-align: center;
+    margin: 0;
   }
 }
