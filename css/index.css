@@ -1406,11 +1406,23 @@ header.scroll #header_nav .en_black {
     font-size: 15px;
   }
 
+  .section.bg4 .info_item {
+    margin-top: 37px;
+    width: 30%;
+  }
+
 }
 
 @media screen and (max-width : 480px) {
   .section.bg3 .bg3_item li{
     width: 80%;
+  }
+  .section.bg4 .bg4_item.left {
+    margin-top: 10px;
+  }
+
+  .section.bg4 .info_item{
+    margin-top: 0px;
   }
   .section.bg1 .text-3-wrapper{
     font-size: 18px;
@@ -1504,6 +1516,8 @@ header.scroll #header_nav .en_black {
   }
   .section.bg5 .step_content .label3 {
     font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .text-1-content p {
     font-size: 18px;
@@ -1845,10 +1859,7 @@ header.scroll #header_nav .en_black {
     line-height: 28px;
     font-size: 13px;
   }
-  .section.bg4 .info_item {
-    margin-top: 37px;
-    width: 30%;
-  }
+
   .section.bg5 {
     padding-top: 20px;
   }
