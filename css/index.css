@@ -949,6 +949,7 @@ header.scroll #header_nav .en_black {
 	-webkit-transform: scale(0.5);
 	-webkit-transform-origin: 0 0;
 }
+
 .wc-webchat-view-pc {
 	position: absolute;
 	right: -30px;
@@ -959,7 +960,7 @@ header.scroll #header_nav .en_black {
 	border:none;
 	height: 607px;
 	width: 50%;
-	margin-right: -60px;
+	margin-right: -68px;
 	-ms-zoom: 0.5;
 	-moz-transform: scale(0.5);
 	-moz-transform-origin: 0 0;
@@ -981,6 +982,25 @@ header.scroll #header_nav .en_black {
 	-webkit-transform: scale(0.5);
 	-webkit-transform-origin: 0 0;
 }
+#wc-webchat-main {
+	-ms-zoom: 0.75;
+	-moz-transform: scale(0.75);
+	-moz-transform-origin: 0 0;
+	-o-transform: scale(0.75);
+	-o-transform-origin: 0 0;
+	-webkit-transform: scale(0.75);
+	-webkit-transform-origin: 0 0;
+}
+#header .efo_demo .wc-webchat {
+    display: block;
+    width: 320px;
+    height: 550px;
+    border: none;
+	left: 78px;
+    position: relative;
+    top: 137px;
+}
+
 
 /********* END UPDATE *********/
 
@@ -2105,3 +2125,30 @@ header.scroll #header_nav .en_black {
     margin: 0;
   }
 }
+
+
+/*** UPDATE FRAME ***/
+
+@media screen and (max-width: 760px){
+	
+	#header .efo_demo .wc-webchat {
+		width: 201px;
+		height: 352px;
+	}
+	#header .efo_demo .wc-webchat {
+        display: block;		
+		border: none;
+		left: 50px;
+		position: relative;
+		top: 89px;
+	}
+}
+@media screen and (max-width: 1024px){
+	.section.bg3 .service_item.service_pc { 
+		margin-left:10px;
+	}
+}
+.start_chat_btn:hover {
+	background:#1eb5ca;
+}
+/*** END EPDATE ***/

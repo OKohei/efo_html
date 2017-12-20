@@ -148,7 +148,7 @@ if(isset($_GET['lang'])) {
 					</h4>
 					<div class="efo_demo_pc">
 						<div class="wc-webchat-web-pc">
-							<iframe class="wc-webchat2" id="wc-webchat4" src="http://efo.botchan.chat/"></iframe>
+							<iframe class="wc-webchat2" scrolling="no" id="wc-webchat4" src="http://efo.botchan.chat/"></iframe>
 						</div>
 						<div class="wc-webchat-view-pc"></div>							
 					</div>			
