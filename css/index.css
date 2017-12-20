@@ -697,6 +697,10 @@ header.scroll #header_nav .en_black {
   width: 100%;
   margin-top: 30px;
 }
+.section.bg6 .bg6_cotainer .first_price{
+  width: 45%;
+  padding: 1% 0;
+}
 .section.bg6 .bg6_cotainer table {
   width: 50%;
   margin: 0 auto;
@@ -837,13 +841,13 @@ header.scroll #header_nav .en_black {
   line-height: 103px;
   margin: 0;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
 }
 .section.bg7 .bg7_item li .content .contact {
   text-decoration: none;
   color: #1791c9;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .section.bg7 .bg7_item li.item1 .content p {
@@ -854,6 +858,9 @@ header.scroll #header_nav .en_black {
   font-weight: bold;
   font-size: 26px;
   padding-bottom: 10px;
+}
+.section.bg7 .bg7_item li.item1 .content .phone a{
+  color: #1791c9;
 }
 .section.bg7 .bg7_item li .title p img {
   margin-bottom: -7px;
@@ -1414,6 +1421,10 @@ header.scroll #header_nav .en_black {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .section.bg6 .bg6_cotainer .first_price{
+    width: 60%;
+    padding: 5% 0;
   }
 }
 

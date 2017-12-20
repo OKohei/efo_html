@@ -285,7 +285,8 @@ if(isset($_GET['lang'])) {
                     <tbody>
                     <tr class="item1">
                         <td><?= $block62[$LANG] ?></td>
-                        <td><?= $block621[$LANG] ?></td>
+<!--                        <td>--><?//= $block621[$LANG] ?><!--</td>-->
+                        <td><img class="first_price" src="/images/bg6/first_price.png" alt=""></td>
                     </tr>
                     <tr class="item_img">
                         <td colspan="2">
