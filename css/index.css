@@ -356,7 +356,7 @@ header.scroll #header_nav .en_black {
 .section.bg2 .bg2_item_cotainer {
   display: inline-block;
   width: 100%;
-  padding: 20px 0 35px 0;
+  padding: 20px 0 35px 150px;
 }
 .section.bg2 .bg2_item {
   text-align: center;
@@ -1594,6 +1594,9 @@ header.scroll #header_nav .en_black {
   .contact_page table tr td:first-child .require{
     font-size: 14px;
     text-align: center;
+  }
+  .section.bg2 .bg2_item_cotainer {
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 1151px) {
