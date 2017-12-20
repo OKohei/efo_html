@@ -156,6 +156,9 @@ header.scroll #header_nav .en_black {
   font-size: 16px;
   padding-top: 10px;
 }
+#header .header_text_item.second .bold_text {
+    font-size: 20px;
+}
 
 /*privacy, company page*/
 .privacy_page #header,
