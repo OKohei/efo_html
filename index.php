@@ -131,24 +131,24 @@ if(isset($_GET['lang'])) {
     <div class="bg3_item_box base">
         <div class="bg3_item_cotainer">
             <ul class="bg3_item left">
-                <li class="item1">
+                <li class="item1" data-iframe_index="0">
                     <p><?= $block33[$LANG] ?></p>
                 </li>
-                <li class="item2">
+                <li class="item2" data-iframe_index="1">
                     <p><?= $block34[$LANG] ?></p>
                 </li>
-                <li class="item3">
+                <li class="item3" data-iframe_index="2">
                     <p><?= $block35[$LANG] ?></p>
                 </li>
             </ul>
             <ul class="bg3_item right">
-                <li class="item1 left">
+                <li class="item1 left" data-iframe_index="3">
                     <p><?= $block36[$LANG] ?></p>
                 </li>
-                <li class="item2">
+                <li class="item2" data-iframe_index="4">
                     <p><?= $block37[$LANG] ?></p>
                 </li>
-                <li class="item3">
+                <li class="item3" data-iframe_index="5">
                     <p><?= $block38[$LANG] ?></p>
                 </li>
             </ul>

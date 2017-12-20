@@ -444,7 +444,7 @@ header.scroll #header_nav .en_black {
   cursor: pointer;
 }
 .section.bg3 .bg3_item li.active {
-  width: 90%;
+  width: 90% !important;
 }
 .section.bg3 .bg3_item li.item1 {
   background-color: #1791c9;
@@ -1865,10 +1865,9 @@ header.scroll #header_nav .en_black {
   }
   .section.bg3 .bg3_item {
     width: 68%;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
-  .section.bg3 .bg3_item.left li,
-  .section.bg3 .bg3_item.left li.active
+  .section.bg3 .bg3_item.left li
   {
     width: 70%;
   }
@@ -1971,6 +1970,12 @@ header.scroll #header_nav .en_black {
   .section.bg2 .bg2_item li .sp_view p{
     font-size: 15px;
   }
+}
+
+@media screen and (max-width: 480px) {
+    .section.bg4 .info_item {
+        margin-left: 70px;
+    }
 }
 
 @media screen and (max-width: 400px) {
