@@ -81,7 +81,7 @@ $(function(){
             }, 1000);
         }
     });
-1
+
     $('.section.bg4 .bg4_item.left li p').on('click', function () {
         $('.section.bg4 .bg4_item.left li').removeClass('active');
         var info_item = $(this).parents('.bg4_item_cotainer').find('.info_item');
