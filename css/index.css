@@ -582,7 +582,25 @@ header.scroll #header_nav .en_black {
   left: -65px;
   top: 40px;
 }
-
+.section.bg4 .info_item:before{
+    display: none;
+}
+.section.bg4 .bg4_item li.item1{
+    position: relative;
+}
+.section.bg4 .bg4_item li.item1::after{
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #fff;
+    width: 50px;
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.section.bg4 .bg4_item li.item1:not(.active)::after{
+    display: none;
+}
 
 
 .section.bg5 {
@@ -1972,8 +1990,8 @@ header.scroll #header_nav .en_black {
     padding: 0 13px;
   }
   .company_page .contact_base table tr {
-    /*display: block;*/
-    display: inline-grid;
+    display: flex;
+    flex-direction: column;
     height: auto;
   }
   .company_page .contact_base table tr + tr {
