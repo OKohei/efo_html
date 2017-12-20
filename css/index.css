@@ -1417,6 +1417,9 @@ header.scroll #header_nav .en_black {
   .section.bg2 .bg2_item_cotainer {
     padding-left: 0px;
   }
+  .section.bg2 .bg2_item_cotainer .bg2_item li {
+    margin: 15px 10px;
+  }
   .section.bg2 .text-2-content {
     font-size: 16px;
     padding-left: 10px;
@@ -1427,9 +1430,6 @@ header.scroll #header_nav .en_black {
   }
   .section.bg2 .bg2_item li .sp_view {
     float: left;
-  }
-  .section.bg2 .bg2_item li .sp_view p {
-    font-size: 10px !important;
   }
   .section.bg4 .bg4_item_cotainer>ul>li p {
     padding: 5px 0;
@@ -1449,6 +1449,13 @@ header.scroll #header_nav .en_black {
   }
   .section.bg4 .bg4_item.left li.active {
     width: 83%;
+  }
+  /*.section.bg3 .bg3_item.left li, .section.bg3 .bg3_item.left li.active {*/
+    /*width: 83% !important;*/
+  /*}*/
+  .section.bg2 .bg2_item li.item3 p {
+    padding-left: 10%;
+    padding-top: 8%;
   }
   .section.bg6 .bg6_cotainer table td {
     font-size: 15px;
@@ -1479,7 +1486,7 @@ header.scroll #header_nav .en_black {
     font-size: 15px;
   }
   .text-1-content p {
-    font-size: 23px;
+    font-size: 20px;
   }
   .section.bg7 .bg7_item li .content .contact {
     font-size: 17px;
@@ -1873,9 +1880,13 @@ header.scroll #header_nav .en_black {
   .section.bg2 .bg2_item li .sp_view{
     display: -webkit-inline-box;
   }
+  .section.bg2 .bg2_item li .sp_view img{
+    width: 130px;
+  }
   .section.bg2 .bg2_item li.item3 img {
-    padding: 20% 33% 0 10%;
-    width: 60%;
+    padding: 0 0 0 10%;
+    margin-top: 40px;
+    width: 84px;
   }
   .section.bg2 .bg2_item li .sp_view p{
     font-size: 15px;
