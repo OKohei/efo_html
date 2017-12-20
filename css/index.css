@@ -335,12 +335,27 @@ header.scroll #header_nav .en_black {
   margin-top: 30px;
   font-weight: 700;
 }
-
 .section.bg2 {
-  background: url(../images/bg2/background.png) no-repeat bottom transparent;
+  background: url(../images/bg2/bg.png) no-repeat top left transparent;
   background-size: cover;
+  height: auto;
+  position: relative;
+  z-index: 0;
   color: #fff;
 }
+.section.bg2:after {
+  content: '';
+  background: url(../images/botchan__logo.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: calc(100vw * 148 / 1282);
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .section.bg2 .text-1-box {
   text-align: left;
 }
@@ -1870,10 +1885,10 @@ header.scroll #header_nav .en_black {
     padding-bottom: 5px;
     font-weight: 700;
   }
-  .section.bg2 {
-    background: url(../images/bg2/background_mobile.png) no-repeat bottom transparent;
-    background-size: cover;
-  }
+  /*.section.bg2 {*/
+    /*background: url(../images/bg2/background_mobile.png) no-repeat bottom transparent;*/
+    /*background-size: cover;*/
+  /*}*/
   .section.bg2 {
     padding-top: 20px;
   }
