@@ -1766,7 +1766,11 @@ header.scroll #header_nav .en_black {
   }
   .section.bg2 .text-1-content {
     margin: 0 10px;
+    padding-right: 0;
   }
+  .section.bg4 .text-1-content {
+     margin: 0 10px;
+   }
   .section.bg2 .text-2-content {
     margin: 10px 10px 0 10px;
   }
@@ -1949,5 +1953,19 @@ header.scroll #header_nav .en_black {
   }
   .contact_page table tr {
     border: none;
+  }
+}
+@media only screen and (max-width : 320px) {
+  .section.bg2 .bg2_item li {
+    max-width: 270px;
+  }
+  .section.bg2 .bg2_item li .sp_view img{
+    width: 100px;
+  }
+  .section.bg2 .bg2_item li.item3 img {
+    width: 68px;
+  }
+  .section.bg2 .bg2_item li .sp_view p {
+    font-size: 14px;
   }
 }
