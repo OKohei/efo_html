@@ -148,13 +148,16 @@ header.scroll #header_nav .en_black {
   margin: 0;
 }
 #header .header_text_item.first {
-  font-size: 28px;
+  font-size: 26px;
   border-bottom: 4px solid #fff;
   padding-bottom: 10px;
 }
 #header .header_text_item.second {
-  font-size: 16px;
+  font-size: 14px;
   padding-top: 10px;
+}
+#header .header_text_item.second .bold_text {
+    font-size: 19px;
 }
 
 /*privacy, company page*/
@@ -1629,6 +1632,7 @@ header.scroll #header_nav .en_black {
   .section.bg6 .bg6_cotainer table {
     width: 100%;
     margin: 0;
+    border-collapse: collapse;
   }
   .section.bg6 .bg6_cotainer .title_bottom_box {
     margin-right: 0;

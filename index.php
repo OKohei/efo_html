@@ -33,6 +33,7 @@ if(isset($_GET['lang'])) {
                     <p><?= $main3[$LANG] ?></p>
                     <p><?= $main4[$LANG] ?></p>
                     <p><?= $main5[$LANG] ?></p>
+                    <p><?= $main6[$LANG] ?></p>
                 </div>
             </div>
         </div>
@@ -148,7 +149,7 @@ if(isset($_GET['lang'])) {
 					</h4>
 					<div class="efo_demo_pc">
 						<div class="wc-webchat-web-pc">
-							<iframe class="wc-webchat2" id="wc-webchat4" src="http://efo.botchan.chat/"></iframe>
+							<iframe class="wc-webchat2" scrolling="no" id="wc-webchat4" src="http://efo.botchan.chat/"></iframe>
 						</div>
 						<div class="wc-webchat-view-pc"></div>							
 					</div>			
@@ -220,7 +221,7 @@ if(isset($_GET['lang'])) {
                                 <p class="label2"><?= $block52[$LANG] ?></p>
                             </div>
                             <div class="step_image">
-                                <img class="step_img" src="/images/bg5/step3.png" alt="">
+                                <img class="step_img" src="/images/bg5/step1.png" alt="">
                             </div>
                             <p class="label3"><?= $block53[$LANG] ?></p>
                         </div>
@@ -346,7 +347,7 @@ if(isset($_GET['lang'])) {
                                 <p><img src="/images/bg7/icon2.png" alt=""><?= $block73[$LANG] ?></p>
                             </div>
                             <div class="content">
-                                <p><a class="contact" href="./contact.php"><?= $block731[$LANG] ?></a></p>
+                                <p><a class="contact" href="https://admin.botchan.chat:3030/efo?connect_page_id=5a3a292e05940871e066b422" target="_blank"><?= $block731[$LANG] ?></a></p>
                             </div>
                         </div>
                     </li>
@@ -376,6 +377,6 @@ if(isset($_GET['lang'])) {
 <link href="https://admin.botchan.chat:3030/css/efo.css" rel="stylesheet">
 <script src="https://admin.botchan.chat:3030/js/efo.js"></script>
 <script>
-    embot_init('https://admin.botchan.chat:3030/efo', '5a38f794059408963e1ce55d');
+    embot_init('https://admin.botchan.chat:3030/efo', '5a3a292e05940871e066b422');
 </script>
 </html>
