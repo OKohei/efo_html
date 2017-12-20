@@ -1,6 +1,6 @@
 <?php
 include('language.php');
-$LANG = 'en';
+$LANG = 'ja';
 if(isset($_GET['lang'])) {
   if($_GET['lang'] == 'vn') {
     $LANG = 'vn';
