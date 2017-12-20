@@ -852,6 +852,9 @@ header.scroll #header_nav .en_black {
   font-size: 26px;
   padding-bottom: 10px;
 }
+.section.bg7 .bg7_item li.item1 .content .phone a{
+  color: #1791c9;
+}
 .section.bg7 .bg7_item li .title p img {
   margin-bottom: -7px;
   padding-right: 5px;
