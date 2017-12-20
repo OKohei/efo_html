@@ -23,6 +23,24 @@ $(function(){
     $('#header .mobile_demo_box .start_chat_btn').on('click', function () {
         var iframe_chat = '<iframe class="wc-webchat" id="wc-webchat-main" src="' + efo_server + '/efo?connect_page_id=5a38f794059408963e1ce55d"></iframe>';
         $('#header .mobile_demo_box .efo_demo').html(iframe_chat);
+		var windown_w = $(window).width();
+        if(windown_w <= 440) {
+			var mobile_demo_box_w = $('#header .mobile_demo_box #mobile_demo').width();
+			var mobile_demo_box_h = $('#header .mobile_demo_box #mobile_demo').height();		
+			var width_view = 4*0.39*$('#header .mobile_demo_box #mobile_demo').width()/3;				
+			var height_buton = 0.85*mobile_demo_box_h*4/3;
+			var margin_left = 0.36*mobile_demo_box_w;
+			var margin_right = 0.242*mobile_demo_box_w;
+			var margin_top = 0.15*mobile_demo_box_h;
+		
+			$('#wc-webchat-main').css('width',width_view);
+			$('#wc-webchat-main').css('height',height_buton);
+			$('#wc-webchat-main').css('right',2);
+			$('#wc-webchat-main').css('left',2);
+			$('#wc-webchat-main').css('top',margin_top);
+			$('.efo_demo').css('height',mobile_demo_box_h);
+			$('.efo_demo').css('left',margin_left);
+		}
         setTimeout(function () {
             var wc_irame = document.getElementById("wc-webchat-main").contentWindow;
 
@@ -187,10 +205,13 @@ function setSixeDemoBg4() {
             });
             // set interface bg5
             $('.section.bg5 .next img').attr("src", '/images/bg5/arrow_down.png');
-            $('.section.bg5 img.step_img').css("width", '60%');
+            $('.section.bg5 img.step_img').css("width", '60%');		
+			
+		
         } else {
             $('.bg4_item_cotainer .screen_img').attr('style', null);
         }
+		
     }, 300);
 }
 
@@ -213,10 +234,30 @@ function resetHeader() {
     //set magrin top chat demo box
     var windown_w = $(window).width();
     if(windown_w <= 760) {
-        var mobile_demo_box_w = $('#header .mobile_demo_box').width();
-        var header_demo_w = $('#header .header_demo').innerWidth();
-        $('#header .header_demo').css('right', (mobile_demo_box_w - header_demo_w + 45) / 2);
-        $('#header .start_chat_btn').css('right', (header_demo_w - 280 ));
+        
+		//tuan edit
+		if(windown_w<400){
+			var mobile_demo_box_w = $('#header .mobile_demo_box').width();
+			var mobile_demo_box_h = $('#header .mobile_demo_box #mobile_demo').height();
+			var height_buton = 33*$('#header .mobile_demo_box').width()/620;
+			
+			var width_buton = 0.28*mobile_demo_box_w;
+			var margin_bottom = 0.06*mobile_demo_box_h;
+			var left = 0.42*mobile_demo_box_w;
+			$('#header .start_chat_btn').css('left', left);
+			$('#header .start_chat_btn').css('width', width_buton);
+			$('#header .start_chat_btn').css('height', height_buton);
+			$('#header .start_chat_btn').css('padding', 0);
+			$('#header .start_chat_btn').css('bottom', margin_bottom);
+			
+			
+		}else{
+			var mobile_demo_box_w = $('#header .mobile_demo_box').width();
+			var header_demo_w = $('#header .header_demo').innerWidth();
+			$('#header .header_demo').css('right', (mobile_demo_box_w - header_demo_w + 45) / 2);
+			$('#header .start_chat_btn').css('right', (header_demo_w - 280 ));
+		}
+        
     } else {
         $('#header .header_demo').attr('style', null);
         $('#header .start_chat_btn').attr('style', null);

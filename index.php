@@ -159,7 +159,7 @@ if(isset($_GET['lang'])) {
 				
 			</div>
 			<div class="service_item service_mobile">
-				<img src="/images/bg3/phone.png" alt="">
+				<img src="/images/bg4/phone.png" alt="" style="max-width:224px;" id="phone4">
 				<div class="efo_demo_mobile"></div>
 			</div>
 		</div>
