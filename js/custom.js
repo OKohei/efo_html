@@ -67,13 +67,11 @@ $(function(){
     });
 
     $('#openBotchanEfo').on('click', function () {
+        var title = $(".wc-cmd.minimize_box").attr("title");
+        if(title == "Maximize"){
+            $(".wc-cmd.minimize_box").click();
+        }
         $('.wc-webchat-ctn').show();
-        var wc_irame = document.getElementById("wc-webchat").contentWindow;
-        var post_message_data = {
-            'chat_box_open_close': true
-        };
-        wc_irame.postMessage((post_message_data);
-
     });
 
     setSizeBg1();
