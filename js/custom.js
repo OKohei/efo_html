@@ -219,17 +219,17 @@ function resetPriceForm() {
     setTimeout(function () {
         var table_w = $('.bg6').find('table').innerWidth(),
             table_icon = $('.bg6').find('table .table_icon_box'),
-            table_icon_w = table_icon.innerWidth();
+            // table_icon_w = table_icon.innerWidth();
+            table_icon_w = 63;
 
+        //width td
+        $('.bg6 table tr').not('.item_img').find('td').css('width', Math.floor(table_w / 2) - 4);
         //icon
         var left = (table_w / 2) - (table_icon_w / 2) - 2;
         table_icon.css('left', left + 'px');
 
-        //width td
-        $('.bg6 table tr').not('.item_img').find('td').css('width', Math.floor(table_w / 2) - 4);
     }, 100);
 }
-
 function resetHeader() {
     //set magrin top chat demo box
     var windown_w = $(window).width();
