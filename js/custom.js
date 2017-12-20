@@ -56,10 +56,11 @@ $(function(){
 	});
     $(document).on('click', '#bg3 .bg3_item li', function () {
         var iframe_index = $(this).attr('data-iframe_index');
+        $('#bg3 .bg3_item li').removeClass('active');
+        $(this).addClass('active');
+
         if (iframe_index && connect_page_id_iframe[iframe_index] != void 0) {
             var connect_page_id = connect_page_id_iframe[iframe_index];
-            $('#bg3 .bg3_item li').removeClass('active');
-            $(this).addClass('active');
 
             var iframe_mobile = '<iframe class="wc-webchat2" id="wc-webchat2" src="' + efo_server + '/efo?connect_page_id=' + connect_page_id + '"></iframe>';
             var iframe_pc = '<iframe class="wc-webchat3" id="wc-webchat3" src="' + efo_server + '/efo?connect_page_id=' + connect_page_id + '"></iframe>';
@@ -80,7 +81,7 @@ $(function(){
             }, 1000);
         }
     });
-
+1
     $('.section.bg4 .bg4_item.left li p').on('click', function () {
         $('.section.bg4 .bg4_item.left li').removeClass('active');
         var info_item = $(this).parents('.bg4_item_cotainer').find('.info_item');
