@@ -318,13 +318,13 @@ header.scroll #header_nav .en_black {
 
 .section.bg1 .text-1-wrapper {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .section.bg1 .text-1-wrapper p {
   display: inline-block;
   padding: 15px 5px;
-font-weight: 700;
+  font-weight: 700;
 }
 .section.bg1 .text-2-wrapper {
   text-align: center;
@@ -1409,13 +1409,19 @@ font-weight: 700;
 }
 
 @media screen and (max-width : 480px) {
+  .section.bg3 .bg3_item li{
+    width: 80%;
+  }
   .section.bg1 .text-3-wrapper{
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 3px;
     text-align: center;
   }
   .section.bg2 .text-1-content{
     padding-right: 0px;
+  }
+  .section.bg1 .text-1-wrapper{
+    font-size: 18px;
   }
   .section {
     padding: 20px 0;
@@ -1437,8 +1443,6 @@ font-weight: 700;
   }
   .section.bg2 .text-2-content {
     font-size: 16px;
-    padding-left: 10px;
-
   }
   .section.bg2 .bg2_item li h2 {
     float: left;
@@ -1453,7 +1457,7 @@ font-weight: 700;
     padding: 5px 0;
   }
   .section.bg4 .text-1-content {
-    margin-left: 25px;
+    margin-left: 10px;
     font-size: 17px;
   }
   .section.bg4 .info_item {
@@ -1764,7 +1768,7 @@ font-weight: 700;
     margin: 0 10px;
   }
   .section.bg2 .text-2-content {
-    margin: 10px 10px 0 0;
+    margin: 10px 10px 0 10px;
   }
   .section.bg2 .bg2_item {
     margin: 0;
@@ -1789,7 +1793,7 @@ font-weight: 700;
   }
   .section.bg3 .bg3_item li {
     line-height: 25px;
-    font-size: 13px;
+    font-size: 15px;
   }
   .section.bg3 .bg3_item.left li {
     padding: 0 30px 0 0;
