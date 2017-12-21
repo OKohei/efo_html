@@ -1,5 +1,8 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <title><?= $meta_ttl[$LANG] ?></title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
     <meta name="description" content="<?= $meta_desc[$LANG] ?>">
     <meta property="og:title" content="<?= $meta_ttl[$LANG] ?>" />
     <meta property="og:type" content="website" />
