@@ -901,12 +901,12 @@ header.scroll #header_nav .en_black {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
 }
 .footer .copyright {
   padding-bottom: 30px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .bx-wrapper {
@@ -1707,10 +1707,10 @@ header.scroll #header_nav .en_black {
     font-size: 16px;
   }
   .footer ul > li > a {
-    font-size: 13px;
+    font-size: 12px;
   }
   .footer .copyright {
-    font-size: 13px;
+    font-size: 12px;
   }
 
 }
