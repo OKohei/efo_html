@@ -1573,7 +1573,7 @@ header.scroll #header_nav .en_black {
 
   .section.bg4 .info_item {
     margin-top: 37px;
-    width: 30%;
+    width: 32%;
   }
 
 }
@@ -2224,6 +2224,15 @@ header.scroll #header_nav .en_black {
     text-align: center;
     margin: 0;
   }
+  .section.bg4 .bg4_item li.item1::after{
+    width: 20px;
+    right: -20px;
+  }
+  .section.bg4 .info_item{
+    margin-left: 40px;
+      width: 40%;
+      margin-top: 10px;
+  }
 }
 
 /*** UPDATE FRAME ***/
@@ -2372,6 +2381,9 @@ header.scroll #header_nav .en_black {
     }
 }
 
+.section.bg6 .bg6_cotainer table tr:first-child td {
+    position: relative;
+}
 .section.bg6 .bg6_cotainer .first_price {
   max-width: 100%;
   max-height: 100%;
@@ -2383,9 +2395,6 @@ header.scroll #header_nav .en_black {
   transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 480px){
-  .section.bg6 .bg6_cotainer table tr:first-child td {
-    position: relative;
-  }
   .section.bg6 .bg6_cotainer .first_price {
     padding: 0;
     padding-left: 10%;
@@ -2446,4 +2455,13 @@ header.scroll #header_nav .en_black {
   #header .mobile_demo_box .header_demo {
     right: 0!important;
   }
+}
+
+.br-sp {
+    display: none;
+}
+@media only screen and (max-width: 480px) {
+    .br-sp {
+        display: inline;
+    }
 }
