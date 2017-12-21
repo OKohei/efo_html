@@ -18,7 +18,7 @@ if(isset($_GET['lang'])) {
     <div id="header" style="background-image: url(/images/<?php echo $LANG; ?>/header_image.png)">
         <div class="mobile_demo_box">
             <div class="header_demo">
-                <img id="mobile_demo" src="/images/mobile_demo.png" alt="">
+                <img id="mobile_demo" src="/images/mobile_demo.gif" alt="">
                 <p class="start_chat_btn"></p>
                 <div class="efo_demo"></div>
             </div>
