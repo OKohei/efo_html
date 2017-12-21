@@ -1883,6 +1883,14 @@ header.scroll #header_nav .en_black {
     width: 55%;
   }
 }
+@media screen and (max-width: 1100px) {
+    .section.bg3 .service_item.service_pc {
+        display: none;
+    }
+    .service_view_body{
+        text-align: center;
+    }
+}
 @media screen and (max-width: 1003px) {
   .section.bg4 .service_item {
     margin-right: 2%;
@@ -2333,14 +2341,11 @@ header.scroll #header_nav .en_black {
 }
 @media only screen and (min-width : 761px){
     .section.bg2 .bg2_item{
-        justify-content: flex-end;
         display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        -webkit-box-pack: end;
-        -webkit-flex-pack: end;
-        -ms-flex-pack: end;
-        margin-right: 30px;
+        justify-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        padding-left: 0px;
     }
     .section.bg2 .bg2_item li{
         height: auto;
