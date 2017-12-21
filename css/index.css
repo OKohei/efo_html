@@ -2371,3 +2371,59 @@ header.scroll #header_nav .en_black {
         margin-right: auto;
     }
 }
+
+/* adv */
+#header .header_text_item.second p {
+  position: relative;
+}
+#header .second p:nth-of-type(1)::after {
+    background: url(../images/advantages1.png) no-repeat top left;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: calc(100px * 273 / 314);
+    top: 0;
+    right: 0;
+    position: absolute;
+    transform: translate(15px, calc(-50% - 5px));
+    width: 100px;
+}
+
+#header .header_text_img {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  #header .header_text_box .header_text {
+    max-width: 100%;
+  }
+  #header .header_text_item.first,
+  #header .header_text_item.second {
+    display: none;
+  }
+  #header .header_text_img {
+    display: block;
+  }
+  #header .header_text_img img {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  #header .header_text_box .header_text {
+    width: 70%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+@media only screen and (max-width: 480px) {
+  #header {
+    height: calc(100vw * 700 / 480);
+  }
+  #header .header_text_box .header_text {
+    width: 100%;
+  }
+  #header .mobile_demo_box .header_demo {
+    right: 0!important;
+  }
+}

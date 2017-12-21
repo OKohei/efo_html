@@ -35,6 +35,9 @@ if(isset($_GET['lang'])) {
                     <p><?= $main5[$LANG] ?></p>
                     <p class="title_comment"><?= $main6[$LANG] ?></p>
                 </div>
+                <p class="header_text_img">
+                    <img src="/images/advantages3.png" alt="">
+                </p>
             </div>
         </div>
     </div>
