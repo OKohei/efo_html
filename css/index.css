@@ -890,7 +890,7 @@ header.scroll #header_nav .en_black {
 .footer ul {
   list-style: none;
   text-align: center;
-  padding: 50px 0;
+  padding: 40px 0;
   margin: 0;
 }
 .footer ul > li {
@@ -901,11 +901,12 @@ header.scroll #header_nav .en_black {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
 }
 .footer .copyright {
   padding-bottom: 30px;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .bx-wrapper {
@@ -1706,8 +1707,12 @@ header.scroll #header_nav .en_black {
     font-size: 16px;
   }
   .footer ul > li > a {
-    font-size: 16px;
+    font-size: 13px;
   }
+  .footer .copyright {
+    font-size: 13px;
+  }
+
 }
 .tcon {
   -webkit-appearance: none;
