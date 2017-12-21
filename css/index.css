@@ -234,7 +234,7 @@ header.scroll #header_nav .en_black {
 
 .section {
   width: 100%;
-  padding: 90px 0 20px 0;
+  padding: 50px 0 20px 0;
 }
 .section.bg1 {
   background: url(../images/google_analytic_background.png) no-repeat center -37px #efefef;
@@ -476,7 +476,7 @@ header.scroll #header_nav .en_black {
   background-color: #1eb5ca;
 }
 .section.bg3 .service_view {
-  padding: 50px 0 80px 0;
+  padding: 50px 0 50px 0;
 }
 .section.bg3 .service_item {
   display: inline-block;
@@ -517,8 +517,8 @@ header.scroll #header_nav .en_black {
 .section.bg4 {
   background: url(../images/bg4/background.png) no-repeat center transparent;
   background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /*padding-top: 100px;*/
+  padding-bottom: 70px;
   color: #fff;
 }
 .section.bg4 .text-1-box {
@@ -624,7 +624,7 @@ header.scroll #header_nav .en_black {
 
 
 .section.bg5 {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 .section.bg5 p {
   margin: 0;
@@ -685,7 +685,7 @@ header.scroll #header_nav .en_black {
 
 
 .section.bg6 {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   background-color: #efefef;
 }
 .section.bg6 p {
@@ -1665,10 +1665,10 @@ header.scroll #header_nav .en_black {
     margin-right: 0;
   }
   .section.bg7 {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
   .section.bg5 {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
   .section.bg5 .bg5_item {
     padding-left: 0px;
