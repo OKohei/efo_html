@@ -2377,6 +2377,14 @@ header.scroll #header_nav .en_black {
   max-height: 100%;
   width: auto;
   padding: 0 5%;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+@media only screen and (max-width: 480px){
+  .section.bg6 .bg6_cotainer .first_price {
+    padding-left: 10%;
+  }
 }
 
 /* adv */
