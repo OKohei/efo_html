@@ -2372,6 +2372,13 @@ header.scroll #header_nav .en_black {
     }
 }
 
+.section.bg6 .bg6_cotainer .first_price {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  padding: 0 5%;
+}
+
 /* adv */
 #header .header_text_item.second p {
   position: relative;
