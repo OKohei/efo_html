@@ -2224,15 +2224,6 @@ header.scroll #header_nav .en_black {
     text-align: center;
     margin: 0;
   }
-  .section.bg4 .bg4_item li.item1::after{
-    width: 20px;
-    right: -20px;
-  }
-  .section.bg4 .info_item{
-    margin-left: 40px;
-      width: 40%;
-      margin-top: 10px;
-  }
 }
 
 /*** UPDATE FRAME ***/
@@ -2399,6 +2390,15 @@ header.scroll #header_nav .en_black {
     padding: 0;
     padding-left: 10%;
   }
+    .section.bg4 .bg4_item li.item1::after{
+        width: 20px;
+        right: -20px;
+    }
+    .section.bg4 .info_item{
+        margin-left: 40px;
+        width: 40%;
+        margin-top: 10px;
+    }
 }
 
 /* adv */
