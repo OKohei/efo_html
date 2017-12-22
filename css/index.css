@@ -2411,7 +2411,7 @@ header.scroll #header_nav .en_black {
 #header .header_text_item.second p {
   position: relative;
 }
-#header .second p:nth-of-type(1)::after {
+#header .second p.header_item_price:nth-of-type(1)::after {
     background: url(../images/advantages1.png) no-repeat top left;
     background-size: cover;
     content: '';

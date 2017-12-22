@@ -30,7 +30,7 @@ if(isset($_GET['lang'])) {
                     <p><?= $main2[$LANG] ?></p>
                 </div>
                 <div class="header_text_item second">
-                    <p><?= $main3[$LANG] ?></p>
+                    <p class="header_item_price"><?= $main3[$LANG] ?></p>
                     <p><?= $main4[$LANG] ?></p>
                     <p><?= $main5[$LANG] ?></p>
                     <p class="title_comment"><?= $main6[$LANG] ?></p>
