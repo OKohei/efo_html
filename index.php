@@ -15,7 +15,7 @@ if(isset($_GET['lang'])) {
 <body class="index_page">
 <?php include 'header.php';?>
 <div id="what">
-    <div id="header" style="background-image: url(/images/<?php echo $LANG; ?>/header_image.png)">
+    <div class="top-page-header" id="header" style="background-image: url(/images/<?php echo $LANG; ?>/header_image.png)">
         <div class="mobile_demo_box">
             <div class="header_demo">
                 <img id="mobile_demo" src="/images/mobile_demo_nobutton.png" alt="">
