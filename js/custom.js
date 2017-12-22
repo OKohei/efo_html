@@ -46,7 +46,7 @@ $(function(){
 
             wc_irame.postMessage({'new_conversation_flg' : 1}, efo_server);
             wc_irame.postMessage({'maximize_flg' : 1}, efo_server);
-        }, 1000);
+        }, 3000);
     });
 
     //frame device
