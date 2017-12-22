@@ -2465,3 +2465,28 @@ header.scroll #header_nav .en_black {
         display: inline;
     }
 }
+
+/*** UPDATE BUTTON ***/
+
+#header .mobile_demo_box .start_chat_btn {
+	background:#000;
+	text-align:center;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 30px/30px;
+    animation: btnchikachika 1s linear alternate-reverse infinite;
+	line-height:22px;
+	font-size:12px;
+}
+@keyframes btnchikachika {
+    0% {
+      box-shadow: 0 0 10px 0 rgba(255,255,255,0);
+    }
+    100% {
+      box-shadow: 0 0 10px 10px rgba(255,255,255,.8);
+    }
+  }
+/*** END UPDATE BUTTON ***/

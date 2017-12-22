@@ -228,6 +228,7 @@ function resetHeader() {
     if(windown_w <= 760) {
         
 		//tuan edit
+		//tuan edit
 		var mobile_demo_box_w = $('#header .mobile_demo_box #mobile_demo').width();
 		var mobile_demo_box_h = $('#header .mobile_demo_box #mobile_demo').height();
 		var height_buton = 33*$('#header .mobile_demo_box #mobile_demo').width()/620;
@@ -238,6 +239,7 @@ function resetHeader() {
 		$('#header .start_chat_btn').css('left', left);
 		$('#header .start_chat_btn').css('width', width_buton);
 		$('#header .start_chat_btn').css('height', height_buton);
+		$('#header .start_chat_btn').css('line-height', height_buton+'px');
 		$('#header .start_chat_btn').css('padding', 0);
 		$('#header .start_chat_btn').css('bottom', margin_bottom);
 		if(windown_w<400){
