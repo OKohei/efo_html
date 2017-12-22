@@ -228,19 +228,20 @@ function resetHeader() {
     if(windown_w <= 760) {
         
 		//tuan edit
+		var mobile_demo_box_w = $('#header .mobile_demo_box #mobile_demo').width();
+		var mobile_demo_box_h = $('#header .mobile_demo_box #mobile_demo').height();
+		var height_buton = 33*$('#header .mobile_demo_box #mobile_demo').width()/620;
+		
+		var width_buton = 0.28*mobile_demo_box_w;
+		var margin_bottom = 0.056*mobile_demo_box_h;
+		var left = 0.43*mobile_demo_box_w;
+		$('#header .start_chat_btn').css('left', left);
+		$('#header .start_chat_btn').css('width', width_buton);
+		$('#header .start_chat_btn').css('height', height_buton);
+		$('#header .start_chat_btn').css('padding', 0);
+		$('#header .start_chat_btn').css('bottom', margin_bottom);
 		if(windown_w<400){
-			var mobile_demo_box_w = $('#header .mobile_demo_box').width();
-			var mobile_demo_box_h = $('#header .mobile_demo_box #mobile_demo').height();
-			var height_buton = 33*$('#header .mobile_demo_box').width()/620;
 			
-			var width_buton = 0.28*mobile_demo_box_w;
-			var margin_bottom = 0.06*mobile_demo_box_h;
-			var left = 0.42*mobile_demo_box_w;
-			$('#header .start_chat_btn').css('left', left);
-			$('#header .start_chat_btn').css('width', width_buton);
-			$('#header .start_chat_btn').css('height', height_buton);
-			$('#header .start_chat_btn').css('padding', 0);
-			$('#header .start_chat_btn').css('bottom', margin_bottom);
 			
 			
 		}else{
