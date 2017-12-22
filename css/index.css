@@ -1442,6 +1442,12 @@ header.scroll #header_nav .en_black {
   }
 }
 
+@media screen and (min-width: 1080px) {
+  #header .mobile_demo_box .start_chat_btn {
+    font-weight: 700;
+  }
+}
+
 @media screen and (max-width: 760px) {
 
   #hmenu {
