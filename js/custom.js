@@ -20,7 +20,7 @@ $(function(){
 
     //frame header
     $('#header .mobile_demo_box .start_chat_btn').on('click', function () {
-        $(this).attr('disabled', 'disabled');
+        $(this).remove();
         var iframe_chat = '<iframe class="wc-webchat" id="wc-webchat-main" src="' + efo_server + '/efo?connect_page_id=5a38f794059408963e1ce55d"></iframe>';
         $('#header .mobile_demo_box .efo_demo').html(iframe_chat);
 		var windown_w = $(window).width();
