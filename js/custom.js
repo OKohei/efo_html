@@ -8,11 +8,12 @@ $(function(){
     ];
 
     var connect_page_id_iframe = [
-        '5a38de8f0594089634261853',
-        '5a38e4cc059408963f1bb1a1',
+        '5a38f794059408963e1ce55d',
         '5a38ebe20594089632038ec2',
+        '5a38e4cc059408963f1bb1a1',
+        '5a5352400594084a262aa15b',
         '5a38eec6059408963e1ce55c',
-        '5a39032005940896356a18f7'
+        '5a38de8f0594089634261853'
     ];
 
     var efo_server = 'https://admin.botchan.chat:3030';
