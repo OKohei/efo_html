@@ -2,7 +2,7 @@
 
 $meta_ttl['ja'] = 'BOTCHAN EFO';
 
-$meta_desc['ja'] = 'BOTCHAN EFOは、そんなCVまでのあと一歩をサポートし、CVRの向上に繋げる、接客型の入力フォームです';
+$meta_desc['ja'] = 'chatbotがエントリーフォームと連携！新しいカタチのエントリーフォームとしてCVRを向上させるウェブ接客ツールです。';
 
 
 $meta_h1['ja'] = 'BOTCHAN EFOでカスタマーサポートを簡単に！';
