@@ -9,7 +9,7 @@
     <meta property="og:site_name" content="BOTCHAN EFO" />
     <meta property="og:description" content="<?= $meta_desc[$LANG] ?>" />
     <meta property="og:url" content="http://efo.botchan.chat" />
-    <meta property="og:image" content="http://efo.botchan.chat/images/botchan_efo.png" />
+    <meta property="og:image" content="http://efo.botchan.chat/images/efo.png" />
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
