@@ -8,6 +8,28 @@ $meta_desc['ja'] = 'chatbotがエントリーフォームと連携！新しい�
 $meta_h1['ja'] = 'BOTCHAN EFOでカスタマーサポートを簡単に！';
 
 
+$share1['ja'] = 'Facebookでシェア';
+$share1['en'] = 'Share Facebook';
+$share1['vn'] = 'Share Facebook';
+
+$share2['ja'] = 'Twitterでシェア';
+$share2['en'] = 'Share Twitter';
+$share2['vn'] = 'Share Twitter';
+
+$share3['ja'] = 'Google+で共有';
+$share3['en'] = 'Share Google+';
+$share3['vn'] = 'Share Google+';
+
+$share4['ja'] = 'はてなブックマークに登録';
+$share4['en'] = 'Share Hatena';
+$share4['vn'] = 'Share Hatena';
+
+$share5['ja'] = 'LINEに送る';
+$share5['en'] = 'Share Line';
+$share5['vn'] = 'Share Line';
+
+
+
 
 $menu1['ja'] = 'BOTCHAN EFO とは？';
 $menu1['en'] = 'About BOTCHAN';

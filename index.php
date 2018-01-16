@@ -44,6 +44,25 @@ if(isset($_GET['lang'])) {
 </div>
 
 <div class="section bg1">
+    <ul class="circle_group clearfix">
+        <li>
+            <div class="sns_icon facebook_back"><a href="" target="_blank" title="<?= $share1[$LANG] ?>"><img src="/images/share_facebook.png" alt="facebook"></a></div>
+        </li>
+        <li>
+            <div class="sns_icon twitter_back"><a href="" target="_blank" title="<?= $share2[$LANG] ?>"><img src="/images/share_twitter.png" alt="twitter"></a></div>
+        </li>
+        <li>
+            <div class="sns_icon google_back"><a href="" target="_blank" title="<?= $share3[$LANG] ?>"><img src="/images/share_gplus.png" alt="googleplus"></a></div>
+        </li>
+        <li>
+            <div class="sns_icon hatena_back"><a href="" target="_blank" title="<?= $share4[$LANG] ?>"><img src="/images/share_hatena.png" alt="はてなブックマーク"></a></div>
+        </li>
+        <li>
+            <div class="sns_icon line_back"><a href="" target="_blank" title="<?= $share5[$LANG] ?>"><img src="/images/share_line.png" alt="LINE"></a></div>
+        </li>
+    </ul>
+
+
         <div class="text-1-wrapper base">
             <p><?= $context1[$LANG] ?></p>
         </div>
@@ -377,7 +396,23 @@ if(isset($_GET['lang'])) {
 </div>
 
 <?php include 'footer.php';?>
+<script>
+    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    (function() {
+        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+        atag.src = _protocol + 'app.skele-ton.com/lpo-heatmap.js';
+        var s = document.getElementsByTagName('script')[0];
+        window["lpo-heatmap"] = "LPO-2685833183-1";
+        s.parentNode.insertBefore(atag, s);
+    })();
+</script>
 </body>
+<script>
+    $(function(){
+        setSnsShare("http://efo.botchan.chat", "<?= $meta_desc[$LANG] ?>");
+    });
+
+</script>
 <link href="https://admin.botchan.chat:3030/css/efo.css" rel="stylesheet">
 <script src="https://admin.botchan.chat:3030/js/efo.js"></script>
 <script>

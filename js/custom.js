@@ -310,3 +310,49 @@ function setSizeBg1() {
         $('.section.bg1 .box_container .box_item p').attr('style', null);
     }
 }
+
+
+function setSnsShare(shareUrl, description) {
+    setTwitterLink(".twitter_back a", shareUrl, description);
+    setFacebookLink(".facebook_back a", shareUrl, description);
+    setGooglePlusLink(".google_back a", shareUrl, description);
+    setHatebuLink(".hatena_back a", shareUrl, description);
+    setLineLink(".line_back a", shareUrl, description);
+}
+
+
+function setTwitterLink(shareSelector, shareUrl, description) {
+    $(shareSelector).attr("href", "https://twitter.com/share?shareUrl=" + shareUrl + "&text=" + encodeURIComponent(description));
+    setShareEvent(shareSelector, 'Twitter', shareUrl);
+}
+
+function setFacebookLink(shareSelector, shareUrl, description) {
+    $(shareSelector).attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + shareUrl + "&t=" + encodeURIComponent(description));
+    setShareEvent(shareSelector, 'Facebook', shareUrl);
+}
+
+function setGooglePlusLink(shareSelector, shareUrl, description) {
+    $(shareSelector).attr("href", "https://plus.google.com/share?shareUrl=" + shareUrl);
+    setShareEvent(shareSelector, 'Google+', shareUrl);
+}
+
+function setHatebuLink(shareSelector, shareUrl, description) {
+    $(shareSelector).attr("href", "https://b.hatena.ne.jp/add?mode=confirm&shareUrl=" + shareUrl + "&description=" + encodeURIComponent(description));
+    setShareEvent(shareSelector, 'Hatena Bookmark', shareUrl);
+}
+
+function setLineLink(shareSelector, shareUrl, description) {
+    $(shareSelector).attr("href", "http://line.me/R/msg/text/?" + encodeURIComponent(description + " " + shareUrl));
+    setShareEvent(shareSelector, 'LINE', shareUrl);
+}
+
+function setShareEvent(selector, snsName, shareUrl) {
+    $(selector).on('click', function(e){
+        var current = this;
+        ga('send', 'social', snsName, 'share', shareUrl, {
+            'nonInteraction': 1
+        });
+        window.open(current.href, '_blank', 'width=600, height=600, menubar=no, toolbar=no, scrollbars=yes');
+        e.preventDefault();
+    });
+}
