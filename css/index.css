@@ -2534,7 +2534,27 @@ ul.circle_group{
   margin-top: 10px;
   margin-left: 5px;
 }
-@media screen and (max-width : 480px) {
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  ul.circle_group{
+    width: 345px;
+    margin:auto;
+    list-style: none;
+    padding:0;
+  }
+
+  .sns_icon{
+    float: left;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+}
+
+
+@media only screen and (max-width : 320px) {
   ul.circle_group{
     width: 305px;
     margin:auto;
