@@ -46,19 +46,22 @@ if(isset($_GET['lang'])) {
 <div class="section bg1">
     <ul class="circle_group clearfix">
         <li>
-            <div class="sns_icon facebook_back"><a href="" target="_blank" title="<?= $share1[$LANG] ?>"><img src="/images/share_facebook.png" alt="facebook"></a></div>
+            <div class="sns_icon fb-like" data-href="http://efo.botchan.chat" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
         </li>
         <li>
-            <div class="sns_icon twitter_back"><a href="" target="_blank" title="<?= $share2[$LANG] ?>"><img src="/images/share_twitter.png" alt="twitter"></a></div>
+            <div class="sns_icon twitter_back"> <a class="twitter-share-button" href="http://efo.botchan.chat" data-dnt="true"></a></div>
         </li>
         <li>
-            <div class="sns_icon google_back"><a href="" target="_blank" title="<?= $share3[$LANG] ?>"><img src="/images/share_gplus.png" alt="googleplus"></a></div>
+            <div class="sns_icon hatena_back">
+                <a href="http://efo.botchan.chat" class="hatena-bookmark-button" data-hatena-bookmark-title="Botchan EFO" data-hatena-bookmark-layout="simple-balloon" data-hatena-bookmark-lang="ja" title="chatbotがエントリーフォームと連携！新しいカタチのエントリーフォームとしてCVRを向上させるウェブ接客ツールです。"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="chatbotがエントリーフォームと連携！新しいカタチのエントリーフォームとしてCVRを向上させるウェブ接客ツールです。" width="20" height="20" style="border: none;" /></a></a>
+            </div>
         </li>
         <li>
-            <div class="sns_icon hatena_back"><a href="" target="_blank" title="<?= $share4[$LANG] ?>"><img src="/images/share_hatena.png" alt="はてなブックマーク"></a></div>
-        </li>
-        <li>
-            <div class="sns_icon line_back"><a href="" target="_blank" title="<?= $share5[$LANG] ?>"><img src="/images/share_line.png" alt="LINE"></a></div>
+            <div class="sns_icon">
+                <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="http://efo.botchan.chat" style="display: none;"></div>
+            </div>
+
+            <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
         </li>
     </ul>
 
@@ -406,7 +409,26 @@ if(isset($_GET['lang'])) {
         s.parentNode.insertBefore(atag, s);
     })();
 </script>
-</body>
+
+
+<!-- [head]内や、[body]の終了直前などに配置 -->
+<script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async">
+    {lang: "ja"}
+</script>
+<script>
+    window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.11&appId=688268881331892';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<script src="https://apis.google.com/js/platform.js" async defer>
+    {lang: "ja"}
+</script>
 <script>
     $(function(){
         setSnsShare("http://efo.botchan.chat", "<?= $meta_desc[$LANG] ?>");

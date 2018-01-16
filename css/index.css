@@ -2522,15 +2522,30 @@ header.scroll #header_nav .en_black {
 }
 
 ul.circle_group{
-  width: 305px;
+  width: 318px;
   margin:auto;
   list-style: none;
   padding:0;
 }
 
-.sns_icon img{
+.sns_icon{
   float: left;
   margin-right: 5px;
   margin-top: 10px;
   margin-left: 5px;
+}
+@media screen and (max-width : 480px) {
+  ul.circle_group{
+    width: 305px;
+    margin:auto;
+    list-style: none;
+    padding:0;
+  }
+
+  .sns_icon{
+    float: left;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
 }
