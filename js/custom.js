@@ -80,7 +80,7 @@ $(function(){
 
                 wc_irame3.postMessage({'new_conversation_flg': 1}, efo_server);
                 wc_irame3.postMessage({'maximize_flg': 1}, efo_server);
-            }, 1000);
+            }, 3000);
         }
     });
 
