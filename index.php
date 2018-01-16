@@ -46,7 +46,8 @@ if(isset($_GET['lang'])) {
 <div class="section bg1">
     <ul class="circle_group clearfix">
         <li>
-            <div class="sns_icon fb-like" data-href="http://efo.botchan.chat" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+            <div class="sns_icon fb-like" data-href="http://efo.botchan.chat" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+
         </li>
         <li>
             <div class="sns_icon twitter_back"> <a class="twitter-share-button" href="http://efo.botchan.chat" data-dnt="true"></a></div>
