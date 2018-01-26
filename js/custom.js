@@ -22,7 +22,7 @@ $(function(){
     //frame header
     $('#header .mobile_demo_box .start_chat_btn').on('click', function () {
         $(this).remove();
-        var iframe_chat = '<iframe class="wc-webchat" id="wc-webchat-main" src="' + efo_server + '/efo?refresh_log_flg=1&preview_flg=1&connect_page_id=5a38f794059408963e1ce55d"></iframe>';
+        var iframe_chat = '<iframe class="wc-webchat" id="wc-webchat-main" src="' + efo_server + '/efo?refresh_log_flg=1&connect_page_id=5a38f794059408963e1ce55d"></iframe>';
         $('#header .mobile_demo_box .efo_demo').html(iframe_chat);
 		var windown_w = $(window).width();
         if(windown_w <= 440) {
@@ -58,8 +58,8 @@ $(function(){
         if (iframe_index && connect_page_id_iframe[iframe_index] != void 0) {
             var connect_page_id = connect_page_id_iframe[iframe_index];
 
-            var iframe_mobile = '<iframe class="wc-webchat2" id="wc-webchat2" src="' + efo_server + '/efo?refresh_log_flg=1&preview_flg=1&connect_page_id=' + connect_page_id + '"></iframe>';
-            var iframe_pc = '<iframe class="wc-webchat3" id="wc-webchat3" src="' + efo_server + '/efo?refresh_log_flg=1&preview_flg=1&connect_page_id=' + connect_page_id + '"></iframe>';
+            var iframe_mobile = '<iframe class="wc-webchat2" id="wc-webchat2" src="' + efo_server + '/efo?refresh_log_flg=1&connect_page_id=' + connect_page_id + '"></iframe>';
+            var iframe_pc = '<iframe class="wc-webchat3" id="wc-webchat3" src="' + efo_server + '/efo?refresh_log_flg=1&connect_page_id=' + connect_page_id + '"></iframe>';
             $('#bg3 .service_view .efo_demo_mobile').html(iframe_mobile);
             $('#bg3 .service_view .wc-webchat-view-pc').html(iframe_pc);
         }
