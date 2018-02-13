@@ -171,11 +171,11 @@ if(isset($_GET['lang'])) {
 			<div class="service_item service_pc">
 				<div class="out-pc-view">
 					<h4 class="service_view_search" style="margin-bottom:16px;">
-						<input class="service_view_input_search" placeholder="http://efo.botchan.chat/">
+						<input class="service_view_input_search" placeholder="https://botchan.chat/">
 					</h4>
 					<div class="efo_demo_pc">
 						<div class="wc-webchat-web-pc">
-							<iframe class="wc-webchat2" scrolling="no" id="wc-webchat4" src="http://efo.botchan.chat/"></iframe>
+							<iframe class="wc-webchat2" scrolling="no" id="wc-webchat4" src="http://botchan.chat/"></iframe>
 						</div>
 						<div class="wc-webchat-view-pc"></div>							
 					</div>			

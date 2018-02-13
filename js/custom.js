@@ -7,13 +7,21 @@ $(function(){
       'onetag.gif'
     ];
 
-    var connect_page_id_iframe = [
+    var connect_page_id_iframe_pc = [
         '5a38f794059408963e1ce55d',
         '5a38ebe20594089632038ec2',
         '5a38e4cc059408963f1bb1a1',
-        '5a5352400594084a262aa15b',
+        '', // '5a5352400594084a262aa15b',
         '5a38eec6059408963e1ce55c',
         '5a38de8f0594089634261853'
+    ];
+    var connect_page_id_iframe_mobile = [
+        '5a82892aa24a6107076c500f',
+        '5a826dffa24a6107081d8c86',
+        '5a826dcfa24a61070a23d19b',
+        '', //'5a5352400594084a262aa15b',
+        '5a826e43a24a61e4826c318b',
+        '5a826d76a24a61404c7b3f65'
     ];
 
     var efo_server = 'https://app2.botchan.chat';
@@ -54,13 +62,19 @@ $(function(){
 	});
     //create webchat device
     setTimeout(function() {
-        for(var i=0; i<connect_page_id_iframe.length; i++) {
-            if (connect_page_id_iframe[i] != void 0) {
-                var connect_page_id = connect_page_id_iframe[i];
-                var iframe_mobile = '<iframe class="wc-webchat2 webchat_device webchat_' + connect_page_id + '" style="display: none" src="' + efo_server + '/efo?refresh_log_flg=1&force_log_flg=1&connect_page_id=' + connect_page_id + '"></iframe>';
+        for(var i=0; i<connect_page_id_iframe_pc.length; i++) {
+            if (connect_page_id_iframe_pc[i] != void 0 && connect_page_id_iframe_pc[i]) {
+                var connect_page_id = connect_page_id_iframe_pc[i];
                 var iframe_pc = '<iframe class="wc-webchat3 webchat_device webchat_' + connect_page_id + '" style="display: none" src="' + efo_server + '/efo?refresh_log_flg=1&force_log_flg=1&connect_page_id=' + connect_page_id + '"></iframe>';
-                $('#bg3 .service_view .efo_demo_mobile').append(iframe_mobile);
                 $('#bg3 .service_view .wc-webchat-view-pc').append(iframe_pc);
+            }
+        }
+
+        for(var i=0; i<connect_page_id_iframe_mobile.length; i++) {
+            if (connect_page_id_iframe_mobile[i] != void 0 && connect_page_id_iframe_mobile[i]) {
+                var connect_page_id = connect_page_id_iframe_mobile[i];
+                var iframe_mobile = '<iframe class="wc-webchat2 webchat_device webchat_' + connect_page_id + '" style="display: none" src="' + efo_server + '/efo?refresh_log_flg=1&force_log_flg=1&connect_page_id=' + connect_page_id + '"></iframe>';
+                $('#bg3 .service_view .efo_demo_mobile').append(iframe_mobile);
             }
         }
     }, 5000);
@@ -69,9 +83,14 @@ $(function(){
         var iframe_index = $(this).attr('data-iframe_index');
         $('#bg3 .bg3_item li').removeClass('active');
         $(this).addClass('active');
-        if (iframe_index && connect_page_id_iframe[iframe_index] != void 0) {
+        if (iframe_index) {
             $('#bg3 .service_view .webchat_device').hide();
-            $('#bg3 .service_view .webchat_' + connect_page_id_iframe[iframe_index]).show();
+            if(connect_page_id_iframe_pc[iframe_index] != void 0) {
+                $('#bg3 .service_view .webchat_' + connect_page_id_iframe_pc[iframe_index]).show();
+            }
+            if(connect_page_id_iframe_mobile[iframe_index] != void 0) {
+                $('#bg3 .service_view .webchat_' + connect_page_id_iframe_mobile[iframe_index]).show();
+            }
         }
     });
 
