@@ -63,7 +63,7 @@ $(function(){
                 $('#bg3 .service_view .wc-webchat-view-pc').append(iframe_pc);
             }
         }
-    }, 10000);
+    }, 5000);
     //show webchat device
     $(document).on('click', '#bg3 .bg3_item li', function () {
         var iframe_index = $(this).attr('data-iframe_index');
