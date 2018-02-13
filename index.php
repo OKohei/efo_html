@@ -153,7 +153,7 @@ if(isset($_GET['lang'])) {
                 </li>
             </ul>
             <ul class="bg3_item right">
-                <li class="item1 left" data-iframe_index="3">
+                <li class="item1 left" data-iframe_index="3" style="display: none;">
                     <p><?= $block36[$LANG] ?></p>
                 </li>
                 <li class="item2" data-iframe_index="4">

@@ -969,7 +969,7 @@ header.scroll #header_nav .en_black {
 	top: 80px;
 	width:100%;
 }
-#wc-webchat3 {
+.wc-webchat3 {
 	border: none;
     height: 394px;
     width: 36%;
@@ -986,7 +986,7 @@ header.scroll #header_nav .en_black {
 .service_view_body {
 	margin:auto;
 }
-#wc-webchat2 { 
+.wc-webchat2 {
 	border:none;
 	-ms-zoom: 0.75;
 	-moz-transform: scale(0.75);
