@@ -436,9 +436,9 @@ if(isset($_GET['lang'])) {
     });
 
 </script>
-<link href="https://admin.botchan.chat:3030/css/efo.css" rel="stylesheet">
-<script src="https://admin.botchan.chat:3030/js/efo.js"></script>
+<link href="https://app2.botchan.chat/css/efo.css" rel="stylesheet">
+<script src="https://app2.botchan.chat/js/efo.js"></script>
 <script>
-    embot_init('https://admin.botchan.chat:3030/efo', '5a3a292e05940871e066b422');
+    embot_init('https://app2.botchan.chat/efo', '5a3a292e05940871e066b422');
 </script>
 </html>
