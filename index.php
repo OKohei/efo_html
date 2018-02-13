@@ -15,10 +15,12 @@ if(isset($_GET['lang'])) {
 <body class="index_page">
 <?php include 'header.php';?>
 <div id="what">
-    <div class="top-page-header" id="header" style="background-image: url(/images/<?php echo $LANG; ?>/header_image.png)">
-        <div class="mobile_demo_box">
+<!--    /images/--><?php //echo $LANG; ?><!--header_image.png-->
+    <div class="top-page-header" id="header" style="background-image: url(https://botchan.blob.core.windows.net/efo/header_image.png)">
+    <div class="mobile_demo_box">
             <div class="header_demo">
-                <img id="mobile_demo" src="/images/mobile_demo_nobutton.png" alt="">
+<!--                /images/mobile_demo_nobutton.png-->
+                <img id="mobile_demo" src="https://botchan.blob.core.windows.net/efo/mobile_demo_nobutton.png" alt="">
                 <p class="start_chat_btn">Start Chat</p>
                 <div class="efo_demo"></div>
             </div>
@@ -175,7 +177,7 @@ if(isset($_GET['lang'])) {
 					</h4>
 					<div class="efo_demo_pc">
 						<div class="wc-webchat-web-pc">
-							<iframe class="wc-webchat2" scrolling="no" id="wc-webchat4" src="http://botchan.chat/"></iframe>
+                            <img class="wc-webchat2" id="wc-webchat4" src="https://botchan.blob.core.windows.net/efo/efo.png" alt="" />
 						</div>
 						<div class="wc-webchat-view-pc"></div>							
 					</div>			
@@ -185,7 +187,8 @@ if(isset($_GET['lang'])) {
 				
 			</div>
 			<div class="service_item service_mobile">
-				<img src="/images/bg4/phone.png" alt="" style="max-width:224px;" id="phone4">
+<!--                /images/bg4/phone.png-->
+				<img src="https://botchan.blob.core.windows.net/efo/phone.png" alt="" style="max-width:224px;" id="phone4">
 				<div class="efo_demo_mobile"></div>
 			</div>
 		</div>

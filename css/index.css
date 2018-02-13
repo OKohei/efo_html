@@ -341,7 +341,8 @@ header.scroll #header_nav .en_black {
   font-weight: 700;
 }
 .section.bg2 {
-  background: url(../images/bg2/bg.png) no-repeat top left transparent;
+  /*background: url(../images/bg2/bg.png) no-repeat top left transparent;*/
+  background: url(https://botchan.blob.core.windows.net/efo/bg.png) no-repeat top left transparent;
   background-size: cover;
   height: auto;
   position: relative;
@@ -487,7 +488,8 @@ header.scroll #header_nav .en_black {
 .section.bg3 .service_item.service_pc {
   width: 800px;
   text-align: right;
-	background:url(../images/bg3/pc.png);
+	/*background:url(../images/bg3/pc.png);*/
+	background:url(https://botchan.blob.core.windows.net/efo/pc.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -515,7 +517,8 @@ header.scroll #header_nav .en_black {
 
 
 .section.bg4 {
-  background: url(../images/bg4/background.png) no-repeat center transparent;
+  /*background: url(../images/bg4/background.png) no-repeat center transparent;*/
+  background: url(https://botchan.blob.core.windows.net/efo/background.png) no-repeat center transparent;
   background-size: cover;
   /*padding-top: 100px;*/
   padding-bottom: 70px;
@@ -950,6 +953,9 @@ header.scroll #header_nav .en_black {
 	width: 100%;
 	height: 300px;
 	top: 78px;
+}
+.wc-webchat-web-pc img {
+  max-width: inherit !important;
 }
 #wc-webchat4 {
 	width: 150%;
@@ -2486,6 +2492,7 @@ header.scroll #header_nav .en_black {
     animation: btnchikachika 1s linear alternate-reverse infinite;
 	line-height:22px;
 	font-size:12px;
+    z-index: 2;
 }
 @keyframes btnchikachika {
     0% {
