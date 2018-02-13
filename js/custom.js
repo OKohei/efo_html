@@ -16,7 +16,7 @@ $(function(){
         '5a38de8f0594089634261853'
     ];
 
-    var efo_server = 'https://admin.botchan.chat:3030';
+    var efo_server = 'https://app2.botchan.chat';
 
 
     //frame header
