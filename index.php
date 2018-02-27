@@ -25,6 +25,13 @@ chosen link or button. -->
     /* ]]> */
 </script>
 
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/947605038/?guid=ON&amp;script=0"/>
+    </div>
+</noscript>
 
 <script type="text/javascript">
     /* <![CDATA[ */
@@ -36,6 +43,7 @@ chosen link or button. -->
     }
     // DO NOT CHANGE THE CODE BELOW.
     goog_report_conversion = function(url) {
+        console.log("goog_report_conversion");
         goog_snippet_vars();
         window.google_conversion_format = "3";
         var opt = new Object();
@@ -51,14 +59,8 @@ chosen link or button. -->
     }
     /* ]]> */
 </script>
-
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 </script>
-<noscript>
-    <div style="display:inline;">
-        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/947605038/?guid=ON&amp;script=0"/>
-    </div>
-</noscript>
 
 <?php include 'header.php';?>
 <div id="what">
