@@ -43,7 +43,6 @@ chosen link or button. -->
     }
     // DO NOT CHANGE THE CODE BELOW.
     goog_report_conversion = function(url) {
-        console.log("goog_report_conversion");
         goog_snippet_vars();
         window.google_conversion_format = "3";
         var opt = new Object();
@@ -59,8 +58,10 @@ chosen link or button. -->
     }
     /* ]]> */
 </script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+<script type="text/javascript"
+        src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
+
 
 <?php include 'header.php';?>
 <div id="what">
