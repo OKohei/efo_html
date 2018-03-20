@@ -12,19 +12,19 @@ if(isset($_GET['lang'])) {
 <html>
 <?php include 'head.php';?>
 <body>
-<!-- Google Code for BOTCHAN Conversion Page -->
+<!-- Yahoo Code for your Conversion Page -->
 <script type="text/javascript">
   /* <![CDATA[ */
-  var google_conversion_id = 947605038;
-  var google_conversion_label = "TaZlCIWo5H0QrpztwwM";
-  var google_remarketing_only = false;
+  var yahoo_conversion_id = 1000276976;
+  var yahoo_conversion_label = "2UvYCNms8X4Q6Y3svQM";
+  var yahoo_conversion_value = 0;
   /* ]]> */
 </script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+<script type="text/javascript" src="https://s.yimg.jp/images/listing/tool/cv/conversion.js">
 </script>
 <noscript>
   <div style="display:inline;">
-    <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/947605038/?label=TaZlCIWo5H0QrpztwwM&amp;guid=ON&amp;script=0"/>
+    <img height="1" width="1" style="border-style:none;" alt="" src="https://b91.yahoo.co.jp/pagead/conversion/1000276976/?value=0&label=2UvYCNms8X4Q6Y3svQM&guid=ON&script=0&disvt=true"/>
   </div>
 </noscript>
 <div class="thanks_base">
