@@ -489,9 +489,5 @@ chosen link or button. -->
     });
 
 </script>
-<link href="https://app2.botchan.chat/css/efo.css" rel="stylesheet">
-<script src="https://app2.botchan.chat/js/efo.js"></script>
-<script>
-    embot_init('https://app2.botchan.chat/efo', '5a3a292e05940871e066b422');
-</script>
+<script src="https://app2.blob.core.windows.net/botchan/js/efoapp.js" onload="efoInit('5a3a292e05940871e066b422')"></script>
 </html>

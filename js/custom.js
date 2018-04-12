@@ -113,6 +113,7 @@ $(function(){
             $(".wc-cmd.minimize_box").click();
         }
         $('.wc-webchat-ctn').show();
+        btag('event', 'open');
     });
 
     setSizeBg1();
