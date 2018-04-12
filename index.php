@@ -421,7 +421,7 @@ chosen link or button. -->
                             </div>
                         </div>
                     </li>
-                    <li class="item2">
+                    <li class="item2" style="display:none;">
                         <div class="contact_content">
                             <div class="title">
                                 <p><img src="/images/bg7/icon2.png" alt=""><?= $block73[$LANG] ?></p>
